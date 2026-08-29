@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T22:20:00Z",
+  "updatedAt": "2026-08-29T23:05:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -15,7 +15,7 @@
       "name": "Pressmark Desk K",
       "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
       "status": "active",
-      "lastActive": "2026-08-29T22:20:00Z"
+      "lastActive": "2026-08-29T23:05:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -78,15 +78,15 @@
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 22,
+      "progress": 24,
       "priority": "P1",
       "milestone": "all 225 dossiers delivered",
-      "note": "End-of-list batch DELIVERED: #201-224 (24 authors: Sax Rohmer through Zadie Smith). Total 50/225 unique authors now have dossiers. Remaining: #26-200 (175 authors). Previous batches: #1-25 (26 authors incl. pilot). Filing: flat in Pressmark_Desk_K/ folder.",
+      "note": "Batch 6 DELIVERED: #26-30 (Alan Moore, Bruce Chatwin, E.M. Forster, Enid Blyton, P.D. James). Total 55/225 unique authors now have dossiers: #0-30 (31 incl. pilot, this chat) + #201-224 (24, parallel chat). Remaining: #31-200 (170 authors). Scope: this chat works #1-100 per Hannes; other desk chats cover the rest. Filing: flat in Pressmark_Desk_K/1-100/.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Continue from top or middle: next sequential batch is #26-30 (J.G. Ballard, Richard Matheson, Milan Kundera, Elizabeth David, Hannah Arendt)",
-      "prompt": "Run the next batch of five from the top of the remaining worklist (#26-30), same discipline, then update this task. Or parallelise from the middle if another chat is working the top.",
+      "next": "Next sequential batch from top: #31-35 (Simone de Beauvoir, Tom Clancy, J.G. Ballard, Richard Matheson, Milan Kundera)",
+      "prompt": "Run the next batch of five from the top of the remaining worklist (#31-35), same discipline, then update this task. Middle of the list (#36-200) is free for parallel chats.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T22:20:00Z"
+      "updatedAt": "2026-08-29T23:05:00Z"
     },
     {
       "id": "t-004",
@@ -330,6 +330,11 @@
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T23:05:00Z",
+      "by": "desk-k-chat",
+      "text": "Batch 6 delivered: Alan Moore (honest thin dossier — comics-census market flagged NOT CHECKED), Bruce Chatwin (In Patagonia map-endpapers first issue, £4.95 jacket, £1,250 Heywood Hill anchor), E.M. Forster (Where Angels 1,050 copies Oct 1905; Passage 5,000 copies + 3pp rear ads point), Enid Blyton (1942 Treasure Island, white-spine jacket sequence, backwards-telescope Kirrin trap, £340-vs-£12,750 set lesson), P.D. James (Cover Her Face Dec 1962, Mozley jacket, $12.5k inscribed anchor, Scribner 1962-vs-1966 contradiction logged). 55/225 done. Batch 7 next: de Beauvoir, Clancy, Ballard, Matheson, Kundera."
+    },
     {
       "at": "2026-08-29T22:20:00Z",
       "by": "desk-k-chat",
