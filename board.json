@@ -1,29 +1,24 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T16:26:00Z",
+  "updatedAt": "2026-08-29T16:37:00Z",
   "tasks": [
     {
       "id": "t-001",
       "title": "Build a shared project board",
-      "status": "in_progress",
+      "status": "done",
       "owner": "Hannes",
-      "progress": 90,
-      "note": "Board live in-app and on the web; the dragon now has a lair.",
+      "progress": 100,
+      "note": "Board live in-app and on the web; chat rules file written. The dragon has its lair.",
       "updatedBy": "setup-chat",
-      "updatedAt": "2026-08-29T16:26:00Z"
-    },
-    {
-      "id": "t-002",
-      "title": "Example task — replace me",
-      "status": "backlog",
-      "owner": "Ludwig",
-      "progress": 0,
-      "note": "Chats will add and move cards like this one automatically.",
-      "updatedBy": "setup-chat",
-      "updatedAt": "2026-08-29T15:02:00Z"
+      "updatedAt": "2026-08-29T16:37:00Z"
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T16:37:00Z",
+      "by": "setup-chat",
+      "text": "Board build complete — first treasure hoarded. The lair is ready for real work."
+    },
     {
       "at": "2026-08-29T16:26:00Z",
       "by": "setup-chat",
