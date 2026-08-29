@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T23:12:00Z",
+  "updatedAt": "2026-08-30T00:45:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -22,7 +22,7 @@
       "name": "Share transfer chat",
       "focus": "Estonian share transfers: Hannes to 30% of Collectiom, Anthon to 1% of Mysteriom",
       "status": "active",
-      "lastActive": "2026-08-29T21:46:00Z"
+      "lastActive": "2026-08-30T00:45:00Z"
     },
     {
       "id": "treasury-v1.9.1",
@@ -326,10 +326,16 @@
     }
   ],
   "notes": [
-    "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim."
+    "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim.",
+    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed routes, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'."
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-30T00:45:00Z",
+      "by": "share-transfer-chat",
+      "text": "Wrote 'Handover Share transfer chat.md' (workspace root) at Hannes's request: full state of t-004 to t-008, the four PDFs, the agreed plan, pending human actions, and board rules appended verbatim for the next chat. Path logged in notes."
+    },
     {
       "at": "2026-08-29T23:12:00Z",
       "by": "treasury-v1-9-2",
