@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T20:58:00Z",
+  "updatedAt": "2026-08-29T23:12:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -36,7 +36,7 @@
       "name": "Treasury v1.9.2",
       "focus": "Auto-accounting ops: August packages, Prague trip report, Wamo feed, Ludwig docs, bank feeds",
       "status": "active",
-      "lastActive": "2026-08-29T21:55:00Z"
+      "lastActive": "2026-08-29T23:12:00Z"
     }
   ],
   "tasks": [
@@ -330,6 +330,11 @@
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T23:12:00Z",
+      "by": "treasury-v1-9-2",
+      "text": "Handover written on Hannes's explicit request: 'Handover Treasury v1.9.2.md' in Autoaccounting/ — full state of t-009..t-014, hard rules (Hannes sends all mail; no auto-Dismiss; no formula-field writes), draft IDs, MARK_IN_REPORT command, first moves for the next chat; board rules appended verbatim."
+    },
     {
       "at": "2026-08-29T20:58:00Z",
       "by": "setup-chat",
