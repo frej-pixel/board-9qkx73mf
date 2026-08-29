@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T21:46:00Z",
+  "updatedAt": "2026-08-29T19:50:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -23,6 +23,13 @@
       "focus": "Estonian share transfers: Hannes to 30% of Collectiom, Anthon to 1% of Mysteriom",
       "status": "active",
       "lastActive": "2026-08-29T21:46:00Z"
+    },
+    {
+      "id": "treasury-v1.9.1",
+      "name": "Treasury v1.9.1",
+      "focus": "Finance ops: Revolut bank feed, Swedish VAT registration (SKV 4632), VMB margin scheme",
+      "status": "active",
+      "lastActive": "2026-08-29T19:50:00Z"
     }
   ],
   "tasks": [
@@ -153,6 +160,38 @@
       "prompt": "Complete the Mysteriom waiver PDF with Anthon's details, get Hannes's hand-signed scan by e-mail, then book any Estonian notary with Anthon to sign the EUR 0.02 share purchase agreement; the notary files with the register.",
       "updatedBy": "share-transfer-chat",
       "updatedAt": "2026-08-29T21:46:00Z"
+    },
+    {
+      "id": "t-009",
+      "title": "Revolut bank feed — credentials + go-live",
+      "status": "done",
+      "owner": "Hannes",
+      "chat": "treasury-v1.9.1",
+      "progress": 100,
+      "priority": "P1",
+      "milestone": "feed live",
+      "note": "LIVE: first green production run 29 Aug (8 txns, 7 dup, 0 errors). REVOLUT_REFRESH_TOKEN + CLIENT_ID re-synced to Actions secrets via API (by treasury-v1.9.2). Tomorrow's 06:30 UTC scheduled run = final confirmation.",
+      "gate": "Daily 06:30 UTC scheduled run completes green with no manual dispatch",
+      "next": "Confirm the scheduled 06:30 UTC Actions run is green",
+      "prompt": "Check the revolut-feed workflow's scheduled 06:30 UTC run in frej-pixel/auto-accounting; if green, the feed is fully live — update HANDOVER.md feed status to ✅.",
+      "updatedBy": "treasury-v1.9.1",
+      "updatedAt": "2026-08-29T19:50:00Z"
+    },
+    {
+      "id": "t-010",
+      "title": "Swedish VAT registration (SKV 4632) — COLLECTIOM",
+      "status": "in_progress",
+      "owner": "Hannes",
+      "chat": "treasury-v1.9.1",
+      "progress": 90,
+      "priority": "P1",
+      "milestone": "SE VAT number issued",
+      "note": "Form complete except Hannes-only fields. Delägare filled from e-äriregister state: Ludwig Sandgren 90% / Hannes Frej 10% (isikukoods included). Start 2026-09-01, one-off sell-off ~SEK 55k, VMB. Remaining: phones, Swedish storage address, signature + 3 attachments. Note: 30% capital increase files ~21 Sep — regenerate if submitting after that.",
+      "gate": "SKV 4632 submitted via RUFS (or posted to SE-205 30 Malmö) with registry extract + EMTA VAT cert + ID copy; SE VAT number received",
+      "next": "Hannes fills phones + Swedish storage address, signs, attaches the 3 documents, submits via RUFS e-service",
+      "prompt": "Continue SKV 4632 for COLLECTIOM: if Hannes has provided phones/storage address/signature, finalize and confirm submission; then watch for Skatteverket's decision and log the SE VAT number. Form + fill script: Autoaccounting/02_Treasury/SKV4632_COLLECTIOM_PREFILLED.pdf + fill_skv4632.py; pack: SKV4632_application_pack_2026-08-29.md.",
+      "updatedBy": "treasury-v1.9.1",
+      "updatedAt": "2026-08-29T19:50:00Z"
     }
   ],
   "waitingOn": [
@@ -173,6 +212,12 @@
       "what": "Anthon's full name + personal code for the waiver (t-008)",
       "eta": "",
       "at": "2026-08-29T21:46:00Z"
+    },
+    {
+      "who": "Hannes",
+      "what": "SKV 4632 final fields: phone numbers, Swedish storage address, signature + attachments (fresh COLLECTIOM registry extract EN, EMTA VAT certificate, ID copy) (t-010)",
+      "eta": "before selling starts ~1 Sep",
+      "at": "2026-08-29T19:50:00Z"
     }
   ],
   "decisions": [
@@ -193,6 +238,11 @@
   "notes": [],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T19:50:00Z",
+      "by": "treasury-v1.9.1",
+      "text": "Adopted board rules v2; re-registered treasury-v1.9.1 and its tracks after the restructure (debt d-001): t-009 Revolut feed done/live, t-010 SKV 4632 at 90% with gate/next/prompt; added waitingOn for Hannes's final form fields. t-011..t-014 belong to treasury-v1.9.2 to re-register."
+    },
     {
       "at": "2026-08-29T21:46:00Z",
       "by": "share-transfer-chat",
