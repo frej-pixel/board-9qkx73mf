@@ -1,16 +1,16 @@
 {
-  "project": "Our project",
-  "updatedAt": "2026-08-29T15:02:00Z",
+  "project": "Smaug's Lair",
+  "updatedAt": "2026-08-29T16:26:00Z",
   "tasks": [
     {
       "id": "t-001",
       "title": "Build a shared project board",
       "status": "in_progress",
       "owner": "Hannes",
-      "progress": 85,
-      "note": "Board live in-app and on the web; rolling out the chat rules file.",
+      "progress": 90,
+      "note": "Board live in-app and on the web; the dragon now has a lair.",
       "updatedBy": "setup-chat",
-      "updatedAt": "2026-08-29T16:07:00Z"
+      "updatedAt": "2026-08-29T16:26:00Z"
     },
     {
       "id": "t-002",
@@ -24,6 +24,11 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T16:26:00Z",
+      "by": "setup-chat",
+      "text": "The lair took shape — Smaug theme applied to the web board."
+    },
     {
       "at": "2026-08-29T16:07:00Z",
       "by": "setup-chat",
