@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T18:55:00Z",
+  "updatedAt": "2026-08-29T18:56:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -31,9 +31,64 @@
       "note": "Worklist top-down, batches of five per session. Batch 1: Rowling, Ishiguro, T.S. Eliot, Lovecraft, Baldwin. Blocked until pilot passes review.",
       "updatedBy": "desk-k-chat",
       "updatedAt": "2026-08-29T18:55:00Z"
+    },
+    {
+      "id": "t-004",
+      "title": "How-to PDF for Ludwig: Collectiom 30% + Mysteriom 1%",
+      "status": "done",
+      "owner": "Hannes",
+      "progress": 100,
+      "note": "Both routes per company researched against current Estonian law and live registry data; PDF delivered. Recommended: portal capital increase for Collectiom (EUR 25, no notary), notarised 1% sale to Anthon for Mysteriom.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T18:56:00Z"
+    },
+    {
+      "id": "t-005",
+      "title": "Draft Collectiom shareholder resolution + amended articles",
+      "status": "review",
+      "owner": "Hannes",
+      "progress": 90,
+      "note": "Signing drafts produced (bilingual ET/EN): resolution + restated articles with capital EUR 4.00. Ludwig to review; verify articles clause-by-clause against the registered text before signing.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T18:56:00Z"
+    },
+    {
+      "id": "t-006",
+      "title": "Hannes digitally signs Collectiom resolution (after 16 Sep)",
+      "status": "backlog",
+      "owner": "Hannes",
+      "progress": 0,
+      "note": "Hannes is at sea until 16 Sep inclusive without his e-Residency card; earliest digital signing 17-18 Sep. EUR 1 contribution can be paid from the ship anytime.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T18:56:00Z"
+    },
+    {
+      "id": "t-007",
+      "title": "Ludwig files Collectiom capital increase in portal",
+      "status": "backlog",
+      "owner": "Ludwig",
+      "progress": 0,
+      "note": "Week of 21 Sep: file amendment + resolution + amended articles in ettevotjaportaal.rik.ee, pay EUR 25 state fee. Register decides in ~5 working days.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T18:56:00Z"
+    },
+    {
+      "id": "t-008",
+      "title": "Mysteriom: Anthon gets 1% (Ludwig sells, notary)",
+      "status": "backlog",
+      "owner": "Ludwig",
+      "progress": 0,
+      "note": "Hannes e-mails written consent + pre-emption waiver (can do from ship). Ludwig + Anthon sign purchase agreement at notary (min fee ~EUR 250 + VAT); notary registers the change.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T18:56:00Z"
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T18:56:00Z",
+      "by": "share-transfer-chat",
+      "text": "Adopted the GitHub-first board rules and synced the share-transfer track as t-004 to t-008: how-to PDF done, signing drafts in review, signing/filing and the Anthon 1% transfer queued for September."
+    },
     {
       "at": "2026-08-29T18:55:00Z",
       "by": "desk-k-chat",
