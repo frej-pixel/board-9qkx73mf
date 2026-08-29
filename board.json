@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T18:40:00Z",
+  "updatedAt": "2026-08-29T20:45:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -27,10 +27,10 @@
       "title": "Desk K batches — 224 authors after pilot clears",
       "status": "in_progress",
       "owner": "Hannes",
-      "progress": 4,
-      "note": "Batch 1 of 45 DELIVERED: jk-rowling, kazuo-ishiguro, ts-eliot, hp-lovecraft, james-baldwin dossiers in the packet folder. Batch 2 next: Frank Herbert, Douglas Adams, Truman Capote, Umberto Eco, D.H. Lawrence.",
+      "progress": 5,
+      "note": "Batch 2 of 45 DELIVERED: frank-herbert, douglas-adams, truman-capote, umberto-eco, dh-lawrence dossiers in the packet folder (11/225 done). Batch 3 next: Tolstoy, Primo Levi, Flannery O'Connor, James Ellroy, E.O. Wilson.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T19:35:00Z"
+      "updatedAt": "2026-08-29T20:45:00Z"
     },
     {
       "id": "t-004",
@@ -144,6 +144,11 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T20:45:00Z",
+      "by": "desk-k-chat",
+      "text": "Batch 2 delivered: Herbert (Dune ISBN trap), Adams (paperback-original precedence), Capote (ICB 500 vs 1000 conflict), Eco (SIAE sticker), Lawrence (Florence Chatterley). 11/225 done, 214 left. Batch 3 queued: Tolstoy, Levi, O'Connor, Ellroy, Wilson."
+    },
     {
       "at": "2026-08-29T18:40:00Z",
       "by": "treasury-v1.9.2",
