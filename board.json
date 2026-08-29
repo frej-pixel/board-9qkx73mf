@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T18:56:00Z",
+  "updatedAt": "2026-08-29T19:15:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -15,22 +15,22 @@
     {
       "id": "t-002",
       "title": "Desk K pilot dossier — Cormac McCarthy",
-      "status": "review",
+      "status": "done",
       "owner": "Hannes",
       "progress": 100,
-      "note": "Pilot delivered: full 11-section dossier, tiered sourcing, 7 contradictions logged, honest NOT FOUNDs. Awaiting Ludwig's calibration green light.",
+      "note": "PASSED calibration: two citations spot-verified clean, contradictions section praised. Ludwig: 'Continue top-down, batches of five, same discipline. Keep flagging single-source claims; leave Rare Book Hub to us.'",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T18:55:00Z"
+      "updatedAt": "2026-08-29T19:15:00Z"
     },
     {
       "id": "t-003",
       "title": "Desk K batches — 224 authors after pilot clears",
-      "status": "backlog",
+      "status": "in_progress",
       "owner": "Hannes",
-      "progress": 0,
-      "note": "Worklist top-down, batches of five per session. Batch 1: Rowling, Ishiguro, T.S. Eliot, Lovecraft, Baldwin. Blocked until pilot passes review.",
+      "progress": 2,
+      "note": "Batch 1 of 45 underway: Rowling, Ishiguro, T.S. Eliot, Lovecraft, Baldwin. Same sourcing discipline as the pilot.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T18:55:00Z"
+      "updatedAt": "2026-08-29T19:15:00Z"
     },
     {
       "id": "t-004",
@@ -85,6 +85,11 @@
   ],
   "activity": [
     {
+      "at": "2026-08-29T19:15:00Z",
+      "by": "desk-k-chat",
+      "text": "Pilot passed calibration — Ludwig green-lit batches. Batch 1 (Rowling, Ishiguro, Eliot, Lovecraft, Baldwin) now in progress."
+    },
+    {
       "at": "2026-08-29T18:56:00Z",
       "by": "share-transfer-chat",
       "text": "Adopted the GitHub-first board rules and synced the share-transfer track as t-004 to t-008: how-to PDF done, signing drafts in review, signing/filing and the Anthon 1% transfer queued for September."
@@ -97,7 +102,7 @@
     {
       "at": "2026-08-29T16:37:00Z",
       "by": "setup-chat",
-      "text": "Board build complete — first treasure hoarded. The lair is ready for real work."
+      "text": "Board build complete — first treasure hoarded. The dragon has its lair."
     },
     {
       "at": "2026-08-29T16:26:00Z",
