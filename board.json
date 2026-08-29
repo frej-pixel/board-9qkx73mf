@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T19:37:00Z",
+  "updatedAt": "2026-08-29T18:40:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -107,10 +107,10 @@
       "title": "August packages → Margit (by ~10 Sep)",
       "status": "in_progress",
       "owner": "Hannes",
-      "progress": 90,
-      "note": "COLLECTIOM 17/17 rows linked + MYSTERIOM 1/1, both drafts current 29 Aug. Hannes reviews + sends, then MARK_IN_REPORT run. Prague rows land after trip report is signed.",
+      "progress": 92,
+      "note": "COLLECTIOM 18/18 rows linked (Macforum kvitto #12156 added as founder loan Hannes) + MYSTERIOM 1/1; drafts current 29 Aug incl. Edinburgh explanation. Hannes reviews + sends, then MARK_IN_REPORT run.",
       "updatedBy": "treasury-v1.9.2",
-      "updatedAt": "2026-08-29T17:40:00Z"
+      "updatedAt": "2026-08-29T18:40:00Z"
     },
     {
       "id": "t-012",
@@ -118,9 +118,9 @@
       "status": "review",
       "owner": "Hannes",
       "progress": 95,
-      "note": "v3 COMPLETE: 19–26 Aug, €691.42 Aug costs (WTNC9L 92.06 + bag 37.86 + Praga 1885 409.79 + Noir 151.71); outbound €85.43 in July pkg. Awaiting Hannes's signature, then file to Drive. Edinburgh tickets (€100.71) went UNUSED — flagged to Margit.",
+      "note": "v3 COMPLETE: 19–26 Aug, €691.42 Aug costs (WTNC9L 92.06 + bag 37.86 + Praga 1885 409.79 + Noir 151.71); outbound €85.43 in July pkg. Awaiting Hannes's signature, then file to Drive. Edinburgh (€100.71) ruled a business planning expense — explained to Margit.",
       "updatedBy": "treasury-v1.9.2",
-      "updatedAt": "2026-08-29T17:40:00Z"
+      "updatedAt": "2026-08-29T18:40:00Z"
     },
     {
       "id": "t-013",
@@ -137,13 +137,18 @@
       "title": "Ludwig docs round 2 + shareholder-loan processing",
       "status": "in_progress",
       "owner": "Ludwig",
-      "progress": 40,
-      "note": "Round 1 (41 files) processed 29 Aug. Still missing: Ryanair TVHYPI €87.36 + QUU34V €18.40 bookings, real Dropbox receipts. His personal statement (local only) needs processing into shareholder-loan rows.",
+      "progress": 55,
+      "note": "Round-2 email DRAFTED (Ryanair TVHYPI €87.36 + QUU34V €18.40 + real Dropbox receipts via 12-char transaction ID). Krakow ruled personal (archived). His personal statement still needs processing into shareholder-loan rows.",
       "updatedBy": "treasury-v1.9.2",
-      "updatedAt": "2026-08-29T17:40:00Z"
+      "updatedAt": "2026-08-29T18:40:00Z"
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T18:40:00Z",
+      "by": "treasury-v1.9.2",
+      "text": "Hannes's calls processed: Edinburgh = business planning expense (noted for Margit, July row annotated), Krakow personal (archived), Anthropic Aug-only (series archived), Macforum 1,694 SEK booked as founder loan Hannes (package now 18/18), Ludwig round-2 email drafted (t-014 to 55%)."
+    },
     {
       "at": "2026-08-29T19:37:00Z",
       "by": "share-transfer-chat",
