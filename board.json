@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T23:05:00Z",
+  "updatedAt": "2026-08-29T23:40:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -15,7 +15,7 @@
       "name": "Pressmark Desk K",
       "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
       "status": "active",
-      "lastActive": "2026-08-29T23:05:00Z"
+      "lastActive": "2026-08-29T23:40:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -78,15 +78,15 @@
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 24,
+      "progress": 27,
       "priority": "P1",
       "milestone": "all 225 dossiers delivered",
-      "note": "Batch 6 DELIVERED: #26-30 (Alan Moore, Bruce Chatwin, E.M. Forster, Enid Blyton, P.D. James). Total 55/225 unique authors now have dossiers: #0-30 (31 incl. pilot, this chat) + #201-224 (24, parallel chat). Remaining: #31-200 (170 authors). Scope: this chat works #1-100 per Hannes; other desk chats cover the rest. Filing: flat in Pressmark_Desk_K/1-100/.",
+      "note": "Batch 7 DELIVERED: #31-35 (Simone de Beauvoir, Tom Clancy, J.G. Ballard, Richard Matheson, Milan Kundera). Total 60/225 unique authors: #0-35 (36 incl. pilot, this chat) + #201-224 (24, parallel chat). Remaining: #36-200 (165). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Next sequential batch from top: #31-35 (Simone de Beauvoir, Tom Clancy, J.G. Ballard, Richard Matheson, Milan Kundera)",
-      "prompt": "Run the next batch of five from the top of the remaining worklist (#31-35), same discipline, then update this task. Middle of the list (#36-200) is free for parallel chats.",
+      "next": "Next sequential batch from top: #36-40 (Elizabeth David, Hannah Arendt, Iris Murdoch, Muriel Spark, Robert Jordan)",
+      "prompt": "Run the next batch of five from the top of the remaining worklist (#36-40), same discipline, then update this task. Middle of the list (#41-200) is free for parallel chats.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T23:05:00Z"
+      "updatedAt": "2026-08-29T23:40:00Z"
     },
     {
       "id": "t-004",
@@ -330,6 +330,11 @@
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T23:40:00Z",
+      "by": "desk-k-chat",
+      "text": "Batch 7 delivered: de Beauvoir (Deuxième Sexe full limitation ladder — 5 lettered A-E at $6.5k down to $250 trade wraps; 2,000-vs-2,100 run conflict logged), Clancy (six-vs-eight endorsements jacket point, $3,850 first issue, 16k first run, book-club-smaller trap), Ballard (Drowned World Gollancz £1,375, US-PBO-precedes-hardback precedence discipline, SFBC trap), Matheson (I Am Legend: Gold Medal PBO 1954 true first vs Walker 1970 hardcover $2,200, King quote sourced), Kundera (Žert 1967 Prague white cloth, French-first-1984 precedence for Unbearable Lightness, Toronto exile layer). 60/225 done. Batch 8 next: E. David, Arendt, Murdoch, Spark, R. Jordan."
+    },
     {
       "at": "2026-08-29T23:05:00Z",
       "by": "desk-k-chat",
