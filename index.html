@@ -35,11 +35,8 @@ body{
   70%{opacity:.5}
   100%{transform:translateY(-105vh) translateX(40px) scale(.4);opacity:0}
 }
-.wrap{max-width:1180px;margin:0 auto;padding:36px 24px 64px;position:relative;z-index:1}
-.banner{border:1px solid var(--border);border-radius:14px;overflow:hidden}
-.banner svg{display:block;width:100%;height:auto}
-.caption{text-align:center;font-style:italic;font-size:12.5px;color:var(--text4);margin-top:8px}
-.head{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:26px}
+.wrap{max-width:1180px;margin:0 auto;padding:44px 24px 64px;position:relative;z-index:1}
+.head{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .eye{flex:none;width:74px;height:52px;filter:drop-shadow(0 0 14px rgba(255,90,31,.45));animation:eyeglow 5s ease-in-out infinite}
 @keyframes eyeglow{0%,100%{filter:drop-shadow(0 0 10px rgba(255,90,31,.35))}50%{filter:drop-shadow(0 0 20px rgba(255,140,40,.6))}}
 h1{
@@ -143,27 +140,6 @@ details.prompt summary:hover{color:var(--gold)}
 </head>
 <body>
 <div class="wrap">
-  <div class="banner">
-    <svg viewBox="0 0 1200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <defs>
-        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#0a0506"/><stop offset="1" stop-color="#1e0e0c"/>
-        </linearGradient>
-        <radialGradient id="hglow" cx="50%" cy="100%" r="65%">
-          <stop offset="0" stop-color="rgba(212,164,55,.55)"/><stop offset="55%" stop-color="rgba(194,46,31,.18)"/><stop offset="100%" stop-color="transparent"/>
-        </radialGradient>
-      </defs>
-      <rect width="1200" height="200" fill="url(#sky)"/>
-      <circle cx="180" cy="38" r="1.4" fill="rgba(212,164,55,.6)"/><circle cx="340" cy="22" r="1" fill="rgba(212,164,55,.45)"/>
-      <circle cx="520" cy="44" r="1.2" fill="rgba(212,164,55,.5)"/><circle cx="760" cy="26" r="1" fill="rgba(212,164,55,.4)"/>
-      <circle cx="980" cy="40" r="1.4" fill="rgba(212,164,55,.55)"/><circle cx="1100" cy="18" r="1" fill="rgba(212,164,55,.4)"/>
-      <path d="M0 200 L150 118 L260 158 L420 44 L500 118 L640 76 L780 148 L920 52 L1050 138 L1200 88 L1200 200 Z"
-        fill="#0d0708" stroke="rgba(212,164,55,.3)" stroke-width="1.2"/>
-      <path d="M420 44 L448 96 L500 118 L470 128 Z" fill="rgba(194,46,31,.22)"/>
-      <ellipse cx="600" cy="205" rx="520" ry="58" fill="url(#hglow)"/>
-    </svg>
-  </div>
-  <div class="caption">Erebor, the Lonely Mountain — every discipline in one hoard</div>
   <div class="head">
     <svg class="eye" viewBox="0 0 120 84" aria-hidden="true">
       <defs>
