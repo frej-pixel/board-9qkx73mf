@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T17:40:00Z",
+  "updatedAt": "2026-08-29T19:35:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -27,10 +27,10 @@
       "title": "Desk K batches — 224 authors after pilot clears",
       "status": "in_progress",
       "owner": "Hannes",
-      "progress": 2,
-      "note": "Batch 1 of 45 underway: Rowling, Ishiguro, T.S. Eliot, Lovecraft, Baldwin. Same sourcing discipline as the pilot.",
+      "progress": 4,
+      "note": "Batch 1 of 45 DELIVERED: jk-rowling, kazuo-ishiguro, ts-eliot, hp-lovecraft, james-baldwin dossiers in the packet folder. Batch 2 next: Frank Herbert, Douglas Adams, Truman Capote, Umberto Eco, D.H. Lawrence.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T19:15:00Z"
+      "updatedAt": "2026-08-29T19:35:00Z"
     },
     {
       "id": "t-004",
@@ -144,6 +144,11 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T19:35:00Z",
+      "by": "desk-k-chat",
+      "text": "Batch 1 delivered: Rowling, Ishiguro, Eliot, Lovecraft, Baldwin — 5 dossiers with tiered sources, auction anchors, contradictions logged (Waste Land 'mountain' myth, Outsider 1258 vs 1268, Baldwin $3.50 vs $3.95 jacket). Batch 2 queued."
+    },
     {
       "at": "2026-08-29T17:40:00Z",
       "by": "treasury-v1.9.2",
