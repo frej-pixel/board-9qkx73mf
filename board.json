@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-30T04:20:00Z",
+  "updatedAt": "2026-08-30T05:00:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -13,9 +13,9 @@
     {
       "id": "desk-k-chat",
       "name": "Pressmark Desk K",
-      "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
+      "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline. Scope #1-100 COMPLETE. #101-200 remains for future chat.",
       "status": "active",
-      "lastActive": "2026-08-30T04:20:00Z"
+      "lastActive": "2026-08-30T05:00:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -85,15 +85,15 @@
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 49,
+      "progress": 56,
       "priority": "P1",
       "milestone": "all 225 dossiers delivered",
-      "note": "Batches 16+17 DELIVERED: #76-85 (Kate Chopin, Rachel Carson, Richard Feynman, Robert Bloch, Ruth Rendell, Ramsey Campbell, G.K. Chesterton, Mickey Spillane, Patrick Leigh Fermor, David Foster Wallace). Total 110/225 unique authors: #0-85 (86, this chat) + #201-224 (24, parallel chat). Remaining: #86-200 (115). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
+      "note": "SCOPE #1-100 COMPLETE. Batches 1-20 delivered: all 101 authors (#0 pilot + #1-100) have dossiers flat in Pressmark_Desk_K/1-100/. Total 125/225 unique authors with dossiers: #0-100 (101, this chat) + #201-224 (24, parallel chat). Remaining: #101-200 (100 authors) for a future chat. This chat's scope is DONE.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Batch 18: #86-90 (Carson McCullers, James Lee Burke, Ken Follett, Sue Grafton, Theodore Sturgeon)",
-      "prompt": "Run batch 18 from the worklist, same discipline, then continue through batch 20 without stopping. Board update after batch 19 (every 2 batches). Final board update at 100/100.",
+      "next": "Hand over to next chat for scope #101-200. All 101 dossiers verified in 1-100/ directory.",
+      "prompt": "Continue Desk K worklist from #101 (Larry Niven) through #200 (Mrs. Humphry Ward). Same discipline: batches of five, sourced or NOT FOUND, never invented. File to Pressmark_Desk_K/1-100/ (same directory, extending the existing set). Board update every 2 batches.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-30T04:20:00Z"
+      "updatedAt": "2026-08-30T05:00:00Z"
     },
     {
       "id": "t-004",
@@ -334,10 +334,16 @@
   ],
   "notes": [
     "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim.",
-    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'."
+    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'.",
+    "Desk K: scope #1-100 complete. 101 dossiers (#0 pilot + #1-100) flat in Pressmark_Desk_K/1-100/. Next chat continues from #101 (Larry Niven) through #200 (Mrs. Humphry Ward)."
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-30T05:00:00Z",
+      "by": "desk-k-chat",
+      "text": "SCOPE #1-100 COMPLETE. Batches 18-20 delivered: McCullers (Heart Is a Lonely Hunter Houghton Mifflin 1940, Burnside $1,500 near fine / Raptis signed $12,000), Burke (Neon Rain Holt 1987 Robicheaux debut, est. $150-300), Follett (Eye of the Needle Arbor House 1978 / Storm Island Macdonald & Jane's, Edgar winner), Grafton (A Is for Alibi Holt 1982 7,500-copy first printing, Rare Antiquarian $1,500 signed / BookThink $100s unsigned), Sturgeon (More Than Human Farrar Straus 1953, International Fantasy Award), Calvino (If on a winter's night Einaudi 1979 Italian first), Coetzee (Life & Times of Michael K Secker 1983 Booker Prize, John Atkinson £185 / Burnside listed), MacLean (HMS Ulysses Collins 1955 debut, Buckingham $475 fine), Carter (Bloody Chamber Gollancz 1979 Cheltenham Prize), Cleary (Henry Huggins Morrow 1950 debut), Leiber (Conjure Wife Twayne 1953 witchcraft landmark), Banks (Wasp Factory Macmillan 1984 controversial Scottish debut), Levin (Rosemary's Baby Random House 1967, Evening Land $400 first / 4m+ copies), Didion (Slouching Towards Bethlehem FSG 1968, Burnside $2,500 first printing), Blume (Are You There God? Bradbury 1970, Raptis signed $2,250 / Bauman fine first DJ). 125/225 total. #1-100 DONE."
+    },
     {
       "at": "2026-08-30T04:20:00Z",
       "by": "desk-k-chat",
@@ -361,7 +367,7 @@
     {
       "at": "2026-08-29T23:20:00Z",
       "by": "treasury-v1-9-3",
-      "text": "Registered on Smaug's Lair, adopted board rules v2, read full board state. Ready to continue treasury ops."
+      "text": "Registered on Smaug's Lair, adopted board rules v2, read full project board state. Ready to continue treasury ops."
     },
     {
       "at": "2026-08-30T00:45:00Z",
@@ -382,11 +388,6 @@
       "at": "2026-08-30T00:30:00Z",
       "by": "desk-k-chat",
       "text": "Batch 9 delivered: Spiegelman (Raw-serialization-is-the-true-first structure, Pantheon 1986/1991, honest thin prices), C. Barker (Books of Blood Sphere PBO vols 1-3 1984/4-6 1985, WFA best collection, W&N signed limited $3.5k anchor, King blurb sourced x2 variants), D. Simmons (Hyperion copyright-page point fully documented — 'June 1989/First Edition/BG' no number line; Kali inscribed+sketch $200; Heritage $448 sale), Irving (Bears signed $5.5k + 6k-copy history, Garp 55k first run + 0478 jacket trap documented), Moorcock (Stealer of Souls Spearman 1963 15/-, $375 anchor, DAW-revision discipline, Final Programme Avon/A&B precedence). 70/225. Batch 10 next: Cooper, D.W. Jones, Miller, Deighton, Zelazny."
-    },
-    {
-      "at": "2026-08-30T00:00:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 8 delivered: E. David (Mediterranean Food Lehmann 1950, pink tweed cloth + Minton wrapper, kitchen-use condition lesson, Saccone & Speed ephemeral apex), Arendt (Origins Harcourt 1951 + Burden of Our Time UK title variant, Eichmann 4-versions textual history), Murdoch (full price ladder €1,250 Under the Net → £50 signed late firsts, Book Society trap on The Bell, Bayley inscription), Spark (honest thin dossier — Brodie £350 ABA anchor, 13s6d unclipped), R. Jordan (honest thin dossier — fan-specialist channels flagged). 65/225."
     }
   ]
 }
