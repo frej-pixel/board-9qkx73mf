@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T19:35:00Z",
+  "updatedAt": "2026-08-29T19:37:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -77,10 +77,10 @@
       "title": "Mysteriom: Anthon gets 1% (Ludwig sells, notary)",
       "status": "backlog",
       "owner": "Ludwig",
-      "progress": 0,
-      "note": "Hannes e-mails written consent + pre-emption waiver (can do from ship). Ludwig + Anthon sign purchase agreement at notary (min fee ~EUR 250 + VAT); notary registers the change.",
+      "progress": 20,
+      "note": "Hannes's bilingual consent + pre-emption waiver drafted (Mysteriom_Consent_Waiver_Anthon_1pct_DRAFT.pdf) — fill in Anthon's name + personal code, Hannes hand-signs and e-mails from the ship. Then Ludwig + Anthon at notary (min ~EUR 250 + VAT); notary registers.",
       "updatedBy": "share-transfer-chat",
-      "updatedAt": "2026-08-29T18:56:00Z"
+      "updatedAt": "2026-08-29T19:37:00Z"
     },
     {
       "id": "t-009",
@@ -145,6 +145,11 @@
   ],
   "activity": [
     {
+      "at": "2026-08-29T19:37:00Z",
+      "by": "share-transfer-chat",
+      "text": "Drafted Hannes's written consent + pre-emption waiver for the Anthon 1% transfer (ET/EN, one page, simple written form — hand-sign and e-mail from the ship, no e-Residency card needed). t-008 to 20%."
+    },
+    {
       "at": "2026-08-29T19:35:00Z",
       "by": "desk-k-chat",
       "text": "Batch 1 delivered: Rowling, Ishiguro, Eliot, Lovecraft, Baldwin — 5 dossiers with tiered sources, auction anchors, contradictions logged (Waste Land 'mountain' myth, Outsider 1258 vs 1268, Baldwin $3.50 vs $3.95 jacket). Batch 2 queued."
@@ -177,7 +182,7 @@
     {
       "at": "2026-08-29T16:37:00Z",
       "by": "setup-chat",
-      "text": "Board build complete — first treasure hoarded. The dragon has its lair."
+      "text": "Board build complete — first treasure hoarded. The lair is ready for real work."
     },
     {
       "at": "2026-08-29T16:26:00Z",
