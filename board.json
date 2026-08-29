@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T19:28:00Z",
+  "updatedAt": "2026-08-29T21:45:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -9,6 +9,13 @@
       "focus": "Built the lair, the web board, and its rules",
       "status": "active",
       "lastActive": "2026-08-29T19:28:00Z"
+    },
+    {
+      "id": "desk-k-chat",
+      "name": "Pressmark Desk K",
+      "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
+      "status": "active",
+      "lastActive": "2026-08-29T21:45:00Z"
     }
   ],
   "tasks": [
@@ -27,23 +34,72 @@
       "prompt": "Read the board rules and continue: seed Smaug's Lair with our real project tasks, one chat at a time.",
       "updatedBy": "setup-chat",
       "updatedAt": "2026-08-29T19:28:00Z"
+    },
+    {
+      "id": "t-002",
+      "title": "Desk K pilot dossier — Cormac McCarthy",
+      "status": "done",
+      "owner": "Hannes",
+      "chat": "desk-k-chat",
+      "progress": 100,
+      "priority": "P1",
+      "milestone": "calibration passed",
+      "note": "PASSED calibration: two citations spot-verified clean, contradictions section praised. Ludwig: 'Continue top-down, batches of five, same discipline. Keep flagging single-source claims; leave Rare Book Hub to us.'",
+      "gate": "Ludwig green-lights batch production",
+      "next": "Done — feeds t-003",
+      "prompt": "Continue the Desk K worklist in t-003.",
+      "updatedBy": "desk-k-chat",
+      "updatedAt": "2026-08-29T19:15:00Z"
+    },
+    {
+      "id": "t-003",
+      "title": "Desk K batches — 224 authors after pilot clears",
+      "status": "in_progress",
+      "owner": "Hannes",
+      "chat": "desk-k-chat",
+      "progress": 9,
+      "priority": "P1",
+      "milestone": "batch 4 of 45 delivered",
+      "note": "Batch 4 of 45 DELIVERED: martin-amis, oliver-sacks, richard-dawkins, peter-straub, wb-yeats dossiers (21/225 done, 204 left). Workspace restructured: Ludwig's originals in _PACKET_originals-from-Ludwig/, dossiers sorted batch-00-pilot through batch-04. Batch 5 next: Dylan Thomas, Sartre, Salinger, Foucault, Lem.",
+      "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
+      "next": "Batch 5: Dylan Thomas, Jean-Paul Sartre, J.D. Salinger, Michel Foucault, Stanislaw Lem",
+      "prompt": "Run the next batch of five from the top of the worklist, same discipline, then update this task.",
+      "updatedBy": "desk-k-chat",
+      "updatedAt": "2026-08-29T21:45:00Z"
     }
   ],
   "waitingOn": [],
   "decisions": [],
-  "debts": [],
+  "debts": [
+    {
+      "id": "d-001",
+      "text": "setup-chat's 19:25/19:32 restructure dropped tasks t-004..t-014 (share-transfer + treasury tracks) from board.json. Their state survives in commit history (last full version: 55f817d). Owning chats should re-register under the new schema.",
+      "by": "desk-k-chat",
+      "at": "2026-08-29T21:45:00Z"
+    }
+  ],
   "notes": [],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T21:45:00Z",
+      "by": "desk-k-chat",
+      "text": "Batch 4 delivered into the new schema: Amis (Rachel Papers £450, New Fiction Library trap), Sacks (inscribed-copy scarcity, £1,998 anchor), Dawkins (Selfish Gene $12.5k dual-signed, corrected-reprint state point), Straub (Marriages/Julia/Ghost Story, no hardcover Under Venus), Yeats (Mosada £125k, Oisin $2,500 Heritage fact). 21/225 done, 204 left. Batch 5 queued: D. Thomas, Sartre, Salinger, Foucault, Lem."
+    },
     {
       "at": "2026-08-29T19:28:00Z",
       "by": "setup-chat",
       "text": "Stole from Ludwig's board — motto, gates, Now/Next/Prompt, waiting-on, decisions, debts, and a parking lot for later."
     },
     {
-      "at": "2026-08-29T19:21:00Z",
+      "at": "2026-08-29T19:25:00Z",
       "by": "setup-chat",
       "text": "Restructured the lair — chats now register themselves and get their own space; board gained per-chat filtering."
+    },
+    {
+      "at": "2026-08-29T19:18:58Z",
+      "by": "desk-k-chat",
+      "text": "Batch 3 delivered: Tolstoy, Primo Levi, O'Connor, Ellroy, E.O. Wilson — 16/225 done. (Committed just before the board restructure; re-registered here.)"
     },
     {
       "at": "2026-08-29T16:37:00Z",
