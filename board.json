@@ -1,0 +1,38 @@
+{
+  "project": "Our project",
+  "updatedAt": "2026-08-29T15:02:00Z",
+  "tasks": [
+    {
+      "id": "t-001",
+      "title": "Build a shared project board",
+      "status": "in_progress",
+      "owner": "Hannes",
+      "progress": 85,
+      "note": "Board live in-app and on the web; rolling out the chat rules file.",
+      "updatedBy": "setup-chat",
+      "updatedAt": "2026-08-29T16:07:00Z"
+    },
+    {
+      "id": "t-002",
+      "title": "Example task — replace me",
+      "status": "backlog",
+      "owner": "Ludwig",
+      "progress": 0,
+      "note": "Chats will add and move cards like this one automatically.",
+      "updatedBy": "setup-chat",
+      "updatedAt": "2026-08-29T15:02:00Z"
+    }
+  ],
+  "activity": [
+    {
+      "at": "2026-08-29T16:07:00Z",
+      "by": "setup-chat",
+      "text": "Web version published; GitHub is now the shared source of truth."
+    },
+    {
+      "at": "2026-08-29T15:02:00Z",
+      "by": "setup-chat",
+      "text": "Board created and chat rules file prepared."
+    }
+  ]
+}

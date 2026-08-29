@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project board</title>
+<style>
+:root{--text:#171717;--text2:#5c5c5c;--text3:#9a9a9a;--text4:#c4c4c4;--border:#e4e4e4;--bg:#ffffff;--muted:#f3f3f3;--accent:#2563eb;--warn:#d97706;--pos:#16a34a}
+@media (prefers-color-scheme: dark){:root{--text:#ededed;--text2:#a3a3a3;--text3:#737373;--text4:#525252;--border:#2e2e2e;--bg:#141414;--muted:#1f1f1f;--accent:#6ea8fe;--warn:#f0b35e;--pos:#4ade80}}
+*{box-sizing:border-box;margin:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 48px}
+.head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+h1{font-size:22px;font-weight:600;letter-spacing:.2px}
+.meta{font-size:13px;color:var(--text3)}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--text3);margin-left:auto}
+.live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--pos)}
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:20px}
+.col{border:1px solid var(--border);border-radius:12px;padding:14px;background:var(--bg)}
+.colhead{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.coltitle{font-size:15px;font-weight:600}
+.count{font-size:12px;color:var(--text3);margin-left:auto;font-variant-numeric:tabular-nums}
+.card{border:1px solid var(--border);border-radius:10px;padding:12px;margin-top:10px}
+.ctitle{font-size:15px;font-weight:600;line-height:1.35}
+.cnote{font-size:14px;color:var(--text2);margin-top:4px}
+.bar{height:4px;border-radius:99px;background:var(--muted);margin-top:10px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--text);border-radius:inherit}
+.cmeta{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:12px;color:var(--text3);flex-wrap:wrap}
+.owner{border:1px solid var(--border);border-radius:6px;padding:0 8px;font-size:12px;line-height:20px;color:var(--text2)}
+.empty{font-size:13px;color:var(--text4);padding:8px 0}
+.act{margin-top:28px}
+.act h2{font-size:16px;font-weight:600;margin-bottom:6px}
+.actitem{display:flex;gap:8px;font-size:13px;color:var(--text2);padding:4px 0}
+.actitem .by{color:var(--text);font-weight:600;flex:none}
+.actitem .at{color:var(--text4);margin-left:auto;white-space:nowrap;font-variant-numeric:tabular-nums}
+.err{color:var(--warn);font-size:14px;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1 id="proj">Project board</h1>
+    <span class="meta" id="meta">Loading…</span>
+    <span class="live">live</span>
+  </div>
+  <div class="board" id="board"></div>
+  <div class="act">
+    <h2>Recent activity</h2>
+    <div id="activity"></div>
+  </div>
+</div>
+<script>
+const COLS=[["backlog","Backlog","var(--text4)"],["in_progress","In progress","var(--accent)"],["review","Review","var(--warn)"],["done","Done","var(--pos)"]];
+let lastRaw="";
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function rel(iso){const t=Date.parse(iso);if(isNaN(t))return"";const s=Math.max(0,(Date.now()-t)/1e3);if(s<60)return"just now";const m=s/60;if(m<60)return Math.floor(m)+"m ago";const h=m/60;if(h<24)return Math.floor(h)+"h ago";const d=h/24;if(d<30)return Math.floor(d)+"d ago";return new Date(t).toISOString().slice(0,10)}
+function render(data){
+  const tasks=Array.isArray(data.tasks)?data.tasks:[];
+  document.getElementById("proj").textContent=data.project||"Project board";
+  document.title=(data.project||"Project board");
+  document.getElementById("meta").textContent="Last updated "+rel(data.updatedAt)+" · "+tasks.length+" task"+(tasks.length===1?"":"s");
+  const byStatus={};COLS.forEach(c=>byStatus[c[0]]=[]);
+  tasks.forEach(t=>{(byStatus[t.status]||byStatus.backlog).push(t)});
+  Object.values(byStatus).forEach(l=>l.sort((a,b)=>Date.parse(b.updatedAt||0)-Date.parse(a.updatedAt||0)));
+  document.getElementById("board").innerHTML=COLS.map(([key,label,color])=>{
+    const list=byStatus[key];
+    const cards=list.length?list.map(t=>{
+      const p=Math.max(0,Math.min(100,Number(t.progress)||0));
+      return '<div class="card"><div class="ctitle">'+esc(t.title)+'</div>'
+        +(t.note?'<div class="cnote">'+esc(t.note)+'</div>':"")
+        +(key!=="done"&&p>0?'<div class="bar"><i style="width:'+p+'%"></i></div>':"")
+        +'<div class="cmeta">'+(t.owner?'<span class="owner">'+esc(t.owner)+'</span>':"")
+        +'<span>'+esc(t.updatedBy||"")+(t.updatedAt?" · "+rel(t.updatedAt):"")+'</span></div></div>';
+    }).join(""):'<div class="empty">No tasks</div>';
+    return '<div class="col"><div class="colhead"><span class="dot" style="background:'+color+'"></span><span class="coltitle">'+label+'</span><span class="count">'+list.length+'</span></div>'+cards+'</div>';
+  }).join("");
+  const act=(Array.isArray(data.activity)?data.activity:[]).slice(-8).reverse();
+  document.getElementById("activity").innerHTML=act.length?act.map(a=>'<div class="actitem"><span class="by">'+esc(a.by)+'</span><span>'+esc(a.text)+'</span><span class="at">'+rel(a.at)+'</span></div>').join(""):'<div class="empty">No activity yet</div>';
+}
+async function load(){
+  try{
+    const r=await fetch("board.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok)throw new Error(r.status);
+    const raw=await r.text();
+    if(raw!==lastRaw){lastRaw=raw;render(JSON.parse(raw))}
+  }catch(e){
+    if(!lastRaw)document.getElementById("meta").innerHTML='<span class="err">Could not load board data</span>';
+  }
+}
+load();
+setInterval(load,10000);
+</script>
+</body>
+</html>
