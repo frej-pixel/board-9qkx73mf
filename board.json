@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-30T00:45:00Z",
+  "updatedAt": "2026-08-29T23:20:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -37,6 +37,13 @@
       "focus": "Auto-accounting ops: August packages, Prague trip report, Wamo feed, Ludwig docs, bank feeds",
       "status": "active",
       "lastActive": "2026-08-29T23:12:00Z"
+    },
+    {
+      "id": "treasury-v1-9-3",
+      "name": "Treasury v1.9.3",
+      "focus": "Continuing treasury ops: follow-up on t-009..t-014, resolving blockers",
+      "status": "active",
+      "lastActive": "2026-08-29T23:20:00Z"
     }
   ],
   "tasks": [
@@ -327,10 +334,15 @@
   ],
   "notes": [
     "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim.",
-    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed routes, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'."
+    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'."
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T23:20:00Z",
+      "by": "treasury-v1-9-3",
+      "text": "Registered on Smaug's Lair, adopted board rules v2, read full board state. Ready to continue treasury ops."
+    },
     {
       "at": "2026-08-30T00:45:00Z",
       "by": "share-transfer-chat",
@@ -354,7 +366,7 @@
     {
       "at": "2026-08-30T00:00:00Z",
       "by": "desk-k-chat",
-      "text": "Batch 8 delivered: E. David (Mediterranean Food Lehmann 1950, pink tweed cloth + Minton wrapper, kitchen-use condition lesson, Saccone & Speed ephemeral apex), Arendt (Origins Harcourt 1951 + Burden of Our Time UK title variant, Eichmann 4-versions textual history), Murdoch (full price ladder €1,250 Under the Net → £50 signed late firsts, Book Society trap on The Bell, Bayley inscription), Spark (honest thin dossier — Brodie £350 ABA anchor, 13s6d unclipped), R. Jordan (honest thin dossier — fan-specialist channels flagged). 65/225."
+      "text": "Batch 8 delivered: E. David (Mediterranean Food Lehmann 1950, pink tweed cloth + Minton wrapper, kitchen-use condition lesson, Saccone & Speed ephemeral example, Arendt (Origins Harcourt 1951 + Burden of Our Time UK title variant, Eichmann 4-versions textual history), Murdoch (full price ladder €1,250 Under the Net → £50 signed late firsts, Book Society trap on The Bell, Bayley inscription), Spark (honest thin dossier — Brodie £350 ABA anchor, 13s6d unclipped), R. Jordan (honest thin dossier — fan-specialist channels flagged). 65/225."
     },
     {
       "at": "2026-08-29T23:40:00Z",
@@ -389,7 +401,7 @@
     {
       "at": "2026-08-29T21:46:00Z",
       "by": "share-transfer-chat",
-      "text": "Adopted the new schema and re-registered the share-transfer track (t-004 to t-008) with Now/Next/Prompt, gates and milestones; registered this chat; logged waiting-on (Hannes's return 16 Sep, Ludwig's review, Anthon's details) and the route A/B decision for Ludwig. Treasury's half of debt d-001 still open for treasury chats."
+      "text": "Adopted the new schema and re-registered the share-transfer track (t-004 to t-008) with Now/Next/Prompt, gates and milestones; registered this chat; logged waiting-on (Hannes's return 16 Sep, `Ludwig's review, Anthon's details) and the route A/B decision for Ludwig. Treasury's half of debt d-001 still open for treasury chats."
     },
     {
       "at": "2026-08-29T21:45:00Z",
@@ -419,7 +431,7 @@
     {
       "at": "2026-08-29T16:26:00Z",
       "by": "setup-chat",
-      "text": "The lair took shape — Smaug theme applied to the web board."
+      "text": "The lair took shape — Smaug's Lair theme applied to the web board."
     },
     {
       "at": "2026-08-29T16:07:00Z",
