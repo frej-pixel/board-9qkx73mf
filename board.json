@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-30T02:30:00Z",
+  "updatedAt": "2026-08-30T02:45:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -15,7 +15,7 @@
       "name": "Pressmark Desk K",
       "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
       "status": "active",
-      "lastActive": "2026-08-30T02:30:00Z"
+      "lastActive": "2026-08-30T02:45:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -85,15 +85,15 @@
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 36,
+      "progress": 40,
       "priority": "P1",
       "milestone": "all 225 dossiers delivered",
-      "note": "Batches 10+11 DELIVERED: #46-55 (Susan Cooper, Diana Wynne Jones, Frank Miller, Len Deighton, Roger Zelazny, Samuel R. Delany, Lloyd Alexander, Paul Theroux, Brandon Sanderson, John D. MacDonald). Total 80/225 unique authors: #0-55 (56 incl. pilot, this chat) + #201-224 (24, parallel chat). Remaining: #56-200 (145). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
+      "note": "Batches 12+13 DELIVERED: #56-65 (James Herbert, Daniel Clowes, Gustave Flaubert, John Grisham, Hermann Hesse, Sinclair Lewis, Ludwig Wittgenstein, Tove Jansson, W. Somerset Maugham, Willa Cather). Total 90/225 unique authors: #0-65 (66, this chat) + #201-224 (24, parallel chat). Remaining: #66-200 (135). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Batch 12: #56-60 (Frank Herbert† check, Daniel Clowes, Gustave Flaubert, John Grisham, Hermann Hesse)",
-      "prompt": "Run batch 12 from the worklist, same discipline, then continue through batch 20 without stopping. Board update every 2 batches.",
+      "next": "Batch 14: #66-70 (Yukio Mishima, Allen Ginsberg, Shel Silverstein, Stephen Hawking, Arthur Machen)",
+      "prompt": "Run batch 14 from the worklist, same discipline, then continue through batch 20 without stopping. Board update after batch 15 (every 2 batches).",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-30T02:30:00Z"
+      "updatedAt": "2026-08-30T02:45:00Z"
     },
     {
       "id": "t-004",
@@ -184,7 +184,7 @@
       "progress": 100,
       "priority": "P1",
       "milestone": "feed live",
-      "note": "LIVE: first green production run 29 Aug (8 txns, 7 dup, 0 errors). REVOLUT_REFRESH_TOKEN + CLIENT_ID re-synced to Actions secrets via API (by treasury-v1.9.2). Tomorrow's 06:30 UTC scheduled run = final confirmation.",
+      "note": "LIVE: first green production run 29 Aug (8 txns, 7 dup, 0 errors). REVOLUT_REFRESH_TOKEN + CLIENT_ID re-synced to Actions secrets via API (by treasury-v1-9-2). Tomorrow's 06:30 UTC scheduled run = final confirmation.",
       "gate": "Daily 06:30 UTC scheduled run completes green with no manual dispatch",
       "next": "Confirm the scheduled 06:30 UTC Actions run is green",
       "prompt": "Check the revolut-feed workflow's scheduled 06:30 UTC run in frej-pixel/auto-accounting; if green, the feed is fully live — update HANDOVER.md feed status to ✅.",
@@ -339,6 +339,11 @@
   "later": [],
   "activity": [
     {
+      "at": "2026-08-30T02:45:00Z",
+      "by": "desk-k-chat",
+      "text": "Batches 12+13 delivered: Herbert (NEL 1974 PBO £120 ceiling, trilogy set £995 anchor), Clowes (Velvet Glove signed limited HC $800 Burnside, Fantagraphics 1993 bibliographic first), Flaubert (Madame Bovary Michel Lévy 1857 'Senart' error $5k first trade issue, first tirage $50k+), Grisham (Wynwood 1989 5k copies, signed limited set $15k apex), Hesse (Steppenwolf S. Fischer 1927 $9.5k Burnside, Vorzugsausgabe €2.4k), Lewis (Main Street Harcourt 1920 $6.5k Swann jacketed, 'Purdy' error first issue), Wittgenstein (Tractatus Kegan Paul 1922 $13k Bauman, $4k American issue), Jansson (Kometjakten Söderström 1946 ink-wash first, 1946→1956→1968 revision chain), Maugham (Of Human Bondage Heinemann 1915 $4.5k anchor, limited signed editions tier), Cather (O Pioneers! Houghton Mifflin 1913 2,000 copies $1.2k Bauman, very rare DJ). 90/225. Batch 14 next."
+    },
+    {
       "at": "2026-08-30T02:30:00Z",
       "by": "desk-k-chat",
       "text": "Batches 10+11 delivered: Cooper (Cape 1965 £16s $3k anchor, UK-true-first precedence, set effect), D.W. Jones (Methuen Howl's $2.8k apex, Fire and Hemlock $300 Greenwillow, Changeover $850), Miller (DKR #1 CGC 9.8 $800-1.1k, $2.4M cover art Heritage, comic-issue discipline), Deighton (IPCRESS signed £1,000-1,500 Anderson & Garland, Hawkeye jacket, Horse Under Water crossword point), Zelazny (Nine Princes pulped $5.2k signed, Lord of Light Hugo, Sign of the Unicorn $750); Delany (Einstein Intersection Gollancz $2,225, Babel-17 Ace PBO Nebula), Lloyd Alexander (Prydain set sold Burnside, Book of Three $350, Black Cauldron $450, Taran Wanderer $300), Theroux (Railway Bazaar signed $360, mass-market abundance), Sanderson (modern mass-market, limited editions only collectible tier), MacDonald (Executioners 1957, Weep for Me Gold Medal $1,450, McGee format hierarchy). 80/225. Batch 12 next."
@@ -382,71 +387,6 @@
       "at": "2026-08-29T23:05:00Z",
       "by": "desk-k-chat",
       "text": "Batch 6 delivered: Alan Moore (honest thin dossier — comics-census market flagged NOT CHECKED), Bruce Chatwin (In Patagonia map-endpapers first issue, £4.95 jacket, £1,250 Heywood Hill anchor), E.M. Forster (Where Angels 1,050 copies Oct 1905; Passage 5,000 copies + 3pp rear ads point), Enid Blyton (1942 Treasure Island, white-spine jacket sequence, backwards-telescope Kirrin trap, £340-vs-£12,750 set lesson), P.D. James (Cover Her Face Dec 1962, Mozley jacket, $12.5k inscribed anchor, Scribner 1962-vs-1966 contradiction logged). 55/225 done. Batch 7 next: de Beauvoir, Clancy, Ballard, Matheson, Kundera."
-    },
-    {
-      "at": "2026-08-29T22:20:00Z",
-      "by": "desk-k-chat",
-      "text": "End-of-list batch delivered: #201-224 (24 authors — Sax Rohmer, Cornell Woolrich, George MacDonald, Hamlin Garland, H. Rider Haggard, Jack Higgins, Ngũgĩ wa Thiong'o, Roberto Bolaño, A.E.W. Mason, Constance Fenimore Woolson, Dinah Maria Mulock, Donna Tartt, Israel Zangwill, Norman Mailer, S.S. Van Dine, Lois Lowry, Walter Pater, Ellery Queen, Roberto Calasso, Sarah Pratt McLean Greene, William Le Queux, Guy Boothby, Jacques Futrelle, Zadie Smith). Total 50/225 unique authors now have dossiers. Remaining: #26-200."
-    },
-    {
-      "at": "2026-08-29T22:05:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 5 delivered: Dylan Thomas (18 Poems 250-copy first issue, Rolph B1a, 250-vs-500 conflict logged), Sartre (Nausée 63 grands papiers/23 de tête, $35k inscribed S.P.), Salinger (3 first-issue jacket points + the 3mm second-jacket trap, $29.5k Brass anchor), Foucault (1961 Plon vs abridged English — edition literacy dossier), Lem (Solaris MON 1961 paperback original, 10k run). 26/225 done, 199 left. All dossiers now flat in 1-100/ per Hannes. Batch 6 next: Moore, Chatwin, Forster, Blyton, P.D. James."
-    },
-    {
-      "at": "2026-08-29T21:55:00Z",
-      "by": "treasury-v1-9-2",
-      "text": "Adopted board rules v2 (kebab id treasury-v1-9-2); registered chat and completed the treasury half of debt d-001 by re-registering t-011..t-014 with gates and Now/Next/Prompt: Margit August packages (review, drafts await Hannes), Prague trip report v3 (review, EUR 691.42, awaits signature), Wamo account/API (70%, waiting on Zoe Cottle), Ludwig docs round 2 (55%). Added waitingOn for Hannes, Zoe and Ludwig; d-001 fully resolved -> done."
-    },
-    {
-      "at": "2026-08-29T19:50:00Z",
-      "by": "treasury-v1.9.1",
-      "text": "Adopted board rules v2; re-registered treasury-v1.9.1 and its tracks after the restructure (debt d-001): t-009 Revolut feed done/live, t-010 SKV 4632 at 90% with gate/next/prompt; added waitingOn for Hannes's final form fields. t-011..t-014 belong to treasury-v1.9.2 to re-register."
-    },
-    {
-      "at": "2026-08-29T21:46:00Z",
-      "by": "share-transfer-chat",
-      "text": "Adopted the new schema and re-registered the share-transfer track (t-004 to t-008) with Now/Next/Prompt, gates and milestones; registered this chat; logged waiting-on (Hannes's return 16 Sep, Ludwig's review, Anthon's details) and the route A/B decision for Ludwig. Treasury's half of debt d-001 still open for treasury chats."
-    },
-    {
-      "at": "2026-08-29T21:45:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 4 delivered into the new schema: Amis (Rachel Papers £450, New Fiction Library trap), Sacks (inscribed-copy scarcity, £1,998 anchor), Dawkins (Selfish Gene $12.5k dual-signed, corrected-reprint state point), Straub (Marriages/Julia/Ghost Story, no hardcover Under Venus), Yeats (Mosada £125k, Oisin $2,500 Heritage fact). 21/225 done, 204 left. Batch 5 queued: D. Thomas, Sartre, Salinger, Foucault, Lem."
-    },
-    {
-      "at": "2026-08-29T19:28:00Z",
-      "by": "setup-chat",
-      "text": "Stole from Ludwig's board — motto, gates, Now/Next/Prompt, waiting-on, decisions, debts, and a parking lot for later."
-    },
-    {
-      "at": "2026-08-29T19:25:00Z",
-      "by": "setup-chat",
-      "text": "Restructured the lair — chats now register themselves and get their own space; board gained per-chat filtering."
-    },
-    {
-      "at": "2026-08-29T19:18:58Z",
-      "by": "desk-k-chat",
-      "text": "Batch 3 delivered: Tolstoy, Primo Levi, O'Connor, Ellroy, E.O. Wilson — 16/225 done. (Committed just before the board restructure; re-registered here.)"
-    },
-    {
-      "at": "2026-08-29T16:37:00Z",
-      "by": "setup-chat",
-      "text": "Board build complete — first treasure hoarded. The lair is ready for real work."
-    },
-    {
-      "at": "2026-08-29T16:26:00Z",
-      "by": "setup-chat",
-      "text": "The lair took shape — Smaug's Lair theme applied to the web board."
-    },
-    {
-      "at": "2026-08-29T16:07:00Z",
-      "by": "setup-chat",
-      "text": "Web version published; GitHub is now the shared source of truth."
-    },
-    {
-      "at": "2026-08-29T15:02:00Z",
-      "by": "setup-chat",
-      "text": "Board created and chat rules file prepared."
     }
   ]
 }
