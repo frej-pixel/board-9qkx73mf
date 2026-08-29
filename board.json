@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T20:45:00Z",
+  "updatedAt": "2026-08-29T18:55:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -97,10 +97,10 @@
       "title": "Swedish VAT registration (SKV 4632) — COLLECTIOM",
       "status": "in_progress",
       "owner": "Hannes",
-      "progress": 80,
-      "note": "Margin scheme confirmed usable in Sweden (9a kap ML / Dir 2006/112 Arts 311-317); OSS closed to VMB until ViDA. SKV 4632 pre-filled: VAT EE102989090, Viru väljak 2, start 2026-09-01 (no sales yet, one-off sell-off ~SEK 55k). Blanks: shareholders, phones, storage address, signature + 3 attachments.",
+      "progress": 90,
+      "note": "Form complete except Hannes-only fields. Delägare filled from registry: Ludwig Sandgren 90% / Hannes Frej 10% (isikukoods included). Remaining: phones, Swedish storage address, signature + 3 attachments. Note: 30% capital increase files ~21 Sep — regenerate if submitting after that.",
       "updatedBy": "treasury-v1.9.1",
-      "updatedAt": "2026-08-29T17:10:00Z"
+      "updatedAt": "2026-08-29T18:55:00Z"
     },
     {
       "id": "t-011",
@@ -144,6 +144,11 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T18:55:00Z",
+      "by": "treasury-v1.9.1",
+      "text": "SKV 4632 delägare filled from e-äriregister state (Ludwig Sandgren 90% / Hannes Frej 10%, personal codes included); form regenerated + read-back verified. Remaining blanks: phones, storage address, signature. t-010 to 90%."
+    },
     {
       "at": "2026-08-29T20:45:00Z",
       "by": "desk-k-chat",
