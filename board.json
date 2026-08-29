@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-30T02:45:00Z",
+  "updatedAt": "2026-08-30T03:15:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -15,7 +15,7 @@
       "name": "Pressmark Desk K",
       "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
       "status": "active",
-      "lastActive": "2026-08-30T02:45:00Z"
+      "lastActive": "2026-08-30T03:15:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -85,15 +85,15 @@
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 40,
+      "progress": 44,
       "priority": "P1",
       "milestone": "all 225 dossiers delivered",
-      "note": "Batches 12+13 DELIVERED: #56-65 (James Herbert, Daniel Clowes, Gustave Flaubert, John Grisham, Hermann Hesse, Sinclair Lewis, Ludwig Wittgenstein, Tove Jansson, W. Somerset Maugham, Willa Cather). Total 90/225 unique authors: #0-65 (66, this chat) + #201-224 (24, parallel chat). Remaining: #66-200 (135). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
+      "note": "Batches 14+15 DELIVERED: #66-75 (Yukio Mishima, Allen Ginsberg, Shel Silverstein, Stephen Hawking, Arthur Machen, Colin Dexter, Frederick Forsyth, Frederik Pohl, Ian Rankin, Jack London). Total 100/225 unique authors: #0-75 (76, this chat) + #201-224 (24, parallel chat). Remaining: #76-200 (125). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Batch 14: #66-70 (Yukio Mishima, Allen Ginsberg, Shel Silverstein, Stephen Hawking, Arthur Machen)",
-      "prompt": "Run batch 14 from the worklist, same discipline, then continue through batch 20 without stopping. Board update after batch 15 (every 2 batches).",
+      "next": "Batch 16: #76-80 (Kate Chopin, Rachel Carson, Richard Feynman, Robert Bloch, Ruth Rendell)",
+      "prompt": "Run batch 16 from the worklist, same discipline, then continue through batch 20 without stopping. Board update after batch 17 (every 2 batches).",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-30T02:45:00Z"
+      "updatedAt": "2026-08-30T03:15:00Z"
     },
     {
       "id": "t-004",
@@ -339,6 +339,11 @@
   "later": [],
   "activity": [
     {
+      "at": "2026-08-30T03:15:00Z",
+      "by": "desk-k-chat",
+      "text": "Batches 14+15 delivered: Mishima (Kamen no Kokuhaku Kawade 1949, Japanese-first scarcity, £4k est. ceiling), Ginsberg (Howl City Lights 1956 1,000-copy first printing, $2.5k signed ceiling, Six Gallery/trial association tier), Silverstein (Giving Tree Harper 1964 5-7.5k first run, $780 VG+ Picturebook Guide, full-torso-photo DJ point), Hawking (Brief History Bantam 1988 mass-market thumbprint provenance Christie's, $150 fine unsigned ceiling), Machen (Great God Pan John Lane 1894 Keynotes #5 Beardsley association, $2.5k UK first est.), Dexter (Last Bus to Woodstock Macmillan 1975 Morse debut, £1.5k inscribed Bayliss), Forsyth (Day of the Jackal Hutchinson 1971 8k red-gold cloth, Edgar winner), Pohl (Space Merchants Ballantine 1953 PBO/HC simultaneous, Richard Powers cover), Rankin (Knots and Crosses Barrie & Jenkins 1987 Rebus debut, remaindered scarcity), London (Call of the Wild Macmillan 1903 snow-stamping/gilt-top first, $4k Burnside near fine). 100/225. Batch 16 next."
+    },
+    {
       "at": "2026-08-30T02:45:00Z",
       "by": "desk-k-chat",
       "text": "Batches 12+13 delivered: Herbert (NEL 1974 PBO £120 ceiling, trilogy set £995 anchor), Clowes (Velvet Glove signed limited HC $800 Burnside, Fantagraphics 1993 bibliographic first), Flaubert (Madame Bovary Michel Lévy 1857 'Senart' error $5k first trade issue, first tirage $50k+), Grisham (Wynwood 1989 5k copies, signed limited set $15k apex), Hesse (Steppenwolf S. Fischer 1927 $9.5k Burnside, Vorzugsausgabe €2.4k), Lewis (Main Street Harcourt 1920 $6.5k Swann jacketed, 'Purdy' error first issue), Wittgenstein (Tractatus Kegan Paul 1922 $13k Bauman, $4k American issue), Jansson (Kometjakten Söderström 1946 ink-wash first, 1946→1956→1968 revision chain), Maugham (Of Human Bondage Heinemann 1915 $4.5k anchor, limited signed editions tier), Cather (O Pioneers! Houghton Mifflin 1913 2,000 copies $1.2k Bauman, very rare DJ). 90/225. Batch 14 next."
@@ -366,7 +371,7 @@
     {
       "at": "2026-08-29T20:58:00Z",
       "by": "setup-chat",
-      "text": "Wrote handover for the next chat (Handover setup-chat.md): full lair build context, board status snapshot, open infra items, rules appended verbatim. Also made the web activity feed sort by timestamp (order-agnostic) since chats prepend entries."
+      "text": "Wrote handover for the next chat (Handover setup-chat.md): full lair build context, board status snapshot, open infra items, rules appended verbatim. Also made the web board activity feed sort by timestamp (order-agnostic) since chats prepend entries."
     },
     {
       "at": "2026-08-30T00:30:00Z",
@@ -382,11 +387,6 @@
       "at": "2026-08-29T23:40:00Z",
       "by": "desk-k-chat",
       "text": "Batch 7 delivered: de Beauvoir (Deuxième Sexe full limitation ladder — 5 lettered A-E at $6.5k down to $250 trade wraps; 2,000-vs-2,100 run conflict logged), Clancy (six-vs-eight endorsements jacket point, $3,850 first issue, 16k first run, book-club-smaller trap), Ballard (Drowned World Gollancz £1,375, US-PBO-precedes-hardback precedence discipline, SFBC trap), Matheson (I Am Legend: Gold Medal PBO 1954 true first vs Walker 1970 hardcover $2,200, King quote sourced), Kundera (Žert 1967 Prague white cloth, French-first-1984 precedence for Unbearable Lightness, Toronto exile layer). 60/225 done. Batch 8 next: E. David, Arendt, Murdoch, Spark, R. Jordan."
-    },
-    {
-      "at": "2026-08-29T23:05:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 6 delivered: Alan Moore (honest thin dossier — comics-census market flagged NOT CHECKED), Bruce Chatwin (In Patagonia map-endpapers first issue, £4.95 jacket, £1,250 Heywood Hill anchor), E.M. Forster (Where Angels 1,050 copies Oct 1905; Passage 5,000 copies + 3pp rear ads point), Enid Blyton (1942 Treasure Island, white-spine jacket sequence, backwards-telescope Kirrin trap, £340-vs-£12,750 set lesson), P.D. James (Cover Her Face Dec 1962, Mozley jacket, $12.5k inscribed anchor, Scribner 1962-vs-1966 contradiction logged). 55/225 done. Batch 7 next: de Beauvoir, Clancy, Ballard, Matheson, Kundera."
     }
   ]
 }
