@@ -271,7 +271,7 @@ function renderLore(data){
     +(later.length?'<div style="margin-top:8px">'+later.map(l=>'<div class="lateritem">'+esc(l)+'</div>').join("")+'</div>':"")+'</div>';
 }
 function renderActivity(data){
-  const act=(Array.isArray(data.activity)?data.activity:[]).slice(-8).reverse();
+  const act=(Array.isArray(data.activity)?data.activity.slice():[]).sort((a,b)=>Date.parse(b.at||0)-Date.parse(a.at||0)).slice(0,8);
   document.getElementById("activity").innerHTML=act.length?act.map(a=>'<div class="actitem"><span class="by">'+esc(a.by)+'</span><span>'+esc(a.text)+'</span><span class="at">'+rel(a.at)+'</span></div>').join(""):'<div class="empty">The mountain is silent</div>';
 }
 function renderAll(){
