@@ -1,203 +1,33 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T21:15:00Z",
+  "updatedAt": "2026-08-29T19:21:00Z",
+  "chats": [
+    {
+      "id": "setup-chat",
+      "name": "Setup chat",
+      "focus": "Built the lair, the web board, and its rules",
+      "status": "active",
+      "lastActive": "2026-08-29T19:21:00Z"
+    }
+  ],
   "tasks": [
     {
       "id": "t-001",
       "title": "Build a shared project board",
       "status": "done",
       "owner": "Hannes",
+      "chat": "setup-chat",
       "progress": 100,
       "note": "Board live in-app and on the web; chat rules file written. The dragon has its lair.",
       "updatedBy": "setup-chat",
       "updatedAt": "2026-08-29T16:37:00Z"
-    },
-    {
-      "id": "t-002",
-      "title": "Desk K pilot dossier — Cormac McCarthy",
-      "status": "done",
-      "owner": "Hannes",
-      "progress": 100,
-      "note": "PASSED calibration: two citations spot-verified clean, contradictions section praised. Ludwig: 'Continue top-down, batches of five, same discipline. Keep flagging single-source claims; leave Rare Book Hub to us.'",
-      "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T19:15:00Z"
-    },
-    {
-      "id": "t-003",
-      "title": "Desk K batches — 224 authors after pilot clears",
-      "status": "in_progress",
-      "owner": "Hannes",
-      "progress": 7,
-      "note": "Batch 3 of 45 DELIVERED: leo-tolstoy, primo-levi, flannery-oconnor, james-ellroy, eo-wilson dossiers in the packet folder (16/225 done, 209 left). Batch 4 next: Martin Amis, Oliver Sacks, Richard Dawkins, Peter Straub, W.B. Yeats.",
-      "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T21:15:00Z"
-    },
-    {
-      "id": "t-004",
-      "title": "How-to PDF for Ludwig: Collectiom 30% + Mysteriom 1%",
-      "status": "done",
-      "owner": "Hannes",
-      "progress": 100,
-      "note": "Both routes per company researched against current Estonian law and live registry data; PDF delivered. Recommended: portal capital increase for Collectiom (EUR 25, no notary), notarised 1% sale to Anthon for Mysteriom.",
-      "updatedBy": "share-transfer-chat",
-      "updatedAt": "2026-08-29T18:56:00Z"
-    },
-    {
-      "id": "t-005",
-      "title": "Draft Collectiom shareholder resolution + amended articles",
-      "status": "review",
-      "owner": "Hannes",
-      "progress": 90,
-      "note": "Signing drafts produced (bilingual ET/EN): resolution + restated articles with capital EUR 4.00. Ludwig to review; verify articles clause-by-clause against the registered text before signing.",
-      "updatedBy": "share-transfer-chat",
-      "updatedAt": "2026-08-29T18:56:00Z"
-    },
-    {
-      "id": "t-006",
-      "title": "Hannes digitally signs Collectiom resolution (after 16 Sep)",
-      "status": "backlog",
-      "owner": "Hannes",
-      "progress": 0,
-      "note": "Hannes is at sea until 16 Sep inclusive without his e-Residency card; earliest digital signing 17-18 Sep. EUR 1 contribution can be paid from the ship anytime.",
-      "updatedBy": "share-transfer-chat",
-      "updatedAt": "2026-08-29T18:56:00Z"
-    },
-    {
-      "id": "t-007",
-      "title": "Ludwig files Collectiom capital increase in portal",
-      "status": "backlog",
-      "owner": "Ludwig",
-      "progress": 0,
-      "note": "Week of 21 Sep: file amendment + resolution + amended articles in ettevotjaportaal.rik.ee, pay EUR 25 state fee. Register decides in ~5 working days.",
-      "updatedBy": "share-transfer-chat",
-      "updatedAt": "2026-08-29T18:56:00Z"
-    },
-    {
-      "id": "t-008",
-      "title": "Mysteriom: Anthon gets 1% (Ludwig sells, notary)",
-      "status": "backlog",
-      "owner": "Ludwig",
-      "progress": 20,
-      "note": "Hannes's bilingual consent + pre-emption waiver drafted (Mysteriom_Consent_Waiver_Anthon_1pct_DRAFT.pdf) — fill in Anthon's name + personal code, Hannes hand-signs and e-mails from the ship. Then Ludwig + Anthon at notary (min ~EUR 250 + VAT); notary registers.",
-      "updatedBy": "share-transfer-chat",
-      "updatedAt": "2026-08-29T19:37:00Z"
-    },
-    {
-      "id": "t-009",
-      "title": "Revolut bank feed — credentials + go-live",
-      "status": "done",
-      "owner": "Hannes",
-      "progress": 100,
-      "note": "LIVE: first green production run 29 Aug (8 txns, 7 dup, 0 errors). REVOLUT_REFRESH_TOKEN + CLIENT_ID re-synced to Actions secrets via API. Tomorrow's 06:30 UTC Actions run = final confirmation.",
-      "updatedBy": "treasury-v1.9.2",
-      "updatedAt": "2026-08-29T17:40:00Z"
-    },
-    {
-      "id": "t-010",
-      "title": "Swedish VAT registration (SKV 4632) — COLLECTIOM",
-      "status": "in_progress",
-      "owner": "Hannes",
-      "progress": 90,
-      "note": "Form complete except Hannes-only fields. Delägare filled from registry: Ludwig Sandgren 90% / Hannes Frej 10% (isikukoods included). Remaining: phones, Swedish storage address, signature + 3 attachments. Note: 30% capital increase files ~21 Sep — regenerate if submitting after that.",
-      "updatedBy": "treasury-v1.9.1",
-      "updatedAt": "2026-08-29T18:55:00Z"
-    },
-    {
-      "id": "t-011",
-      "title": "August packages → Margit (by ~10 Sep)",
-      "status": "in_progress",
-      "owner": "Hannes",
-      "progress": 92,
-      "note": "COLLECTIOM 18/18 rows linked (Macforum kvitto #12156 added as founder loan Hannes) + MYSTERIOM 1/1; drafts current 29 Aug incl. Edinburgh explanation. Hannes reviews + sends, then MARK_IN_REPORT run.",
-      "updatedBy": "treasury-v1.9.2",
-      "updatedAt": "2026-08-29T18:40:00Z"
-    },
-    {
-      "id": "t-012",
-      "title": "Prague Business Trip Report — sign + file",
-      "status": "review",
-      "owner": "Hannes",
-      "progress": 95,
-      "note": "v3 COMPLETE: 19–26 Aug, €691.42 Aug costs (WTNC9L 92.06 + bag 37.86 + Praga 1885 409.79 + Noir 151.71); outbound €85.43 in July pkg. Awaiting Hannes's signature, then file to Drive. Edinburgh (€100.71) ruled a business planning expense — explained to Margit.",
-      "updatedBy": "treasury-v1.9.2",
-      "updatedAt": "2026-08-29T18:40:00Z"
-    },
-    {
-      "id": "t-013",
-      "title": "Wamo MYSTERIOM bank — feed integration",
-      "status": "in_progress",
-      "owner": "Hannes",
-      "progress": 70,
-      "note": "Account APPROVED 28 Aug. API access asked (Zoe Cottle) — awaiting reply. Fallbacks: GoCardless PSD2 / manual statement import. Margit notice drafted; IBAN + Accounts-table entry pending.",
-      "updatedBy": "treasury-v1.9.2",
-      "updatedAt": "2026-08-29T17:40:00Z"
-    },
-    {
-      "id": "t-014",
-      "title": "Ludwig docs round 2 + shareholder-loan processing",
-      "status": "in_progress",
-      "owner": "Ludwig",
-      "progress": 55,
-      "note": "Round-2 email DRAFTED (Ryanair TVHYPI €87.36 + QUU34V €18.40 + real Dropbox receipts via 12-char transaction ID). Krakow ruled personal (archived). His personal statement still needs processing into shareholder-loan rows.",
-      "updatedBy": "treasury-v1.9.2",
-      "updatedAt": "2026-08-29T18:40:00Z"
     }
   ],
   "activity": [
     {
-      "at": "2026-08-29T21:15:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 3 delivered: Tolstoy (W&P self-published 1868-69, 4,800 run, $48.5k Bauman anchor), Primo Levi (De Silva 1947, 2,500 run, twice Einaudi-rejected), O'Connor (Wise Blood 3,000 run, $7,500 Whitmore; film-date contradiction logged), Ellroy (Avon paperback-original firsts), E.O. Wilson (thin dossier, honest NOT FOUNDs). 16/225 done, 209 left. Batch 4 queued: Amis, Sacks, Dawkins, Straub, Yeats."
-    },
-    {
-      "at": "2026-08-29T18:55:00Z",
-      "by": "treasury-v1.9.1",
-      "text": "SKV 4632 delägare filled from e-äriregister state (Ludwig Sandgren 90% / Hannes Frej 10%, personal codes included); form regenerated + read-back verified. Remaining blanks: phones, storage address, signature. t-010 to 90%."
-    },
-    {
-      "at": "2026-08-29T20:45:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 2 delivered: Herbert (Dune ISBN trap), Adams (paperback-original precedence), Capote (ICB 500 vs 1000 conflict), Eco (SIAE sticker), Lawrence (Florence Chatterley). 11/225 done, 214 left. Batch 3 queued: Tolstoy, Levi, O'Connor, Ellroy, Wilson."
-    },
-    {
-      "at": "2026-08-29T18:40:00Z",
-      "by": "treasury-v1.9.2",
-      "text": "Hannes's calls processed: Edinburgh = business planning expense (noted for Margit, July row annotated), Krakow personal (archived), Anthropic Aug-only (series archived), Macforum 1,694 SEK booked as founder loan Hannes (package now 18/18), Ludwig round-2 email drafted (t-014 to 55%)."
-    },
-    {
-      "at": "2026-08-29T19:37:00Z",
-      "by": "share-transfer-chat",
-      "text": "Drafted Hannes's written consent + pre-emption waiver for the Anthon 1% transfer (ET/EN, one page, simple written form — hand-sign and e-mail from the ship, no e-Residency card needed). t-008 to 20%."
-    },
-    {
-      "at": "2026-08-29T19:35:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 1 delivered: Rowling, Ishiguro, Eliot, Lovecraft, Baldwin — 5 dossiers with tiered sources, auction anchors, contradictions logged (Waste Land 'mountain' myth, Outsider 1258 vs 1268, Baldwin $3.50 vs $3.95 jacket). Batch 2 queued."
-    },
-    {
-      "at": "2026-08-29T17:40:00Z",
-      "by": "treasury-v1.9.2",
-      "text": "Revolut feed LIVE (t-009 done, secrets synced). Ludwig's 41-file dump processed: Prague trip fully documented (t-012 to review, €691.42), August packages at 17 rows (t-011), Wamo feed track added (t-013), Ludwig round-2 gaps logged (t-014)."
-    },
-    {
-      "at": "2026-08-29T17:10:00Z",
-      "by": "treasury-v1.9.1",
-      "text": "Adopted board rules; added Treasury tracks: Revolut feed go-live (t-009) and Swedish VAT registration SKV 4632 (t-010, form pre-filled, start 1 Sep — no retroactive exposure)."
-    },
-    {
-      "at": "2026-08-29T19:15:00Z",
-      "by": "desk-k-chat",
-      "text": "Pilot passed calibration — Ludwig green-lit batches. Batch 1 (Rowling, Ishiguro, Eliot, Lovecraft, Baldwin) now in progress."
-    },
-    {
-      "at": "2026-08-29T18:56:00Z",
-      "by": "share-transfer-chat",
-      "text": "Adopted the GitHub-first board rules and synced the share-transfer track as t-004 to t-008: how-to PDF done, signing drafts in review, signing/filing and the Anthon 1% transfer queued for September."
-    },
-    {
-      "at": "2026-08-29T18:55:00Z",
-      "by": "desk-k-chat",
-      "text": "Desk K pilot dossier (Cormac McCarthy) delivered and set to review; batch queue of 224 authors parked in backlog pending Ludwig's calibration."
+      "at": "2026-08-29T19:21:00Z",
+      "by": "setup-chat",
+      "text": "Restructured the lair — chats now register themselves and get their own space; board gained per-chat filtering."
     },
     {
       "at": "2026-08-29T16:37:00Z",

@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0a0506;--bg2:#150b0c;--card:#180e0d;--card2:#100908;
+  --bg:#0a0506;--card:#180e0d;--card2:#100908;
   --text:#f0e6d2;--text2:#c0ad88;--text3:#8a775a;--text4:#5a4c38;
   --gold:#d4a437;--gold-hi:#f5c95c;--ember:#ff5a1f;--ember-deep:#c22e1f;
   --border:rgba(212,164,55,.22);--border-hi:rgba(212,164,55,.45);
@@ -52,7 +52,24 @@ h1{
 @keyframes flicker{0%,100%{opacity:1;transform:scale(1)}40%{opacity:.55;transform:scale(.8)}60%{opacity:.9}}
 .meta{font-size:13px;color:var(--text4);margin-top:4px;font-variant-numeric:tabular-nums}
 .rule{height:1px;margin:26px 0 4px;background:linear-gradient(90deg,transparent,var(--border-hi) 20%,var(--gold) 50%,var(--border-hi) 80%,transparent);opacity:.6}
-.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
+h2.sect{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing:.08em;color:var(--gold);margin:34px 0 12px}
+.roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.mate{border:1px solid var(--border);border-radius:12px;padding:14px;
+  background:linear-gradient(180deg,var(--card),var(--card2));transition:border-color .25s}
+.mate:hover{border-color:var(--border-hi)}
+.matehead{display:flex;align-items:center;gap:8px}
+.matehead .name{font-family:"Cinzel",serif;font-size:14px;font-weight:500;letter-spacing:.05em;color:var(--text)}
+.matehead .sdot{width:7px;height:7px;border-radius:50%;flex:none}
+.sdot.on{background:var(--ember);box-shadow:0 0 7px var(--ember);animation:flicker 1.8s ease-in-out infinite}
+.sdot.off{background:var(--text4)}
+.mate .focus{font-size:13.5px;color:var(--text2);font-style:italic;margin-top:5px}
+.mate .stats{font-size:12px;color:var(--text3);margin-top:9px;font-variant-numeric:tabular-nums}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.chip{border:1px solid var(--border);border-radius:99px;padding:3px 14px;font-size:13px;color:var(--text2);
+  background:transparent;cursor:pointer;font-family:"Cinzel",serif;letter-spacing:.05em;transition:all .2s}
+.chip:hover{border-color:var(--border-hi);color:var(--gold)}
+.chip.on{background:var(--gold);border-color:var(--gold);color:#1a0f06;font-weight:700}
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:16px}
 .col{border:1px solid var(--border);border-radius:14px;padding:16px;
   background:linear-gradient(180deg,rgba(24,14,13,.85),rgba(12,7,6,.9));
   box-shadow:inset 0 1px 0 rgba(212,164,55,.08)}
@@ -71,6 +88,7 @@ h1{
 .bar>i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--ember-deep),var(--ember),var(--gold));box-shadow:0 0 10px rgba(255,90,31,.5)}
 .cmeta{display:flex;align-items:center;gap:8px;margin-top:11px;font-size:12px;color:var(--text3);flex-wrap:wrap}
 .owner{border:1px solid var(--border);border-radius:6px;padding:0 8px;font-size:11.5px;line-height:20px;color:var(--gold);font-family:"Cinzel",serif;letter-spacing:.05em}
+.chattag{border:1px solid rgba(255,90,31,.35);border-radius:6px;padding:0 8px;font-size:11.5px;line-height:20px;color:var(--ember);font-family:"Cinzel",serif;letter-spacing:.05em}
 .empty{font-size:13.5px;color:var(--text4);padding:10px 0;font-style:italic}
 .act{margin-top:40px}
 .act h2{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing:.08em;color:var(--gold);margin-bottom:10px}
@@ -109,6 +127,9 @@ h1{
     </div>
   </div>
   <div class="rule"></div>
+  <h2 class="sect">The Company</h2>
+  <div class="roster" id="roster"></div>
+  <div class="chips" id="chips"></div>
   <div class="board" id="board"></div>
   <div class="act">
     <h2>Tidings from the Mountain</h2>
@@ -118,13 +139,44 @@ h1{
 </div>
 <script>
 const COLS=[["backlog","Slumbering","var(--text4)",false],["in_progress","The Hunt","var(--ember)",true],["review","Circling","var(--gold)",false],["done","Hoarded","var(--gold-hi)",false]];
-let lastRaw="";
+let lastRaw="",DATA=null;
+let filter="all";
+try{filter=localStorage.getItem("smaug-filter")||"all"}catch(e){}
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function rel(iso){const t=Date.parse(iso);if(isNaN(t))return"";const s=Math.max(0,(Date.now()-t)/1e3);if(s<60)return"just now";const m=s/60;if(m<60)return Math.floor(m)+"m ago";const h=m/60;if(h<24)return Math.floor(h)+"h ago";const d=h/24;if(d<30)return Math.floor(d)+"d ago";return new Date(t).toISOString().slice(0,10)}
-function render(data){
+function chatList(data){
+  const reg=Array.isArray(data.chats)?data.chats.slice():[];
+  const seen=new Set(reg.map(c=>c.id));
+  (Array.isArray(data.tasks)?data.tasks:[]).forEach(t=>{
+    const id=t.chat||t.updatedBy;
+    if(id&&!seen.has(id)){seen.add(id);reg.push({id:id,name:id,focus:"",status:"idle",lastActive:t.updatedAt})}
+  });
+  return reg;
+}
+function renderRoster(data){
   const tasks=Array.isArray(data.tasks)?data.tasks:[];
-  if(data.project){document.getElementById("proj").textContent=data.project;document.title=data.project}
-  document.getElementById("meta").textContent="Last stirred "+rel(data.updatedAt)+" · "+tasks.length+" treasure"+(tasks.length===1?"":"s");
+  const chats=chatList(data);
+  document.getElementById("roster").innerHTML=chats.length?chats.map(c=>{
+    const mine=tasks.filter(t=>(t.chat||t.updatedBy)===c.id);
+    const hunting=mine.filter(t=>t.status==="in_progress").length;
+    const hoarded=mine.filter(t=>t.status==="done").length;
+    const active=c.lastActive&&(Date.now()-Date.parse(c.lastActive))<864e5;
+    return '<div class="mate"><div class="matehead"><span class="sdot '+(active?"on":"off")+'"></span><span class="name">'+esc(c.name||c.id)+'</span></div>'
+      +(c.focus?'<div class="focus">'+esc(c.focus)+'</div>':"")
+      +'<div class="stats">'+hunting+" in the hunt · "+hoarded+" hoarded"+(c.lastActive?" · last seen "+rel(c.lastActive):"")+'</div></div>';
+  }).join(""):'<div class="empty">No companions yet — the first chat to work will appear here</div>';
+}
+function renderChips(data){
+  const chats=chatList(data);
+  const el=document.getElementById("chips");
+  if(filter!=="all"&&!chats.some(c=>c.id===filter))filter="all";
+  el.innerHTML='<button class="chip'+(filter==="all"?" on":"")+'" data-f="all">Whole hoard</button>'
+    +chats.map(c=>'<button class="chip'+(filter===c.id?" on":"")+'" data-f="'+esc(c.id)+'">'+esc(c.name||c.id)+'</button>').join("");
+  el.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{filter=b.dataset.f;try{localStorage.setItem("smaug-filter",filter)}catch(e){}renderAll()});
+}
+function renderBoard(data){
+  let tasks=Array.isArray(data.tasks)?data.tasks:[];
+  if(filter!=="all")tasks=tasks.filter(t=>(t.chat||t.updatedBy)===filter);
   const byStatus={};COLS.forEach(c=>byStatus[c[0]]=[]);
   tasks.forEach(t=>{(byStatus[t.status]||byStatus.backlog).push(t)});
   Object.values(byStatus).forEach(l=>l.sort((a,b)=>Date.parse(b.updatedAt||0)-Date.parse(a.updatedAt||0)));
@@ -132,23 +184,34 @@ function render(data){
     const list=byStatus[key];
     const cards=list.length?list.map(t=>{
       const p=Math.max(0,Math.min(100,Number(t.progress)||0));
+      const cid=t.chat||t.updatedBy;
       return '<div class="card"><div class="ctitle">'+esc(t.title)+'</div>'
         +(t.note?'<div class="cnote">'+esc(t.note)+'</div>':"")
         +(key!=="done"&&p>0?'<div class="bar"><i style="width:'+p+'%"></i></div>':"")
         +'<div class="cmeta">'+(t.owner?'<span class="owner">'+esc(t.owner)+'</span>':"")
-        +'<span>'+esc(t.updatedBy||"")+(t.updatedAt?" · "+rel(t.updatedAt):"")+'</span></div></div>';
+        +(filter==="all"&&cid?'<span class="chattag">'+esc(cid)+'</span>':"")
+        +'<span>'+(t.updatedAt?rel(t.updatedAt):"")+'</span></div></div>';
     }).join(""):'<div class="empty">Nothing but echoes</div>';
     return '<div class="col"><div class="colhead"><span class="dot'+(flick?' ember':'')+'" style="background:'+color+'"></span><span class="coltitle">'+label+'</span><span class="count">'+list.length+'</span></div>'+cards+'</div>';
   }).join("");
+}
+function renderActivity(data){
   const act=(Array.isArray(data.activity)?data.activity:[]).slice(-8).reverse();
   document.getElementById("activity").innerHTML=act.length?act.map(a=>'<div class="actitem"><span class="by">'+esc(a.by)+'</span><span>'+esc(a.text)+'</span><span class="at">'+rel(a.at)+'</span></div>').join(""):'<div class="empty">The mountain is silent</div>';
+}
+function renderAll(){
+  if(!DATA)return;
+  const tasks=Array.isArray(DATA.tasks)?DATA.tasks:[];
+  if(DATA.project){document.getElementById("proj").textContent=DATA.project;document.title=DATA.project}
+  document.getElementById("meta").textContent="Last stirred "+rel(DATA.updatedAt)+" · "+tasks.length+" treasure"+(tasks.length===1?"":"s");
+  renderRoster(DATA);renderChips(DATA);renderBoard(DATA);renderActivity(DATA);
 }
 async function load(){
   try{
     const r=await fetch("board.json?t="+Date.now(),{cache:"no-store"});
     if(!r.ok)throw new Error(r.status);
     const raw=await r.text();
-    if(raw!==lastRaw){lastRaw=raw;render(JSON.parse(raw))}
+    if(raw!==lastRaw){lastRaw=raw;DATA=JSON.parse(raw);renderAll()}
   }catch(e){
     if(!lastRaw)document.getElementById("meta").textContent="The hoard could not be reached";
   }
