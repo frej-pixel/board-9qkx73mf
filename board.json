@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T21:45:00Z",
+  "updatedAt": "2026-08-29T21:46:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -16,6 +16,13 @@
       "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
       "status": "active",
       "lastActive": "2026-08-29T21:45:00Z"
+    },
+    {
+      "id": "share-transfer-chat",
+      "name": "Share transfer chat",
+      "focus": "Estonian share transfers: Hannes to 30% of Collectiom, Anthon to 1% of Mysteriom",
+      "status": "active",
+      "lastActive": "2026-08-29T21:46:00Z"
     }
   ],
   "tasks": [
@@ -66,10 +73,115 @@
       "prompt": "Run the next batch of five from the top of the worklist, same discipline, then update this task.",
       "updatedBy": "desk-k-chat",
       "updatedAt": "2026-08-29T21:45:00Z"
+    },
+    {
+      "id": "t-004",
+      "title": "How-to PDF for Ludwig: Collectiom 30% + Mysteriom 1%",
+      "status": "done",
+      "owner": "Hannes",
+      "chat": "share-transfer-chat",
+      "progress": 100,
+      "priority": "P1",
+      "milestone": "guide delivered",
+      "note": "Both routes per company researched against current Estonian law and live registry data; Ludwig_Share_Guide_Collectiom_Mysteriom.pdf delivered. Recommended: portal capital increase for Collectiom (EUR 25, no notary), notarised 1% sale to Anthon for Mysteriom.",
+      "gate": "Ludwig has every option, exact steps, costs and signing logistics",
+      "next": "Done — feeds t-005 to t-008",
+      "prompt": "Complete. The guide PDF in the workspace root is the reference for t-005 to t-008.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T21:46:00Z"
+    },
+    {
+      "id": "t-005",
+      "title": "Draft Collectiom shareholder resolution + amended articles",
+      "status": "review",
+      "owner": "Ludwig",
+      "chat": "share-transfer-chat",
+      "progress": 90,
+      "priority": "P1",
+      "milestone": "signing-ready packet",
+      "note": "Signing drafts produced (bilingual ET/EN): resolution (capital EUR 2 to EUR 4, 200 new shares, Ludwig 100 / Hannes 100) + restated articles with capital EUR 4.00. With Ludwig for review.",
+      "gate": "Ludwig approves drafts; articles verified clause-by-clause against the registered text (download in e-Business Register)",
+      "next": "Ludwig reviews both drafts and downloads the registered articles for the clause check",
+      "prompt": "Review Collectiom_Capital_Increase_Resolution_DRAFT.pdf and Collectiom_Articles_New_Redaction_DRAFT.pdf; verify the articles against the registered text from ariregister.rik.ee; then schedule digital signing for 17-18 Sep.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T21:46:00Z"
+    },
+    {
+      "id": "t-006",
+      "title": "Hannes digitally signs Collectiom resolution (after 16 Sep)",
+      "status": "backlog",
+      "owner": "Hannes",
+      "chat": "share-transfer-chat",
+      "progress": 0,
+      "priority": "P1",
+      "milestone": "both signatures on the resolution",
+      "note": "Hannes is at sea until 16 Sep inclusive without his e-Residency card; earliest digital signing 17-18 Sep. EUR 1 contribution can be paid from the ship anytime.",
+      "gate": "Resolution + restated articles signed by both shareholders in DigiDoc",
+      "next": "17-18 Sep: Hannes signs the approved drafts digitally from home",
+      "prompt": "Hannes: sign the Ludwig-approved Collectiom resolution and restated articles in DigiDoc, pay EUR 1.00 osakapital to Collectiom if not yet done, and tell Ludwig the packet is ready to file (t-007).",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T21:46:00Z"
+    },
+    {
+      "id": "t-007",
+      "title": "Ludwig files Collectiom capital increase in portal",
+      "status": "backlog",
+      "owner": "Ludwig",
+      "chat": "share-transfer-chat",
+      "progress": 0,
+      "priority": "P1",
+      "milestone": "30% entered in the register",
+      "note": "Week of 21 Sep: file amendment + signed resolution + restated articles in ettevotjaportaal.rik.ee, pay EUR 25 state fee. Register decides in ~5 working days.",
+      "gate": "Registry card shows Ludwig EUR 2.80 (70%) / Hannes EUR 1.20 (30%)",
+      "next": "Ludwig files the signed packet in the Company Registration Portal and pays the EUR 25 fee",
+      "prompt": "File the signed Collectiom capital-increase packet in ettevotjaportaal.rik.ee (amendment application + resolution + restated articles + board confirmation of payment), pay EUR 25, and share the confirmation with Hannes.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T21:46:00Z"
+    },
+    {
+      "id": "t-008",
+      "title": "Mysteriom: Anthon gets 1% (Ludwig sells, notary)",
+      "status": "backlog",
+      "owner": "Ludwig",
+      "chat": "share-transfer-chat",
+      "progress": 20,
+      "priority": "P2",
+      "milestone": "Anthon registered at 1%",
+      "note": "Hannes's bilingual consent + pre-emption waiver drafted (Mysteriom_Consent_Waiver_Anthon_1pct_DRAFT.pdf) — hand-sign and e-mail from the ship, no card needed. Then Ludwig + Anthon sign the purchase agreement at a notary (min ~EUR 250 + VAT); notary registers the change.",
+      "gate": "Registry card shows Ludwig 69% / Hannes 30% / Anthon 1%",
+      "next": "Fill Anthon's full name + personal code into the waiver; Hannes signs and e-mails it from the ship",
+      "prompt": "Complete the Mysteriom waiver PDF with Anthon's details, get Hannes's hand-signed scan by e-mail, then book any Estonian notary with Anthon to sign the EUR 0.02 share purchase agreement; the notary files with the register.",
+      "updatedBy": "share-transfer-chat",
+      "updatedAt": "2026-08-29T21:46:00Z"
     }
   ],
-  "waitingOn": [],
-  "decisions": [],
+  "waitingOn": [
+    {
+      "who": "Hannes (at sea)",
+      "what": "Back on land 16 Sep + e-Residency card for digital signing (t-006)",
+      "eta": "2026-09-16",
+      "at": "2026-08-29T21:46:00Z"
+    },
+    {
+      "who": "Ludwig",
+      "what": "Review of the Collectiom resolution + restated articles drafts (t-005)",
+      "eta": "before 17 Sep",
+      "at": "2026-08-29T21:46:00Z"
+    },
+    {
+      "who": "Ludwig / Anthon",
+      "what": "Anthon's full name + personal code for the waiver (t-008)",
+      "eta": "",
+      "at": "2026-08-29T21:46:00Z"
+    }
+  ],
+  "decisions": [
+    {
+      "text": "Mysteriom -> Anthon: route A (Ludwig sells 1% at notary — recommended, Hannes stays at exactly 30%) or route B (new issue, dilutes Ludwig and Hannes equally)",
+      "for": "Ludwig",
+      "at": "2026-08-29T21:46:00Z"
+    }
+  ],
   "debts": [
     {
       "id": "d-001",
@@ -81,6 +193,11 @@
   "notes": [],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T21:46:00Z",
+      "by": "share-transfer-chat",
+      "text": "Adopted the new schema and re-registered the share-transfer track (t-004 to t-008) with Now/Next/Prompt, gates and milestones; registered this chat; logged waiting-on (Hannes's return 16 Sep, Ludwig's review, Anthon's details) and the route A/B decision for Ludwig. Treasury's half of debt d-001 still open for treasury chats."
+    },
     {
       "at": "2026-08-29T21:45:00Z",
       "by": "desk-k-chat",
