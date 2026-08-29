@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T17:10:00Z",
+  "updatedAt": "2026-08-29T17:40:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -85,12 +85,12 @@
     {
       "id": "t-009",
       "title": "Revolut bank feed — credentials + go-live",
-      "status": "in_progress",
+      "status": "done",
       "owner": "Hannes",
-      "progress": 90,
-      "note": "New API cert + read-only consent done; local dry run green (27 txns, dedup clean); daily 06:30 UTC cron pushed (commit 6033bbd). Left: re-paste REVOLUT_REFRESH_TOKEN secret (51 chars, hash 6cfc23f843) and rerun the Actions dry run.",
-      "updatedBy": "treasury-v1.9.1",
-      "updatedAt": "2026-08-29T17:10:00Z"
+      "progress": 100,
+      "note": "LIVE: first green production run 29 Aug (8 txns, 7 dup, 0 errors). REVOLUT_REFRESH_TOKEN + CLIENT_ID re-synced to Actions secrets via API. Tomorrow's 06:30 UTC Actions run = final confirmation.",
+      "updatedBy": "treasury-v1.9.2",
+      "updatedAt": "2026-08-29T17:40:00Z"
     },
     {
       "id": "t-010",
@@ -101,9 +101,54 @@
       "note": "Margin scheme confirmed usable in Sweden (9a kap ML / Dir 2006/112 Arts 311-317); OSS closed to VMB until ViDA. SKV 4632 pre-filled: VAT EE102989090, Viru väljak 2, start 2026-09-01 (no sales yet, one-off sell-off ~SEK 55k). Blanks: shareholders, phones, storage address, signature + 3 attachments.",
       "updatedBy": "treasury-v1.9.1",
       "updatedAt": "2026-08-29T17:10:00Z"
+    },
+    {
+      "id": "t-011",
+      "title": "August packages → Margit (by ~10 Sep)",
+      "status": "in_progress",
+      "owner": "Hannes",
+      "progress": 90,
+      "note": "COLLECTIOM 17/17 rows linked + MYSTERIOM 1/1, both drafts current 29 Aug. Hannes reviews + sends, then MARK_IN_REPORT run. Prague rows land after trip report is signed.",
+      "updatedBy": "treasury-v1.9.2",
+      "updatedAt": "2026-08-29T17:40:00Z"
+    },
+    {
+      "id": "t-012",
+      "title": "Prague Business Trip Report — sign + file",
+      "status": "review",
+      "owner": "Hannes",
+      "progress": 95,
+      "note": "v3 COMPLETE: 19–26 Aug, €691.42 Aug costs (WTNC9L 92.06 + bag 37.86 + Praga 1885 409.79 + Noir 151.71); outbound €85.43 in July pkg. Awaiting Hannes's signature, then file to Drive. Edinburgh tickets (€100.71) went UNUSED — flagged to Margit.",
+      "updatedBy": "treasury-v1.9.2",
+      "updatedAt": "2026-08-29T17:40:00Z"
+    },
+    {
+      "id": "t-013",
+      "title": "Wamo MYSTERIOM bank — feed integration",
+      "status": "in_progress",
+      "owner": "Hannes",
+      "progress": 70,
+      "note": "Account APPROVED 28 Aug. API access asked (Zoe Cottle) — awaiting reply. Fallbacks: GoCardless PSD2 / manual statement import. Margit notice drafted; IBAN + Accounts-table entry pending.",
+      "updatedBy": "treasury-v1.9.2",
+      "updatedAt": "2026-08-29T17:40:00Z"
+    },
+    {
+      "id": "t-014",
+      "title": "Ludwig docs round 2 + shareholder-loan processing",
+      "status": "in_progress",
+      "owner": "Ludwig",
+      "progress": 40,
+      "note": "Round 1 (41 files) processed 29 Aug. Still missing: Ryanair TVHYPI €87.36 + QUU34V €18.40 bookings, real Dropbox receipts. His personal statement (local only) needs processing into shareholder-loan rows.",
+      "updatedBy": "treasury-v1.9.2",
+      "updatedAt": "2026-08-29T17:40:00Z"
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T17:40:00Z",
+      "by": "treasury-v1.9.2",
+      "text": "Revolut feed LIVE (t-009 done, secrets synced). Ludwig's 41-file dump processed: Prague trip fully documented (t-012 to review, €691.42), August packages at 17 rows (t-011), Wamo feed track added (t-013), Ludwig round-2 gaps logged (t-014)."
+    },
     {
       "at": "2026-08-29T17:10:00Z",
       "by": "treasury-v1.9.1",
