@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T21:55:00Z",
+  "updatedAt": "2026-08-29T22:05:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -15,7 +15,7 @@
       "name": "Pressmark Desk K",
       "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
       "status": "active",
-      "lastActive": "2026-08-29T21:45:00Z"
+      "lastActive": "2026-08-29T22:05:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -78,15 +78,15 @@
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 9,
+      "progress": 12,
       "priority": "P1",
-      "milestone": "batch 4 of 45 delivered",
-      "note": "Batch 4 of 45 DELIVERED: martin-amis, oliver-sacks, richard-dawkins, peter-straub, wb-yeats dossiers (21/225 done, 204 left). Workspace restructured: Ludwig's originals in _PACKET_originals-from-Ludwig/, dossiers sorted batch-00-pilot through batch-04. Batch 5 next: Dylan Thomas, Sartre, Salinger, Foucault, Lem.",
+      "milestone": "batch 5 of 45 delivered",
+      "note": "Batch 5 of 45 DELIVERED: dylan-thomas, jean-paul-sartre, jd-salinger, michel-foucault, stanislaw-lem dossiers (26/225 done, 199 left). Filing changed per Hannes: all dossiers flat in 1-100/ folder, batch folders removed. Batch 6 next: Alan Moore, Bruce Chatwin, E.M. Forster, Enid Blyton, P.D. James.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Batch 5: Dylan Thomas, Jean-Paul Sartre, J.D. Salinger, Michel Foucault, Stanislaw Lem",
+      "next": "Batch 6: Alan Moore, Bruce Chatwin, E.M. Forster, Enid Blyton, P.D. James",
       "prompt": "Run the next batch of five from the top of the worklist, same discipline, then update this task.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T21:45:00Z"
+      "updatedAt": "2026-08-29T22:05:00Z"
     },
     {
       "id": "t-004",
@@ -330,6 +330,11 @@
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T22:05:00Z",
+      "by": "desk-k-chat",
+      "text": "Batch 5 delivered: Dylan Thomas (18 Poems 250-copy first issue, Rolph B1a, 250-vs-500 conflict logged), Sartre (Nausée 63 grands papiers/23 de tête, $35k inscribed S.P.), Salinger (3 first-issue jacket points + the 3mm second-jacket trap, $29.5k Brass anchor), Foucault (1961 Plon vs abridged English — edition literacy dossier), Lem (Solaris MON 1961 paperback original, 10k run). 26/225 done, 199 left. All dossiers now flat in 1-100/ per Hannes. Batch 6 queued: Moore, Chatwin, Forster, Blyton, P.D. James."
+    },
     {
       "at": "2026-08-29T21:55:00Z",
       "by": "treasury-v1-9-2",
