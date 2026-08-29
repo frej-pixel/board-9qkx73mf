@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T23:20:00Z",
+  "updatedAt": "2026-08-30T02:30:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -15,7 +15,7 @@
       "name": "Pressmark Desk K",
       "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
       "status": "active",
-      "lastActive": "2026-08-30T00:30:00Z"
+      "lastActive": "2026-08-30T02:30:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -85,15 +85,15 @@
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 29,
+      "progress": 36,
       "priority": "P1",
       "milestone": "all 225 dossiers delivered",
-      "note": "Batches 8+9 DELIVERED: #36-45 (Elizabeth David, Hannah Arendt, Iris Murdoch, Muriel Spark, Robert Jordan, Art Spiegelman, Clive Barker, Dan Simmons, John Irving, Michael Moorcock). Total 70/225 unique authors: #0-45 (46 incl. pilot, this chat) + #201-224 (24, parallel chat). Remaining: #46-200 (155). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
+      "note": "Batches 10+11 DELIVERED: #46-55 (Susan Cooper, Diana Wynne Jones, Frank Miller, Len Deighton, Roger Zelazny, Samuel R. Delany, Lloyd Alexander, Paul Theroux, Brandon Sanderson, John D. MacDonald). Total 80/225 unique authors: #0-55 (56 incl. pilot, this chat) + #201-224 (24, parallel chat). Remaining: #56-200 (145). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Next sequential batch from top: #46-50 (Susan Cooper, Diana Wynne Jones, Frank Miller, Len Deighton, Roger Zelazny)",
-      "prompt": "Run the next batch of five from the top of the remaining worklist (#46-50), same discipline, then update this task. Middle of the list (#51-200) is free for parallel chats.",
+      "next": "Batch 12: #56-60 (Frank Herbert† check, Daniel Clowes, Gustave Flaubert, John Grisham, Hermann Hesse)",
+      "prompt": "Run batch 12 from the worklist, same discipline, then continue through batch 20 without stopping. Board update every 2 batches.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-30T00:30:00Z"
+      "updatedAt": "2026-08-30T02:30:00Z"
     },
     {
       "id": "t-004",
@@ -339,6 +339,11 @@
   "later": [],
   "activity": [
     {
+      "at": "2026-08-30T02:30:00Z",
+      "by": "desk-k-chat",
+      "text": "Batches 10+11 delivered: Cooper (Cape 1965 £16s $3k anchor, UK-true-first precedence, set effect), D.W. Jones (Methuen Howl's $2.8k apex, Fire and Hemlock $300 Greenwillow, Changeover $850), Miller (DKR #1 CGC 9.8 $800-1.1k, $2.4M cover art Heritage, comic-issue discipline), Deighton (IPCRESS signed £1,000-1,500 Anderson & Garland, Hawkeye jacket, Horse Under Water crossword point), Zelazny (Nine Princes pulped $5.2k signed, Lord of Light Hugo, Sign of the Unicorn $750); Delany (Einstein Intersection Gollancz $2,225, Babel-17 Ace PBO Nebula), Lloyd Alexander (Prydain set sold Burnside, Book of Three $350, Black Cauldron $450, Taran Wanderer $300), Theroux (Railway Bazaar signed $360, mass-market abundance), Sanderson (modern mass-market, limited editions only collectible tier), MacDonald (Executioners 1957, Weep for Me Gold Medal $1,450, McGee format hierarchy). 80/225. Batch 12 next."
+    },
+    {
       "at": "2026-08-29T23:20:00Z",
       "by": "treasury-v1-9-3",
       "text": "Registered on Smaug's Lair, adopted board rules v2, read full board state. Ready to continue treasury ops."
@@ -366,7 +371,7 @@
     {
       "at": "2026-08-30T00:00:00Z",
       "by": "desk-k-chat",
-      "text": "Batch 8 delivered: E. David (Mediterranean Food Lehmann 1950, pink tweed cloth + Minton wrapper, kitchen-use condition lesson, Saccone & Speed ephemeral example, Arendt (Origins Harcourt 1951 + Burden of Our Time UK title variant, Eichmann 4-versions textual history), Murdoch (full price ladder €1,250 Under the Net → £50 signed late firsts, Book Society trap on The Bell, Bayley inscription), Spark (honest thin dossier — Brodie £350 ABA anchor, 13s6d unclipped), R. Jordan (honest thin dossier — fan-specialist channels flagged). 65/225."
+      "text": "Batch 8 delivered: E. David (Mediterranean Food Lehmann 1950, pink tweed cloth + Minton wrapper, kitchen-use condition lesson, Saccone & Speed ephemeral apex), Arendt (Origins Harcourt 1951 + Burden of Our Time UK title variant, Eichmann 4-versions textual history), Murdoch (full price ladder €1,250 Under the Net → £50 signed late firsts, Book Society trap on The Bell, Bayley inscription), Spark (honest thin dossier — Brodie £350 ABA anchor, 13s6d unclipped), R. Jordan (honest thin dossier — fan-specialist channels flagged). 65/225."
     },
     {
       "at": "2026-08-29T23:40:00Z",
@@ -401,7 +406,7 @@
     {
       "at": "2026-08-29T21:46:00Z",
       "by": "share-transfer-chat",
-      "text": "Adopted the new schema and re-registered the share-transfer track (t-004 to t-008) with Now/Next/Prompt, gates and milestones; registered this chat; logged waiting-on (Hannes's return 16 Sep, `Ludwig's review, Anthon's details) and the route A/B decision for Ludwig. Treasury's half of debt d-001 still open for treasury chats."
+      "text": "Adopted the new schema and re-registered the share-transfer track (t-004 to t-008) with Now/Next/Prompt, gates and milestones; registered this chat; logged waiting-on (Hannes's return 16 Sep, Ludwig's review, Anthon's details) and the route A/B decision for Ludwig. Treasury's half of debt d-001 still open for treasury chats."
     },
     {
       "at": "2026-08-29T21:45:00Z",
