@@ -1,13 +1,14 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T19:21:00Z",
+  "motto": "Finish what was started — the hoard grows by closing, not by starting.",
+  "updatedAt": "2026-08-29T19:28:00Z",
   "chats": [
     {
       "id": "setup-chat",
       "name": "Setup chat",
       "focus": "Built the lair, the web board, and its rules",
       "status": "active",
-      "lastActive": "2026-08-29T19:21:00Z"
+      "lastActive": "2026-08-29T19:28:00Z"
     }
   ],
   "tasks": [
@@ -18,12 +19,27 @@
       "owner": "Hannes",
       "chat": "setup-chat",
       "progress": 100,
-      "note": "Board live in-app and on the web; chat rules file written. The dragon has its lair.",
+      "priority": "P1",
+      "milestone": "lair standing",
+      "note": "Board live in-app and on the web; chat rules file written and self-propagating.",
+      "gate": "Web board live, rules viral, chats self-registering",
+      "next": "Seed the lair with real project tasks",
+      "prompt": "Read the board rules and continue: seed Smaug's Lair with our real project tasks, one chat at a time.",
       "updatedBy": "setup-chat",
-      "updatedAt": "2026-08-29T16:37:00Z"
+      "updatedAt": "2026-08-29T19:28:00Z"
     }
   ],
+  "waitingOn": [],
+  "decisions": [],
+  "debts": [],
+  "notes": [],
+  "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T19:28:00Z",
+      "by": "setup-chat",
+      "text": "Stole from Ludwig's board — motto, gates, Now/Next/Prompt, waiting-on, decisions, debts, and a parking lot for later."
+    },
     {
       "at": "2026-08-29T19:21:00Z",
       "by": "setup-chat",

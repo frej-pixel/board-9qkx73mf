@@ -35,8 +35,11 @@ body{
   70%{opacity:.5}
   100%{transform:translateY(-105vh) translateX(40px) scale(.4);opacity:0}
 }
-.wrap{max-width:1180px;margin:0 auto;padding:44px 24px 64px;position:relative;z-index:1}
-.head{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.wrap{max-width:1180px;margin:0 auto;padding:36px 24px 64px;position:relative;z-index:1}
+.banner{border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.banner svg{display:block;width:100%;height:auto}
+.caption{text-align:center;font-style:italic;font-size:12.5px;color:var(--text4);margin-top:8px}
+.head{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:26px}
 .eye{flex:none;width:74px;height:52px;filter:drop-shadow(0 0 14px rgba(255,90,31,.45));animation:eyeglow 5s ease-in-out infinite}
 @keyframes eyeglow{0%,100%{filter:drop-shadow(0 0 10px rgba(255,90,31,.35))}50%{filter:drop-shadow(0 0 20px rgba(255,140,40,.6))}}
 h1{
@@ -45,7 +48,7 @@ h1{
   -webkit-background-clip:text;background-clip:text;color:transparent;
   text-shadow:0 0 40px rgba(212,164,55,.15);
 }
-.tagline{font-style:italic;color:var(--text3);font-size:15px;margin-top:2px}
+.motto{font-style:italic;color:var(--text3);font-size:15px;margin-top:2px}
 .headmeta{margin-left:auto;text-align:right}
 .live{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--text2);font-style:italic}
 .live i{width:8px;height:8px;border-radius:50%;background:var(--ember);box-shadow:0 0 8px var(--ember);animation:flicker 1.6s ease-in-out infinite}
@@ -53,13 +56,14 @@ h1{
 .meta{font-size:13px;color:var(--text4);margin-top:4px;font-variant-numeric:tabular-nums}
 .rule{height:1px;margin:26px 0 4px;background:linear-gradient(90deg,transparent,var(--border-hi) 20%,var(--gold) 50%,var(--border-hi) 80%,transparent);opacity:.6}
 h2.sect{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing:.08em;color:var(--gold);margin:34px 0 12px}
+h2.sect small{font-family:"Spectral",serif;font-style:italic;color:var(--text4);font-size:12.5px;letter-spacing:.02em;margin-left:10px;text-transform:none}
 .roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
 .mate{border:1px solid var(--border);border-radius:12px;padding:14px;
   background:linear-gradient(180deg,var(--card),var(--card2));transition:border-color .25s}
 .mate:hover{border-color:var(--border-hi)}
 .matehead{display:flex;align-items:center;gap:8px}
 .matehead .name{font-family:"Cinzel",serif;font-size:14px;font-weight:500;letter-spacing:.05em;color:var(--text)}
-.matehead .sdot{width:7px;height:7px;border-radius:50%;flex:none}
+.sdot{width:7px;height:7px;border-radius:50%;flex:none}
 .sdot.on{background:var(--ember);box-shadow:0 0 7px var(--ember);animation:flicker 1.8s ease-in-out infinite}
 .sdot.off{background:var(--text4)}
 .mate .focus{font-size:13.5px;color:var(--text2);font-style:italic;margin-top:5px}
@@ -69,7 +73,7 @@ h2.sect{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing
   background:transparent;cursor:pointer;font-family:"Cinzel",serif;letter-spacing:.05em;transition:all .2s}
 .chip:hover{border-color:var(--border-hi);color:var(--gold)}
 .chip.on{background:var(--gold);border-color:var(--gold);color:#1a0f06;font-weight:700}
-.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:16px}
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
 .col{border:1px solid var(--border);border-radius:14px;padding:16px;
   background:linear-gradient(180deg,rgba(24,14,13,.85),rgba(12,7,6,.9));
   box-shadow:inset 0 1px 0 rgba(212,164,55,.08)}
@@ -82,16 +86,53 @@ h2.sect{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing
   background:linear-gradient(180deg,var(--card),var(--card2));
   transition:border-color .25s,box-shadow .25s,transform .25s}
 .card:hover{border-color:var(--border-hi);box-shadow:0 4px 24px rgba(194,46,31,.18);transform:translateY(-1px)}
+.chead{display:flex;align-items:baseline;gap:9px}
+.pill{font-family:"Cinzel",serif;font-size:11px;font-weight:700;letter-spacing:.06em;flex:none;padding:0 6px;border-radius:5px;line-height:18px}
+.pill.P1{color:var(--ember);border:1px solid rgba(255,90,31,.45)}
+.pill.P2{color:var(--gold);border:1px solid var(--border-hi)}
+.pill.P3{color:var(--text3);border:1px solid var(--border)}
 .ctitle{font-size:15.5px;font-weight:500;line-height:1.4;color:var(--text)}
 .cnote{font-size:14px;color:var(--text2);margin-top:5px}
+.gate{font-size:12.5px;color:var(--gold);margin-top:8px;font-variant-numeric:tabular-nums}
+.gate b{font-family:"Cinzel",serif;font-weight:500;font-size:11px;letter-spacing:.08em;color:var(--text3)}
+.next{font-size:13.5px;color:var(--text2);margin-top:6px;font-style:italic}
+.next b{font-family:"Cinzel",serif;font-weight:500;font-size:11px;letter-spacing:.08em;color:var(--text3);font-style:normal}
+details.prompt{margin-top:8px}
+details.prompt summary{font-family:"Cinzel",serif;font-size:11px;letter-spacing:.08em;color:var(--text3);cursor:pointer;list-style:none}
+details.prompt summary::before{content:"▸ "}
+details.prompt[open] summary::before{content:"▾ "}
+details.prompt summary:hover{color:var(--gold)}
+.ptext{font-size:12.5px;color:var(--text2);font-style:italic;border-left:2px solid var(--border-hi);padding:6px 0 6px 10px;margin-top:6px;cursor:pointer}
+.ptext:hover{color:var(--text)}
 .bar{height:4px;border-radius:99px;background:rgba(212,164,55,.12);margin-top:12px;overflow:hidden}
 .bar>i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--ember-deep),var(--ember),var(--gold));box-shadow:0 0 10px rgba(255,90,31,.5)}
+.msrow{display:flex;align-items:baseline;gap:8px;margin-top:5px}
+.pct{font-size:12px;color:var(--text2);font-variant-numeric:tabular-nums}
+.milestone{font-size:12px;color:var(--text4);font-style:italic;margin-left:auto}
 .cmeta{display:flex;align-items:center;gap:8px;margin-top:11px;font-size:12px;color:var(--text3);flex-wrap:wrap}
 .owner{border:1px solid var(--border);border-radius:6px;padding:0 8px;font-size:11.5px;line-height:20px;color:var(--gold);font-family:"Cinzel",serif;letter-spacing:.05em}
 .chattag{border:1px solid rgba(255,90,31,.35);border-radius:6px;padding:0 8px;font-size:11.5px;line-height:20px;color:var(--ember);font-family:"Cinzel",serif;letter-spacing:.05em}
 .empty{font-size:13.5px;color:var(--text4);padding:10px 0;font-style:italic}
+.twocol{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-top:12px}
+.panel{border:1px solid var(--border);border-radius:14px;padding:16px;background:linear-gradient(180deg,rgba(24,14,13,.85),rgba(12,7,6,.9))}
+.panel h3{font-family:"Cinzel",serif;font-size:14px;font-weight:500;letter-spacing:.08em;color:var(--gold);margin-bottom:10px}
+.wrow{display:flex;gap:10px;font-size:13.5px;color:var(--text2);padding:7px 0;border-bottom:1px solid rgba(212,164,55,.08)}
+.wrow:last-child{border-bottom:0}
+.wrow .who{font-family:"Cinzel",serif;font-size:12px;letter-spacing:.05em;color:var(--text);flex:none;min-width:88px;padding-top:1px}
+.wrow .eta{color:var(--text4);margin-left:auto;white-space:nowrap;font-style:italic;font-size:12.5px;padding-top:2px}
+.drow{display:flex;gap:10px;font-size:13.5px;color:var(--text2);padding:7px 0;border-bottom:1px solid rgba(212,164,55,.08)}
+.drow:last-child{border-bottom:0}
+.drow .for{font-family:"Cinzel",serif;font-size:12px;letter-spacing:.05em;color:var(--ember);flex:none;padding-top:1px}
+.debts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:4px 24px;margin-top:4px}
+.debt{font-size:13.5px;color:var(--text2);padding:5px 0;display:flex;gap:9px}
+.debt .box{font-family:"Cinzel",serif;color:var(--gold);flex:none}
+.debt.done{color:var(--text4);text-decoration:line-through}
+.debt.done .box{color:var(--text4)}
+.lore{margin-top:12px}
+.lore .note{font-size:14px;color:var(--text2);padding:5px 0}
+.lore .lateritem{font-size:13.5px;color:var(--text3);font-style:italic;padding:3px 0}
+.lore .lateritem::before{content:"— "}
 .act{margin-top:40px}
-.act h2{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing:.08em;color:var(--gold);margin-bottom:10px}
 .actitem{display:flex;gap:10px;font-size:13.5px;color:var(--text2);padding:6px 0;border-bottom:1px solid rgba(212,164,55,.08)}
 .actitem:last-child{border-bottom:0}
 .actitem .by{color:var(--gold);font-family:"Cinzel",serif;font-size:12px;letter-spacing:.05em;flex:none;padding-top:1px}
@@ -102,14 +143,33 @@ h2.sect{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing
 </head>
 <body>
 <div class="wrap">
+  <div class="banner">
+    <svg viewBox="0 0 1200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0a0506"/><stop offset="1" stop-color="#1e0e0c"/>
+        </linearGradient>
+        <radialGradient id="hglow" cx="50%" cy="100%" r="65%">
+          <stop offset="0" stop-color="rgba(212,164,55,.55)"/><stop offset="55%" stop-color="rgba(194,46,31,.18)"/><stop offset="100%" stop-color="transparent"/>
+        </radialGradient>
+      </defs>
+      <rect width="1200" height="200" fill="url(#sky)"/>
+      <circle cx="180" cy="38" r="1.4" fill="rgba(212,164,55,.6)"/><circle cx="340" cy="22" r="1" fill="rgba(212,164,55,.45)"/>
+      <circle cx="520" cy="44" r="1.2" fill="rgba(212,164,55,.5)"/><circle cx="760" cy="26" r="1" fill="rgba(212,164,55,.4)"/>
+      <circle cx="980" cy="40" r="1.4" fill="rgba(212,164,55,.55)"/><circle cx="1100" cy="18" r="1" fill="rgba(212,164,55,.4)"/>
+      <path d="M0 200 L150 118 L260 158 L420 44 L500 118 L640 76 L780 148 L920 52 L1050 138 L1200 88 L1200 200 Z"
+        fill="#0d0708" stroke="rgba(212,164,55,.3)" stroke-width="1.2"/>
+      <path d="M420 44 L448 96 L500 118 L470 128 Z" fill="rgba(194,46,31,.22)"/>
+      <ellipse cx="600" cy="205" rx="520" ry="58" fill="url(#hglow)"/>
+    </svg>
+  </div>
+  <div class="caption">Erebor, the Lonely Mountain — every discipline in one hoard</div>
   <div class="head">
     <svg class="eye" viewBox="0 0 120 84" aria-hidden="true">
       <defs>
         <radialGradient id="iris" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#f8e3a5"/>
-          <stop offset="45%" stop-color="#d4a437"/>
-          <stop offset="80%" stop-color="#8a4a12"/>
-          <stop offset="100%" stop-color="#3a1a08"/>
+          <stop offset="0%" stop-color="#f8e3a5"/><stop offset="45%" stop-color="#d4a437"/>
+          <stop offset="80%" stop-color="#8a4a12"/><stop offset="100%" stop-color="#3a1a08"/>
         </radialGradient>
       </defs>
       <path d="M4 42 Q60 -14 116 42 Q60 98 4 42 Z" fill="url(#iris)" stroke="rgba(212,164,55,.6)" stroke-width="1.5"/>
@@ -119,7 +179,7 @@ h2.sect{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing
     </svg>
     <div>
       <h1 id="proj">Smaug's Lair</h1>
-      <div class="tagline">Here lies the hoard of all our labours</div>
+      <div class="motto" id="motto">Here lies the hoard of all our labours</div>
     </div>
     <div class="headmeta">
       <span class="live"><i></i>the dragon watches</span>
@@ -127,20 +187,23 @@ h2.sect{font-family:"Cinzel",serif;font-size:17px;font-weight:500;letter-spacing
     </div>
   </div>
   <div class="rule"></div>
-  <h2 class="sect">The Company</h2>
+  <h2 class="sect">The Company<small>one space per chat — the register keeps itself</small></h2>
   <div class="roster" id="roster"></div>
   <div class="chips" id="chips"></div>
   <div class="board" id="board"></div>
+  <div id="blockers"></div>
+  <div id="debtswrap"></div>
+  <div id="lorewrap"></div>
   <div class="act">
-    <h2>Tidings from the Mountain</h2>
+    <h2 class="sect" style="margin-top:0">Tidings from the Mountain</h2>
     <div id="activity"></div>
   </div>
-  <div class="foot">Never laugh at live dragons.</div>
+  <div class="foot">Maintained by the company — every chat updates the hoard at close. Never laugh at live dragons.</div>
 </div>
 <script>
 const COLS=[["backlog","Slumbering","var(--text4)",false],["in_progress","The Hunt","var(--ember)",true],["review","Circling","var(--gold)",false],["done","Hoarded","var(--gold-hi)",false]];
-let lastRaw="",DATA=null;
-let filter="all";
+const ROMAN={P1:"I",P2:"II",P3:"III"};
+let lastRaw="",DATA=null,filter="all";
 try{filter=localStorage.getItem("smaug-filter")||"all"}catch(e){}
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function rel(iso){const t=Date.parse(iso);if(isNaN(t))return"";const s=Math.max(0,(Date.now()-t)/1e3);if(s<60)return"just now";const m=s/60;if(m<60)return Math.floor(m)+"m ago";const h=m/60;if(h<24)return Math.floor(h)+"h ago";const d=h/24;if(d<30)return Math.floor(d)+"d ago";return new Date(t).toISOString().slice(0,10)}
@@ -177,23 +240,59 @@ function renderChips(data){
 function renderBoard(data){
   let tasks=Array.isArray(data.tasks)?data.tasks:[];
   if(filter!=="all")tasks=tasks.filter(t=>(t.chat||t.updatedBy)===filter);
+  const PR={P1:0,P2:1,P3:2};
   const byStatus={};COLS.forEach(c=>byStatus[c[0]]=[]);
   tasks.forEach(t=>{(byStatus[t.status]||byStatus.backlog).push(t)});
-  Object.values(byStatus).forEach(l=>l.sort((a,b)=>Date.parse(b.updatedAt||0)-Date.parse(a.updatedAt||0)));
+  Object.values(byStatus).forEach(l=>l.sort((a,b)=>(PR[a.priority]??3)-(PR[b.priority]??3)||Date.parse(b.updatedAt||0)-Date.parse(a.updatedAt||0)));
   document.getElementById("board").innerHTML=COLS.map(([key,label,color,flick])=>{
     const list=byStatus[key];
     const cards=list.length?list.map(t=>{
       const p=Math.max(0,Math.min(100,Number(t.progress)||0));
       const cid=t.chat||t.updatedBy;
-      return '<div class="card"><div class="ctitle">'+esc(t.title)+'</div>'
+      return '<div class="card"><div class="chead">'
+        +(t.priority&&ROMAN[t.priority]?'<span class="pill '+esc(t.priority)+'">'+ROMAN[t.priority]+'</span>':"")
+        +'<div class="ctitle">'+esc(t.title)+'</div></div>'
         +(t.note?'<div class="cnote">'+esc(t.note)+'</div>':"")
-        +(key!=="done"&&p>0?'<div class="bar"><i style="width:'+p+'%"></i></div>':"")
+        +(t.gate?'<div class="gate"><b>GATE</b> — '+esc(t.gate)+'</div>':"")
+        +(t.next?'<div class="next"><b>NEXT</b> — '+esc(t.next)+'</div>':"")
+        +(t.prompt?'<details class="prompt"><summary>Handover prompt</summary><div class="ptext" title="Click to copy">'+esc(t.prompt)+'</div></details>':"")
+        +(key!=="done"&&p>0?'<div class="bar"><i style="width:'+p+'%"></i></div><div class="msrow"><span class="pct">'+p+'%</span>'+(t.milestone?'<span class="milestone">'+esc(t.milestone)+'</span>':"")+'</div>':"")
         +'<div class="cmeta">'+(t.owner?'<span class="owner">'+esc(t.owner)+'</span>':"")
         +(filter==="all"&&cid?'<span class="chattag">'+esc(cid)+'</span>':"")
         +'<span>'+(t.updatedAt?rel(t.updatedAt):"")+'</span></div></div>';
     }).join(""):'<div class="empty">Nothing but echoes</div>';
     return '<div class="col"><div class="colhead"><span class="dot'+(flick?' ember':'')+'" style="background:'+color+'"></span><span class="coltitle">'+label+'</span><span class="count">'+list.length+'</span></div>'+cards+'</div>';
   }).join("");
+  document.querySelectorAll(".ptext").forEach(el=>el.onclick=()=>{
+    if(navigator.clipboard){navigator.clipboard.writeText(el.textContent).catch(()=>{})}
+    el.style.color="var(--gold-hi)";setTimeout(()=>el.style.color="",600);
+  });
+}
+function renderBlockers(data){
+  const w=Array.isArray(data.waitingOn)?data.waitingOn:[];
+  const d=Array.isArray(data.decisions)?data.decisions:[];
+  const el=document.getElementById("blockers");
+  if(!w.length&&!d.length){el.innerHTML="";return}
+  let h='<h2 class="sect">Beyond the Mountain<small>what the hoard waits for, and who must decide</small></h2><div class="twocol">';
+  if(w.length)h+='<div class="panel"><h3>Waiting on</h3>'+w.map(x=>'<div class="wrow"><span class="who">'+esc(x.who)+'</span><span>'+esc(x.what)+'</span>'+(x.eta?'<span class="eta">'+esc(x.eta)+'</span>':"")+'</div>').join("")+'</div>';
+  if(d.length)h+='<div class="panel"><h3>Decisions pending</h3>'+d.map(x=>'<div class="drow">'+(x.for?'<span class="for">'+esc(x.for)+'</span>':"")+'<span>'+esc(x.text)+'</span></div>').join("")+'</div>';
+  el.innerHTML=h+'</div>';
+}
+function renderDebts(data){
+  const debts=Array.isArray(data.debts)?data.debts:[];
+  const el=document.getElementById("debtswrap");
+  if(!debts.length){el.innerHTML="";return}
+  el.innerHTML='<h2 class="sect">Debts of the Mountain<small>chores owed before the week is out</small></h2><div class="debts">'
+    +debts.map(x=>'<div class="debt'+(x.done?' done':'')+'"><span class="box">'+(x.done?'[x]':'[&nbsp;]')+'</span><span>'+esc(x.text)+'</span></div>').join("")+'</div>';
+}
+function renderLore(data){
+  const notes=Array.isArray(data.notes)?data.notes:[];
+  const later=Array.isArray(data.later)?data.later:[];
+  const el=document.getElementById("lorewrap");
+  if(!notes.length&&!later.length){el.innerHTML="";return}
+  el.innerHTML='<h2 class="sect">Lore &amp; Later<small>what is known, and what is deliberately not yet</small></h2><div class="lore">'
+    +notes.map(n=>'<div class="note">'+esc(n)+'</div>').join("")
+    +(later.length?'<div style="margin-top:8px">'+later.map(l=>'<div class="lateritem">'+esc(l)+'</div>').join("")+'</div>':"")+'</div>';
 }
 function renderActivity(data){
   const act=(Array.isArray(data.activity)?data.activity:[]).slice(-8).reverse();
@@ -203,8 +302,9 @@ function renderAll(){
   if(!DATA)return;
   const tasks=Array.isArray(DATA.tasks)?DATA.tasks:[];
   if(DATA.project){document.getElementById("proj").textContent=DATA.project;document.title=DATA.project}
+  if(DATA.motto)document.getElementById("motto").textContent=DATA.motto;
   document.getElementById("meta").textContent="Last stirred "+rel(DATA.updatedAt)+" · "+tasks.length+" treasure"+(tasks.length===1?"":"s");
-  renderRoster(DATA);renderChips(DATA);renderBoard(DATA);renderActivity(DATA);
+  renderRoster(DATA);renderChips(DATA);renderBoard(DATA);renderBlockers(DATA);renderDebts(DATA);renderLore(DATA);renderActivity(DATA);
 }
 async function load(){
   try{
