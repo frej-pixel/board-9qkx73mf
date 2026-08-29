@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-30T03:15:00Z",
+  "updatedAt": "2026-08-30T04:20:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -15,7 +15,7 @@
       "name": "Pressmark Desk K",
       "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline",
       "status": "active",
-      "lastActive": "2026-08-30T03:15:00Z"
+      "lastActive": "2026-08-30T04:20:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -85,15 +85,15 @@
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 44,
+      "progress": 49,
       "priority": "P1",
       "milestone": "all 225 dossiers delivered",
-      "note": "Batches 14+15 DELIVERED: #66-75 (Yukio Mishima, Allen Ginsberg, Shel Silverstein, Stephen Hawking, Arthur Machen, Colin Dexter, Frederick Forsyth, Frederik Pohl, Ian Rankin, Jack London). Total 100/225 unique authors: #0-75 (76, this chat) + #201-224 (24, parallel chat). Remaining: #76-200 (125). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
+      "note": "Batches 16+17 DELIVERED: #76-85 (Kate Chopin, Rachel Carson, Richard Feynman, Robert Bloch, Ruth Rendell, Ramsey Campbell, G.K. Chesterton, Mickey Spillane, Patrick Leigh Fermor, David Foster Wallace). Total 110/225 unique authors: #0-85 (86, this chat) + #201-224 (24, parallel chat). Remaining: #86-200 (115). Scope: this chat works #1-100 per Hannes. Filing: flat in Pressmark_Desk_K/1-100/.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Batch 16: #76-80 (Kate Chopin, Rachel Carson, Richard Feynman, Robert Bloch, Ruth Rendell)",
-      "prompt": "Run batch 16 from the worklist, same discipline, then continue through batch 20 without stopping. Board update after batch 17 (every 2 batches).",
+      "next": "Batch 18: #86-90 (Carson McCullers, James Lee Burke, Ken Follett, Sue Grafton, Theodore Sturgeon)",
+      "prompt": "Run batch 18 from the worklist, same discipline, then continue through batch 20 without stopping. Board update after batch 19 (every 2 batches). Final board update at 100/100.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-30T03:15:00Z"
+      "updatedAt": "2026-08-30T04:20:00Z"
     },
     {
       "id": "t-004",
@@ -339,6 +339,11 @@
   "later": [],
   "activity": [
     {
+      "at": "2026-08-30T04:20:00Z",
+      "by": "desk-k-chat",
+      "text": "Batches 16+17 delivered: Chopin (Awakening Stone 1899 A Solitary Soul, genuinely scarce, $2k-5k est. ceiling), Carson (Silent Spring Houghton Mifflin 1962, Raptis $750 / Whitmore $850 / Burnside outlier $21k, $300-1k standard market), Feynman (Feynman Lectures Addison-Wesley 1963-65 3 vols + exercises, Burnside near fine set $3.8k, signed apex $85k Peter D. Zimmerman provenance), Bloch (Psycho Simon & Schuster 1959, horror landmark Biblio-confirmed, $200-600 est. fine first), Rendell (From Doon with Death John Long 1964 Wexford debut, Shapero scarce-first, £200-500 est.), Campbell (Inhabitant of the Lake Arkham House 1964 2,009-copy first book, Cthulhu Mythos, Utpatel jacket), Chesterton (Man Who Was Thursday Arrowsmith 1908, John Atkinson £650 first UK), Spillane (I the Jury Dutton 1947, Whitmore $1,950 first edition, 6m+ copies sold), Leigh Fermor (Time of Gifts John Murray 1977 Craxton jacket, Raptis signed $5k sold, nocloo $249 first), Wallace (Infinite Jest Little Brown 1996, Burnside signed $4,500 first state Vollmann misspelling). 110/225. Batch 18 next."
+    },
+    {
       "at": "2026-08-30T03:15:00Z",
       "by": "desk-k-chat",
       "text": "Batches 14+15 delivered: Mishima (Kamen no Kokuhaku Kawade 1949, Japanese-first scarcity, £4k est. ceiling), Ginsberg (Howl City Lights 1956 1,000-copy first printing, $2.5k signed ceiling, Six Gallery/trial association tier), Silverstein (Giving Tree Harper 1964 5-7.5k first run, $780 VG+ Picturebook Guide, full-torso-photo DJ point), Hawking (Brief History Bantam 1988 mass-market thumbprint provenance Christie's, $150 fine unsigned ceiling), Machen (Great God Pan John Lane 1894 Keynotes #5 Beardsley association, $2.5k UK first est.), Dexter (Last Bus to Woodstock Macmillan 1975 Morse debut, £1.5k inscribed Bayliss), Forsyth (Day of the Jackal Hutchinson 1971 8k red-gold cloth, Edgar winner), Pohl (Space Merchants Ballantine 1953 PBO/HC simultaneous, Richard Powers cover), Rankin (Knots and Crosses Barrie & Jenkins 1987 Rebus debut, remaindered scarcity), London (Call of the Wild Macmillan 1903 snow-stamping/gilt-top first, $4k Burnside near fine). 100/225. Batch 16 next."
@@ -382,11 +387,6 @@
       "at": "2026-08-30T00:00:00Z",
       "by": "desk-k-chat",
       "text": "Batch 8 delivered: E. David (Mediterranean Food Lehmann 1950, pink tweed cloth + Minton wrapper, kitchen-use condition lesson, Saccone & Speed ephemeral apex), Arendt (Origins Harcourt 1951 + Burden of Our Time UK title variant, Eichmann 4-versions textual history), Murdoch (full price ladder €1,250 Under the Net → £50 signed late firsts, Book Society trap on The Bell, Bayley inscription), Spark (honest thin dossier — Brodie £350 ABA anchor, 13s6d unclipped), R. Jordan (honest thin dossier — fan-specialist channels flagged). 65/225."
-    },
-    {
-      "at": "2026-08-29T23:40:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 7 delivered: de Beauvoir (Deuxième Sexe full limitation ladder — 5 lettered A-E at $6.5k down to $250 trade wraps; 2,000-vs-2,100 run conflict logged), Clancy (six-vs-eight endorsements jacket point, $3,850 first issue, 16k first run, book-club-smaller trap), Ballard (Drowned World Gollancz £1,375, US-PBO-precedes-hardback precedence discipline, SFBC trap), Matheson (I Am Legend: Gold Medal PBO 1954 true first vs Walker 1970 hardcover $2,200, King quote sourced), Kundera (Žert 1967 Prague white cloth, French-first-1984 precedence for Unbearable Lightness, Toronto exile layer). 60/225 done. Batch 8 next: E. David, Arendt, Murdoch, Spark, R. Jordan."
     }
   ]
 }
