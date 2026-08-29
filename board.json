@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-29T19:50:00Z",
+  "updatedAt": "2026-08-29T21:55:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -30,6 +30,13 @@
       "focus": "Finance ops: Revolut bank feed, Swedish VAT registration (SKV 4632), VMB margin scheme",
       "status": "active",
       "lastActive": "2026-08-29T19:50:00Z"
+    },
+    {
+      "id": "treasury-v1-9-2",
+      "name": "Treasury v1.9.2",
+      "focus": "Auto-accounting ops: August packages, Prague trip report, Wamo feed, Ludwig docs, bank feeds",
+      "status": "active",
+      "lastActive": "2026-08-29T21:55:00Z"
     }
   ],
   "tasks": [
@@ -192,6 +199,70 @@
       "prompt": "Continue SKV 4632 for COLLECTIOM: if Hannes has provided phones/storage address/signature, finalize and confirm submission; then watch for Skatteverket's decision and log the SE VAT number. Form + fill script: Autoaccounting/02_Treasury/SKV4632_COLLECTIOM_PREFILLED.pdf + fill_skv4632.py; pack: SKV4632_application_pack_2026-08-29.md.",
       "updatedBy": "treasury-v1.9.1",
       "updatedAt": "2026-08-29T19:50:00Z"
+    },
+    {
+      "id": "t-011",
+      "title": "August accounting packages — COLLECTIOM + MYSTERIOM (Margit)",
+      "status": "review",
+      "owner": "Hannes",
+      "chat": "treasury-v1-9-2",
+      "progress": 90,
+      "priority": "P1",
+      "milestone": "packages sent to Margit",
+      "note": "Both August packages rebuilt and upserted to Drive: COLLECTIOM 18/18 rows linked, MYSTERIOM 1 row. Gmail drafts updated in place (COLLECTIOM r-704256830676998350, MYSTERIOM r-7655456346254947425). Awaiting Hannes to send.",
+      "gate": "Both drafts sent by Hannes + MARK_IN_REPORT run marks the rows as reported",
+      "next": "Hannes reviews and sends both Gmail drafts to Margit",
+      "prompt": "After Hannes sends the drafts, run: DRY_RUN=false MARK_IN_REPORT=true SKIP_DRAFT=true ENTITY=BOTH YEAR=2026 MONTH=8 python3 margit_monthly_package/build_package.py — then verify Airtable rows show reported status.",
+      "updatedBy": "treasury-v1-9-2",
+      "updatedAt": "2026-08-29T21:55:00Z"
+    },
+    {
+      "id": "t-012",
+      "title": "Prague business trip report v3 — hotels included",
+      "status": "review",
+      "owner": "Hannes",
+      "chat": "treasury-v1-9-2",
+      "progress": 95,
+      "priority": "P1",
+      "milestone": "signed and filed trip report",
+      "note": "v3 complete with both hotels on the company card, total EUR 691.42. Edinburgh flight EUR 100.71 kept as business planning expense (destination changed to Prague); Krakow = personal (archived). Draft: 02_Treasury/Business_Trip_Report_Prague_2026-08-26_DRAFT.xlsx.",
+      "gate": "Hannes signs the report and it is filed to Drive COLLECTIOM/2026-08",
+      "next": "Hannes reviews and signs the trip report",
+      "prompt": "Open Autoaccounting/02_Treasury/Business_Trip_Report_Prague_2026-08-26_DRAFT.xlsx, verify the rows against Airtable, get Hannes's signature, and file the signed report to Drive COLLECTIOM/2026-08.",
+      "updatedBy": "treasury-v1-9-2",
+      "updatedAt": "2026-08-29T21:55:00Z"
+    },
+    {
+      "id": "t-013",
+      "title": "Wamo business account — API feed or statement import",
+      "status": "in_progress",
+      "owner": "Hannes",
+      "chat": "treasury-v1-9-2",
+      "progress": 70,
+      "priority": "P2",
+      "milestone": "Wamo transactions flowing into Airtable",
+      "note": "Wamo account approved 28 Aug. API access requested from Zoe Cottle — answer pending. docs.wam.money is a DIFFERENT company (Trinidad) — ignore it. Fallback if no API: monthly CSV/PDF statement import, same pattern as the manual Revolut flow.",
+      "gate": "Zoe confirms or denies API access; feed or statement-import flow chosen and built",
+      "next": "Wait for Zoe Cottle's answer on API access",
+      "prompt": "If Zoe grants API access: build a wamo-feed workflow mirroring revolut-feed (secrets synced via GitHub API, PyNaCl sealed box). If denied: implement a monthly Wamo CSV/PDF statement import into Airtable. Wamo IBAN still needed from Hannes.",
+      "updatedBy": "treasury-v1-9-2",
+      "updatedAt": "2026-08-29T21:55:00Z"
+    },
+    {
+      "id": "t-014",
+      "title": "Ludwig docs round 2 — Ryanair + Dropbox receipts",
+      "status": "in_progress",
+      "owner": "Ludwig",
+      "chat": "treasury-v1-9-2",
+      "progress": 55,
+      "priority": "P1",
+      "milestone": "all Ludwig-paid expenses documented",
+      "note": "Round-2 hunting-list draft ready for Hannes to send (Gmail draft r8820466312647437108). Ludwig's first receipts filed; still missing: Ryanair TVHYPI EUR 87.36, Ryanair QUU34V EUR 18.40, and real Dropbox receipts.",
+      "gate": "TVHYPI + QUU34V + Dropbox receipts filed to Drive; shareholder-loan rows created for Ludwig-paid items",
+      "next": "Process Ludwig's statements in _PRIVATE/ludwig_statements/ and chase the missing receipts",
+      "prompt": "Process Autoaccounting/_PRIVATE/ludwig_statements/: match Ludwig-paid expenses, file receipts to Drive, and create shareholder-loan rows in Airtable for Ludwig (mirror of the Hannes founder-loan flow). Chase Ryanair TVHYPI/QUU34V and Dropbox receipts.",
+      "updatedBy": "treasury-v1-9-2",
+      "updatedAt": "2026-08-29T21:55:00Z"
     }
   ],
   "waitingOn": [
@@ -218,6 +289,24 @@
       "what": "SKV 4632 final fields: phone numbers, Swedish storage address, signature + attachments (fresh COLLECTIOM registry extract EN, EMTA VAT certificate, ID copy) (t-010)",
       "eta": "before selling starts ~1 Sep",
       "at": "2026-08-29T19:50:00Z"
+    },
+    {
+      "who": "Hannes",
+      "what": "Sign Prague trip report v3; send Margit package drafts (COLLECTIOM + MYSTERIOM); personal Revolut statement; Wamo IBAN (t-011, t-012, t-013)",
+      "eta": "",
+      "at": "2026-08-29T21:55:00Z"
+    },
+    {
+      "who": "Zoe Cottle (Wamo)",
+      "what": "Answer on API access for the Wamo business account feed (t-013)",
+      "eta": "",
+      "at": "2026-08-29T21:55:00Z"
+    },
+    {
+      "who": "Ludwig",
+      "what": "Round-2 docs: Ryanair TVHYPI EUR 87.36 + QUU34V EUR 18.40 + real Dropbox receipts (t-014)",
+      "eta": "",
+      "at": "2026-08-29T21:55:00Z"
     }
   ],
   "decisions": [
@@ -232,12 +321,20 @@
       "id": "d-001",
       "text": "setup-chat's 19:25/19:32 restructure dropped tasks t-004..t-014 (share-transfer + treasury tracks) from board.json. Their state survives in commit history (last full version: 55f817d). Owning chats should re-register under the new schema.",
       "by": "desk-k-chat",
-      "at": "2026-08-29T21:45:00Z"
+      "at": "2026-08-29T21:45:00Z",
+      "done": true
     }
   ],
-  "notes": [],
+  "notes": [
+    "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim."
+  ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-29T21:55:00Z",
+      "by": "treasury-v1-9-2",
+      "text": "Adopted board rules v2 (kebab id treasury-v1-9-2); registered chat and completed the treasury half of debt d-001 by re-registering t-011..t-014 with gates and Now/Next/Prompt: Margit August packages (review, drafts await Hannes), Prague trip report v3 (review, EUR 691.42, awaits signature), Wamo account/API (70%, waiting on Zoe Cottle), Ludwig docs round 2 (55%). Added waitingOn for Hannes, Zoe and Ludwig; d-001 fully resolved -> done."
+    },
     {
       "at": "2026-08-29T19:50:00Z",
       "by": "treasury-v1.9.1",
