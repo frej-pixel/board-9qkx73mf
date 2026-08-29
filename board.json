@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "updatedAt": "2026-08-29T18:55:00Z",
+  "updatedAt": "2026-08-29T21:15:00Z",
   "tasks": [
     {
       "id": "t-001",
@@ -27,10 +27,10 @@
       "title": "Desk K batches — 224 authors after pilot clears",
       "status": "in_progress",
       "owner": "Hannes",
-      "progress": 5,
-      "note": "Batch 2 of 45 DELIVERED: frank-herbert, douglas-adams, truman-capote, umberto-eco, dh-lawrence dossiers in the packet folder (11/225 done). Batch 3 next: Tolstoy, Primo Levi, Flannery O'Connor, James Ellroy, E.O. Wilson.",
+      "progress": 7,
+      "note": "Batch 3 of 45 DELIVERED: leo-tolstoy, primo-levi, flannery-oconnor, james-ellroy, eo-wilson dossiers in the packet folder (16/225 done, 209 left). Batch 4 next: Martin Amis, Oliver Sacks, Richard Dawkins, Peter Straub, W.B. Yeats.",
       "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T20:45:00Z"
+      "updatedAt": "2026-08-29T21:15:00Z"
     },
     {
       "id": "t-004",
@@ -144,6 +144,11 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-08-29T21:15:00Z",
+      "by": "desk-k-chat",
+      "text": "Batch 3 delivered: Tolstoy (W&P self-published 1868-69, 4,800 run, $48.5k Bauman anchor), Primo Levi (De Silva 1947, 2,500 run, twice Einaudi-rejected), O'Connor (Wise Blood 3,000 run, $7,500 Whitmore; film-date contradiction logged), Ellroy (Avon paperback-original firsts), E.O. Wilson (thin dossier, honest NOT FOUNDs). 16/225 done, 209 left. Batch 4 queued: Amis, Sacks, Dawkins, Straub, Yeats."
+    },
     {
       "at": "2026-08-29T18:55:00Z",
       "by": "treasury-v1.9.1",
