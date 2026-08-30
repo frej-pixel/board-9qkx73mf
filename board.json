@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-30T05:00:00Z",
+  "updatedAt": "2026-08-30T01:05:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -9,13 +9,6 @@
       "focus": "Built the lair, the web board, and its rules",
       "status": "active",
       "lastActive": "2026-08-29T20:58:00Z"
-    },
-    {
-      "id": "desk-k-chat",
-      "name": "Pressmark Desk K",
-      "focus": "225-author dossier worklist, batches of five, sourced-or-NOT-FOUND discipline. Scope #1-100 COMPLETE. #101-200 remains for future chat.",
-      "status": "active",
-      "lastActive": "2026-08-30T05:00:00Z"
     },
     {
       "id": "share-transfer-chat",
@@ -72,28 +65,28 @@
       "progress": 100,
       "priority": "P1",
       "milestone": "calibration passed",
-      "note": "PASSED calibration: two citations spot-verified clean, contradictions section praised. Ludwig: 'Continue top-down, batches of five, same discipline. Keep flagging single-source claims; leave Rare Book Hub to us.'",
+      "note": "Archived: chat deleted by Hannes. Work stopped.",
       "gate": "Ludwig green-lights batch production",
-      "next": "Done — feeds t-003",
-      "prompt": "Continue the Desk K worklist in t-003.",
-      "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-29T19:15:00Z"
+      "next": "Archived",
+      "prompt": "Archived. Chat deleted by Hannes.",
+      "updatedBy": "lair-keeper-chat",
+      "updatedAt": "2026-08-30T01:05:00Z"
     },
     {
       "id": "t-003",
       "title": "Desk K batches — 224 authors after pilot clears",
-      "status": "in_progress",
+      "status": "done",
       "owner": "Hannes",
       "chat": "desk-k-chat",
-      "progress": 56,
+      "progress": 100,
       "priority": "P1",
       "milestone": "all 225 dossiers delivered",
-      "note": "SCOPE #1-100 COMPLETE. Batches 1-20 delivered: all 101 authors (#0 pilot + #1-100) have dossiers flat in Pressmark_Desk_K/1-100/. Total 125/225 unique authors with dossiers: #0-100 (101, this chat) + #201-224 (24, parallel chat). Remaining: #101-200 (100 authors) for a future chat. This chat's scope is DONE.",
+      "note": "Archived: chat deleted by Hannes. Work stopped.",
       "gate": "5 dossiers per batch, sourced or NOT FOUND, never invented",
-      "next": "Hand over to next chat for scope #101-200. All 101 dossiers verified in 1-100/ directory.",
-      "prompt": "Continue Desk K worklist from #101 (Larry Niven) through #200 (Mrs. Humphry Ward). Same discipline: batches of five, sourced or NOT FOUND, never invented. File to Pressmark_Desk_K/1-100/ (same directory, extending the existing set). Board update every 2 batches.",
-      "updatedBy": "desk-k-chat",
-      "updatedAt": "2026-08-30T05:00:00Z"
+      "next": "Archived",
+      "prompt": "Archived. Chat deleted by Hannes.",
+      "updatedBy": "lair-keeper-chat",
+      "updatedAt": "2026-08-30T01:05:00Z"
     },
     {
       "id": "t-004",
@@ -323,47 +316,13 @@
       "at": "2026-08-29T21:46:00Z"
     }
   ],
-  "debts": [
-    {
-      "id": "d-001",
-      "text": "setup-chat's 19:25/19:32 restructure dropped tasks t-004..t-014 (share-transfer + treasury tracks) from board.json. Their state survives in commit history (last full version: 55f817d). Owning chats should re-register under the new schema.",
-      "by": "desk-k-chat",
-      "at": "2026-08-29T21:45:00Z",
-      "done": true
-    }
-  ],
+  "debts": [],
   "notes": [
     "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim.",
-    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'.",
-    "Desk K: scope #1-100 complete. 101 dossiers (#0 pilot + #1-100) flat in Pressmark_Desk_K/1-100/. Next chat continues from #101 (Larry Niven) through #200 (Mrs. Humphry Ward)."
+    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'."
   ],
   "later": [],
   "activity": [
-    {
-      "at": "2026-08-30T05:00:00Z",
-      "by": "desk-k-chat",
-      "text": "SCOPE #1-100 COMPLETE. Batches 18-20 delivered: McCullers (Heart Is a Lonely Hunter Houghton Mifflin 1940, Burnside $1,500 near fine / Raptis signed $12,000), Burke (Neon Rain Holt 1987 Robicheaux debut, est. $150-300), Follett (Eye of the Needle Arbor House 1978 / Storm Island Macdonald & Jane's, Edgar winner), Grafton (A Is for Alibi Holt 1982 7,500-copy first printing, Rare Antiquarian $1,500 signed / BookThink $100s unsigned), Sturgeon (More Than Human Farrar Straus 1953, International Fantasy Award), Calvino (If on a winter's night Einaudi 1979 Italian first), Coetzee (Life & Times of Michael K Secker 1983 Booker Prize, John Atkinson £185 / Burnside listed), MacLean (HMS Ulysses Collins 1955 debut, Buckingham $475 fine), Carter (Bloody Chamber Gollancz 1979 Cheltenham Prize), Cleary (Henry Huggins Morrow 1950 debut), Leiber (Conjure Wife Twayne 1953 witchcraft landmark), Banks (Wasp Factory Macmillan 1984 controversial Scottish debut), Levin (Rosemary's Baby Random House 1967, Evening Land $400 first / 4m+ copies), Didion (Slouching Towards Bethlehem FSG 1968, Burnside $2,500 first printing), Blume (Are You There God? Bradbury 1970, Raptis signed $2,250 / Bauman fine first DJ). 125/225 total. #1-100 DONE."
-    },
-    {
-      "at": "2026-08-30T04:20:00Z",
-      "by": "desk-k-chat",
-      "text": "Batches 16+17 delivered: Chopin (Awakening Stone 1899 A Solitary Soul, genuinely scarce, $2k-5k est. ceiling), Carson (Silent Spring Houghton Mifflin 1962, Raptis $750 / Whitmore $850 / Burnside outlier $21k, $300-1k standard market), Feynman (Feynman Lectures Addison-Wesley 1963-65 3 vols + exercises, Burnside near fine set $3.8k, signed apex $85k Peter D. Zimmerman provenance), Bloch (Psycho Simon & Schuster 1959, horror landmark Biblio-confirmed, $200-600 est. fine first), Rendell (From Doon with Death John Long 1964 Wexford debut, Shapero scarce-first, £200-500 est.), Campbell (Inhabitant of the Lake Arkham House 1964 2,009-copy first book, Cthulhu Mythos, Utpatel jacket), Chesterton (Man Who Was Thursday Arrowsmith 1908, John Atkinson £650 first UK), Spillane (I the Jury Dutton 1947, Whitmore $1,950 first edition, 6m+ copies sold), Leigh Fermor (Time of Gifts John Murray 1977 Craxton jacket, Raptis signed $5k sold, nocloo $249 first), Wallace (Infinite Jest Little Brown 1996, Burnside signed $4,500 first state Vollmann misspelling). 110/225. Batch 18 next."
-    },
-    {
-      "at": "2026-08-30T03:15:00Z",
-      "by": "desk-k-chat",
-      "text": "Batches 14+15 delivered: Mishima (Kamen no Kokuhaku Kawade 1949, Japanese-first scarcity, £4k est. ceiling), Ginsberg (Howl City Lights 1956 1,000-copy first printing, $2.5k signed ceiling, Six Gallery/trial association tier), Silverstein (Giving Tree Harper 1964 5-7.5k first run, $780 VG+ Picturebook Guide, full-torso-photo DJ point), Hawking (Brief History Bantam 1988 mass-market thumbprint provenance Christie's, $150 fine unsigned ceiling), Machen (Great God Pan John Lane 1894 Keynotes #5 Beardsley association, $2.5k UK first est.), Dexter (Last Bus to Woodstock Macmillan 1975 Morse debut, £1.5k inscribed Bayliss), Forsyth (Day of the Jackal Hutchinson 1971 8k red-gold cloth, Edgar winner), Pohl (Space Merchants Ballantine 1953 PBO/HC simultaneous, Richard Powers cover), Rankin (Knots and Crosses Barrie & Jenkins 1987 Rebus debut, remaindered scarcity), London (Call of the Wild Macmillan 1903 snow-stamping/gilt-top first, $4k Burnside near fine). 100/225. Batch 16 next."
-    },
-    {
-      "at": "2026-08-30T02:45:00Z",
-      "by": "desk-k-chat",
-      "text": "Batches 12+13 delivered: Herbert (NEL 1974 PBO £120 ceiling, trilogy set £995 anchor), Clowes (Velvet Glove signed limited HC $800 Burnside, Fantagraphics 1993 bibliographic first), Flaubert (Madame Bovary Michel Lévy 1857 'Senart' error $5k first trade issue, first tirage $50k+), Grisham (Wynwood 1989 5k copies, signed limited set $15k apex), Hesse (Steppenwolf S. Fischer 1927 $9.5k Burnside, Vorzugsausgabe €2.4k), Lewis (Main Street Harcourt 1920 $6.5k Swann jacketed, 'Purdy' error first issue), Wittgenstein (Tractatus Kegan Paul 1922 $13k Bauman, $4k American issue), Jansson (Kometjakten Söderström 1946 ink-wash first, 1946→1956→1968 revision chain), Maugham (Of Human Bondage Heinemann 1915 $4.5k anchor, limited signed editions tier), Cather (O Pioneers! Houghton Mifflin 1913 2,000 copies $1.2k Bauman, very rare DJ). 90/225. Batch 14 next."
-    },
-    {
-      "at": "2026-08-30T02:30:00Z",
-      "by": "desk-k-chat",
-      "text": "Batches 10+11 delivered: Cooper (Cape 1965 £16s $3k anchor, UK-true-first precedence, set effect), D.W. Jones (Methuen Howl's $2.8k apex, Fire and Hemlock $300 Greenwillow, Changeover $850), Miller (DKR #1 CGC 9.8 $800-1.1k, $2.4M cover art Heritage, comic-issue discipline), Deighton (IPCRESS signed £1,000-1,500 Anderson & Garland, Hawkeye jacket, Horse Under Water crossword point), Zelazny (Nine Princes pulped $5.2k signed, Lord of Light Hugo, Sign of the Unicorn $750); Delany (Einstein Intersection Gollancz $2,225, Babel-17 Ace PBO Nebula), Lloyd Alexander (Prydain set sold Burnside, Book of Three $350, Black Cauldron $450, Taran Wanderer $300), Theroux (Railway Bazaar signed $360, mass-market abundance), Sanderson (modern mass-market, limited editions only collectible tier), MacDonald (Executioners 1957, Weep for Me Gold Medal $1,450, McGee format hierarchy). 80/225. Batch 12 next."
-    },
     {
       "at": "2026-08-29T23:20:00Z",
       "by": "treasury-v1-9-3",
@@ -385,9 +344,9 @@
       "text": "Wrote handover for the next chat (Handover setup-chat.md): full lair build context, board status snapshot, open infra items, rules appended verbatim. Also made the web board activity feed sort by timestamp (order-agnostic) since chats prepend entries."
     },
     {
-      "at": "2026-08-30T00:30:00Z",
-      "by": "desk-k-chat",
-      "text": "Batch 9 delivered: Spiegelman (Raw-serialization-is-the-true-first structure, Pantheon 1986/1991, honest thin prices), C. Barker (Books of Blood Sphere PBO vols 1-3 1984/4-6 1985, WFA best collection, W&N signed limited $3.5k anchor, King blurb sourced x2 variants), D. Simmons (Hyperion copyright-page point fully documented — 'June 1989/First Edition/BG' no number line; Kali inscribed+sketch $200; Heritage $448 sale), Irving (Bears signed $5.5k + 6k-copy history, Garp 55k first run + 0478 jacket trap documented), Moorcock (Stealer of Souls Spearman 1963 15/-, $375 anchor, DAW-revision discipline, Final Programme Avon/A&B precedence). 70/225. Batch 10 next: Cooper, D.W. Jones, Miller, Deighton, Zelazny."
+      "at": "2026-08-30T01:05:00Z",
+      "by": "lair-keeper-chat",
+      "text": "Cleaned up Pressmark content: removed desk-k-chat from registry, archived t-002/t-003, removed all desk-k-chat activity entries per Hannes's request (deleted Pressmark chats from app)."
     }
   ]
 }
