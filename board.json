@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-30T01:05:00Z",
+  "updatedAt": "2026-08-30T21:24:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -34,9 +34,9 @@
     {
       "id": "treasury-v1-9-3",
       "name": "Treasury v1.9.3",
-      "focus": "Continuing treasury ops: follow-up on t-009..t-014, resolving blockers",
+      "focus": "Auto-accounting ops: fixed GMAIL_REFRESH_TOKEN, ran full pipeline, updating board",
       "status": "active",
-      "lastActive": "2026-08-29T23:20:00Z"
+      "lastActive": "2026-08-30T21:24:00Z"
     }
   ],
   "tasks": [
@@ -177,10 +177,10 @@
       "progress": 100,
       "priority": "P1",
       "milestone": "feed live",
-      "note": "LIVE: first green production run 29 Aug (8 txns, 7 dup, 0 errors). REVOLUT_REFRESH_TOKEN + CLIENT_ID re-synced to Actions secrets via API (by treasury-v1-9-2). Tomorrow's 06:30 UTC scheduled run = final confirmation.",
+      "note": "FULLY LIVE: 30 Aug 06:30 UTC scheduled run confirmed green. Local run 30 Aug 21:10Z: 7 txns, 1 state_skipped, 6 dup, 0 errors. Feed healthy.",
       "gate": "Daily 06:30 UTC scheduled run completes green with no manual dispatch",
-      "next": "Confirm the scheduled 06:30 UTC Actions run is green",
-      "prompt": "Check the revolut-feed workflow's scheduled 06:30 UTC run in frej-pixel/auto-accounting; if green, the feed is fully live — update HANDOVER.md feed status to ✅.",
+      "next": "Done — feed fully operational",
+      "prompt": "Feed is live. No further action needed unless errors appear.",
       "updatedBy": "treasury-v1.9.1",
       "updatedAt": "2026-08-29T19:50:00Z"
     },
@@ -209,7 +209,7 @@
       "progress": 90,
       "priority": "P1",
       "milestone": "packages sent to Margit",
-      "note": "Both August packages rebuilt and upserted to Drive: COLLECTIOM 18/18 rows linked, MYSTERIOM 1 row. Gmail drafts updated in place (COLLECTIOM r-704256830676998350, MYSTERIOM r-7655456346254947425). Awaiting Hannes to send.",
+      "note": "Packages rebuilt 30 Aug 21:11Z (COLLECTIOM 18/18, MYSTERIOM 1/1). Hannes will send Margit drafts tomorrow (31 Aug, last day of month).",
       "gate": "Both drafts sent by Hannes + MARK_IN_REPORT run marks the rows as reported",
       "next": "Hannes reviews and sends both Gmail drafts to Margit",
       "prompt": "After Hannes sends the drafts, run: DRY_RUN=false MARK_IN_REPORT=true SKIP_DRAFT=true ENTITY=BOTH YEAR=2026 MONTH=8 python3 margit_monthly_package/build_package.py — then verify Airtable rows show reported status.",
@@ -225,7 +225,7 @@
       "progress": 95,
       "priority": "P1",
       "milestone": "signed and filed trip report",
-      "note": "v3 complete with both hotels on the company card, total EUR 691.42. Edinburgh flight EUR 100.71 kept as business planning expense (destination changed to Prague); Krakow = personal (archived). Draft: 02_Treasury/Business_Trip_Report_Prague_2026-08-26_DRAFT.xlsx.",
+      "note": "Hannes confirmed he will sign now. Only Hannes signature needed (his trip report).",
       "gate": "Hannes signs the report and it is filed to Drive COLLECTIOM/2026-08",
       "next": "Hannes reviews and signs the trip report",
       "prompt": "Open Autoaccounting/02_Treasury/Business_Trip_Report_Prague_2026-08-26_DRAFT.xlsx, verify the rows against Airtable, get Hannes's signature, and file the signed report to Drive COLLECTIOM/2026-08.",
@@ -257,7 +257,7 @@
       "progress": 55,
       "priority": "P1",
       "milestone": "all Ludwig-paid expenses documented",
-      "note": "Round-2 hunting-list draft ready for Hannes to send (Gmail draft r8820466312647437108). Ludwig's first receipts filed; still missing: Ryanair TVHYPI EUR 87.36, Ryanair QUU34V EUR 18.40, and real Dropbox receipts.",
+      "note": "Ludwig docs still awaited. Hunting-list draft ready (r8820466312647437108). Ludwig Gmail tokens dead (invalid_grant) — needs re-consent.",
       "gate": "TVHYPI + QUU34V + Dropbox receipts filed to Drive; shareholder-loan rows created for Ludwig-paid items",
       "next": "Process Ludwig's statements in _PRIVATE/ludwig_statements/ and chase the missing receipts",
       "prompt": "Process Autoaccounting/_PRIVATE/ludwig_statements/: match Ludwig-paid expenses, file receipts to Drive, and create shareholder-loan rows in Airtable for Ludwig (mirror of the Hannes founder-loan flow). Chase Ryanair TVHYPI/QUU34V and Dropbox receipts.",
@@ -323,6 +323,11 @@
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-08-30T21:24:00Z",
+      "by": "treasury-v1-9-3",
+      "text": "Ran full pipeline: fixed missing GMAIL_REFRESH_TOKEN in .env (restored from MYSTERIOM token), agent scanned 13 Gmail msgs (0 booked, all skipped), receipt hunter found 1 missing receipt (MacBook), packages rebuilt and uploaded to Drive. Hannes: signing Prague report now, sending Margit drafts tomorrow."
+    },
     {
       "at": "2026-08-29T23:20:00Z",
       "by": "treasury-v1-9-3",
