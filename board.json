@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-09-02T19:20:00Z",
+  "updatedAt": "2026-09-02T19:45:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -50,7 +50,7 @@
       "name": "Treasury v1.9.4",
       "focus": "Treasury/auto-accounting ops: SKV 4632 finish, Wamo feed route, September accumulator",
       "status": "active",
-      "lastActive": "2026-09-02T19:20:00Z"
+      "lastActive": "2026-09-02T19:45:00Z"
     }
   ],
   "tasks": [
@@ -382,6 +382,11 @@
       "at": "2026-09-02T19:20:00Z",
       "by": "treasury-v1-9-4",
       "text": "Read-up from v1.9.3 + SKV4632 handovers. Zoe Cottle: NO Wamo API (31 Aug) — feed route decision needed. EMTA skuldfrihetsintyg still missing (Ludwig). Anthropic 'duplicate' verified: 2 genuine charges. Revolut feed green (3 Sep rows booked)."
+    },
+    {
+      "at": "2026-09-02T19:45:00Z",
+      "by": "treasury-v1-9-4",
+      "text": "MacBook docs source corrected per Hannes: invoice comes from Svea Bank (12 installments), not Macforum. COLLECTIOM Margit draft updated with installments/documents-pending note; Airtable row note updated."
     }
   ]
 }
