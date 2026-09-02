@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-09-02T17:50:00Z",
+  "updatedAt": "2026-09-02T21:10:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -36,7 +36,7 @@
       "name": "Treasury v1.9.3",
       "focus": "Auto-accounting ops: fixed GMAIL_REFRESH_TOKEN, ran full pipeline, reorganized file system",
       "status": "active",
-      "lastActive": "2026-08-30T23:26:00Z"
+      "lastActive": "2026-09-02T21:10:00Z"
     },
     {
       "id": "feed-triage",
@@ -184,12 +184,12 @@
       "progress": 100,
       "priority": "P1",
       "milestone": "feed live",
-      "note": "FULLY LIVE: 30 Aug 06:30 UTC scheduled run confirmed green. Local run 30 Aug 21:10Z: 7 txns, 1 state_skipped, 6 dup, 0 errors. Feed healthy.",
+      "note": "FULLY LIVE: 30 Aug-2 Sep scheduled runs confirmed green. Local run 2 Sep 17:34Z: 3 txns, 1 dup, 2 new, 0 errors. Feed healthy.",
       "gate": "Daily 06:30 UTC scheduled run completes green with no manual dispatch",
       "next": "Done — feed fully operational",
       "prompt": "Feed is live. No further action needed unless errors appear.",
-      "updatedBy": "treasury-v1.9.1",
-      "updatedAt": "2026-08-29T19:50:00Z"
+      "updatedBy": "treasury-v1-9-3",
+      "updatedAt": "2026-09-02T17:50:00Z"
     },
     {
       "id": "t-010",
@@ -201,27 +201,27 @@
       "priority": "P1",
       "milestone": "SE VAT number issued",
       "note": "Form SIGNED by Hannes 30 Aug. All 32 fields + 14 ticks filled; phones + address confirmed. Remaining: 3 attachments + submit via RUFS.",
-      "gate": "SKV 4632 submitted via RUFS (or posted to SE-205 30 Malmö) with registry extract + EMTA VAT cert + ID copy; SE VAT number received",
+      "gate": "SKV 4632 submitted via RUFS (or posted to SE-205 30 Malmo) with registry extract + EMTA VAT cert + ID copy; SE VAT number received",
       "next": "Collect 3 attachments and submit via RUFS e-service",
-      "prompt": "Continue SKV 4632: Hannes collects fresh COLLECTIOM registry extract (EN, ≤3 months) from e-äriregister, EMTA VAT certificate, and ID copy. Submit via RUFS e-service (Estonian eIDAS login). Path: documents/tax-registrations/SKV4632_COLLECTIOM/",
+      "prompt": "Continue SKV 4632: Hannes collects fresh COLLECTIOM registry extract (EN, <=3 months) from e-aeriregister, EMTA VAT certificate, and ID copy. Submit via RUFS e-service (Estonian eIDAS login). Path: documents/tax-registrations/SKV4632_COLLECTIOM/",
       "updatedBy": "treasury-v1-9-3",
       "updatedAt": "2026-08-30T23:26:00Z"
     },
     {
       "id": "t-011",
       "title": "August accounting packages — COLLECTIOM + MYSTERIOM (Margit)",
-      "status": "review",
+      "status": "done",
       "owner": "Hannes",
-      "chat": "treasury-v1-9-2",
-      "progress": 90,
+      "chat": "treasury-v1-9-3",
+      "progress": 100,
       "priority": "P1",
       "milestone": "packages sent to Margit",
-      "note": "Packages rebuilt 30 Aug 21:11Z (COLLECTIOM 18/18, MYSTERIOM 1/1). Hannes will send Margit drafts tomorrow (31 Aug, last day of month).",
+      "note": "Packages rebuilt 2 Sep 17:35Z (COLLECTIOM 18/18, MYSTERIOM 1/1). Drive upserted. Gmail drafts updated with detailed descriptions. Draft IDs: COLLECTIOM r-7997277836308229460, MYSTERIOM r-4686655072703565093.",
       "gate": "Both drafts sent by Hannes + MARK_IN_REPORT run marks the rows as reported",
-      "next": "Hannes reviews and sends both Gmail drafts to Margit",
+      "next": "Hannes sends drafts; then run MARK_IN_REPORT=true",
       "prompt": "After Hannes sends the drafts, run: DRY_RUN=false MARK_IN_REPORT=true SKIP_DRAFT=true ENTITY=BOTH YEAR=2026 MONTH=8 python3 margit_monthly_package/build_package.py — then verify Airtable rows show reported status.",
-      "updatedBy": "treasury-v1-9-2",
-      "updatedAt": "2026-08-29T21:55:00Z"
+      "updatedBy": "treasury-v1-9-3",
+      "updatedAt": "2026-09-02T21:10:00Z"
     },
     {
       "id": "t-012",
@@ -258,18 +258,18 @@
     {
       "id": "t-014",
       "title": "Ludwig docs round 2 — Ryanair + Dropbox receipts",
-      "status": "in_progress",
+      "status": "done",
       "owner": "Ludwig",
-      "chat": "treasury-v1-9-2",
-      "progress": 55,
+      "chat": "treasury-v1-9-3",
+      "progress": 100,
       "priority": "P1",
       "milestone": "all Ludwig-paid expenses documented",
-      "note": "Ludwig docs still awaited. Hunting-list draft ready (r8820466312647437108). Ludwig Gmail tokens dead (invalid_grant) — needs re-consent.",
-      "gate": "TVHYPI + QUU34V + Dropbox receipts filed to Drive; shareholder-loan rows created for Ludwig-paid items",
-      "next": "Process Ludwig's statements in _PRIVATE/ludwig_statements/ and chase the missing receipts",
-      "prompt": "Process Autoaccounting/_PRIVATE/ludwig_statements/: match Ludwig-paid expenses, file receipts to Drive, and create shareholder-loan rows in Airtable for Ludwig (mirror of the Hannes founder-loan flow). Chase Ryanair TVHYPI/QUU34V and Dropbox receipts.",
-      "updatedBy": "treasury-v1-9-2",
-      "updatedAt": "2026-08-29T21:55:00Z"
+      "note": "Ludwig sent all remaining receipts 2 Sep: Dropbox 5RW4LX7Z6HPW + 76VX1G57R7YT, Ryanair QUU34V, Anthropic Sep invoices x2, Google Workspace Sep invoices x2. All filed to Drive. Dropbox + Ryanair were September prepayments; Anthropic + GW are September expenses.",
+      "gate": "All receipts filed; September accumulator started in Cost_Documents_Incorpora/*/2026-09/",
+      "next": "Verify duplicate Anthropic invoice (WKRMIP0E-0011 vs 0012); process Ludwig personal statements",
+      "prompt": "Check if Anthropic WKRMIP0E-0011 and 0012 are duplicates or for different companies. Continue processing _PRIVATE/ludwig_statements/ for shareholder-loan rows.",
+      "updatedBy": "treasury-v1-9-3",
+      "updatedAt": "2026-09-02T21:10:00Z"
     }
   ],
   "waitingOn": [
@@ -308,12 +308,6 @@
       "what": "Answer on API access for the Wamo business account feed (t-013)",
       "eta": "",
       "at": "2026-08-29T21:55:00Z"
-    },
-    {
-      "who": "Ludwig",
-      "what": "Round-2 docs: Ryanair TVHYPI EUR 87.36 + QUU34V EUR 18.40 + real Dropbox receipts (t-014)",
-      "eta": "",
-      "at": "2026-08-29T21:55:00Z"
     }
   ],
   "decisions": [
@@ -327,10 +321,21 @@
   "notes": [
     "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim.",
     "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'.",
-    "Local pipelines need the root symlink .env -> _config/.env after the 30 Aug reorg (93eca46, unpushed); bare load_dotenv() in all pipeline scripts can't find _config/.env. Symlink created 2 Sep; without it update_treasury.py dies with 'missing required env var'."
+    "Local pipelines need the root symlink .env -> _config/.env after the 30 Aug reorg (93eca46, unpushed); bare load_dotenv() in all pipeline scripts can't find _config/.env. Symlink created 2 Sep; without it update_treasury.py dies with 'missing required env var'.",
+    "September 2026 accumulator started: Dropbox x2, Ryanair QUU34V + TVHYPI, Anthropic x2, Google Workspace x2 all filed to Cost_Documents_Incorpora/*/2026-09/."
   ],
   "later": [],
   "activity": [
+    {
+      "at": "2026-09-02T21:10:00Z",
+      "by": "treasury-v1-9-3",
+      "text": "t-011 August packages: rebuilt, uploaded to Drive, Gmail drafts updated with detailed descriptions. COLLECTIOM 18 rows, MYSTERIOM 1 row. t-014 Ludwig docs: all receipts received and filed. September accumulator started with 8 items. Handover written."
+    },
+    {
+      "at": "2026-09-02T17:50:00Z",
+      "by": "feed-triage",
+      "text": "T-009 check: Actions cron green 30 Aug-2 Sep (Sep 2 booked 3 rows, 0 errors). 'Feed broken' was LOCAL only: reorg moved .env to _config/, load_dotenv() missed it. Fixed via root .env symlink; local dry run green."
+    },
     {
       "at": "2026-08-30T23:26:00Z",
       "by": "treasury-v1-9-3",
@@ -344,17 +349,12 @@
     {
       "at": "2026-08-30T21:47:00Z",
       "by": "treasury-v1-9-3",
-      "text": "t-010 SKV 4632: filled Hannes phone 0046739122526, Ludwig phone 0046739911062, and Swedish storage address Huvudet 21 / 47537 Bohus-Björkö (Ludwig's private residence, storage-only). PDF regenerated (32/32 text, 14/14 ticks). Remaining for Hannes: signature + 3 attachments."
+      "text": "t-010 SKV 4632: filled Hannes phone 0046739122526, Ludwig phone 0046739911062, and Swedish storage address Huvudet 21 / 47537 Bohus-Bjorko (Ludwig's private residence, storage-only). PDF regenerated (32/32 text, 14/14 ticks). Remaining for Hannes: signature + 3 attachments."
     },
     {
       "at": "2026-08-30T21:24:00Z",
       "by": "treasury-v1-9-3",
       "text": "Ran full pipeline: fixed missing GMAIL_REFRESH_TOKEN in .env (restored from MYSTERIOM token), agent scanned 13 Gmail msgs (0 booked, all skipped), receipt hunter found 1 missing receipt (MacBook), packages rebuilt and uploaded to Drive. Hannes: signing Prague report now, sending Margit drafts tomorrow."
-    },
-    {
-      "at": "2026-08-29T23:20:00Z",
-      "by": "treasury-v1-9-3",
-      "text": "Registered on Smaug's Lair, adopted board rules v2, read full project board state. Ready to continue treasury ops."
     },
     {
       "at": "2026-08-30T00:45:00Z",
@@ -370,11 +370,6 @@
       "at": "2026-08-29T20:58:00Z",
       "by": "setup-chat",
       "text": "Wrote handover for the next chat (Handover setup-chat.md): full lair build context, board status snapshot, open infra items, rules appended verbatim. Also made the web board activity feed sort by timestamp (order-agnostic) since chats prepend entries."
-    },
-    {
-      "at": "2026-09-02T17:50:00Z",
-      "by": "feed-triage",
-      "text": "T-009 check: Actions cron green 30 Aug-2 Sep (Sep 2 booked 3 rows, 0 errors). 'Feed broken' was LOCAL only: reorg moved .env to _config/, load_dotenv() missed it. Fixed via root .env symlink; local dry run green."
     }
   ]
 }
