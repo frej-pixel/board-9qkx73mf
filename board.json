@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-08-30T23:26:00Z",
+  "updatedAt": "2026-09-02T17:50:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -37,6 +37,13 @@
       "focus": "Auto-accounting ops: fixed GMAIL_REFRESH_TOKEN, ran full pipeline, reorganized file system",
       "status": "active",
       "lastActive": "2026-08-30T23:26:00Z"
+    },
+    {
+      "id": "feed-triage",
+      "name": "Feed triage (2 Sep)",
+      "focus": "Diagnosed 'Revolut feed broken' report",
+      "status": "active",
+      "lastActive": "2026-09-02T17:50:00Z"
     }
   ],
   "tasks": [
@@ -319,7 +326,8 @@
   "debts": [],
   "notes": [
     "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim.",
-    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'."
+    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'.",
+    "Local pipelines need the root symlink .env -> _config/.env after the 30 Aug reorg (93eca46, unpushed); bare load_dotenv() in all pipeline scripts can't find _config/.env. Symlink created 2 Sep; without it update_treasury.py dies with 'missing required env var'."
   ],
   "later": [],
   "activity": [
@@ -362,6 +370,11 @@
       "at": "2026-08-29T20:58:00Z",
       "by": "setup-chat",
       "text": "Wrote handover for the next chat (Handover setup-chat.md): full lair build context, board status snapshot, open infra items, rules appended verbatim. Also made the web board activity feed sort by timestamp (order-agnostic) since chats prepend entries."
+    },
+    {
+      "at": "2026-09-02T17:50:00Z",
+      "by": "feed-triage",
+      "text": "T-009 check: Actions cron green 30 Aug-2 Sep (Sep 2 booked 3 rows, 0 errors). 'Feed broken' was LOCAL only: reorg moved .env to _config/, load_dotenv() missed it. Fixed via root .env symlink; local dry run green."
     }
   ]
 }
