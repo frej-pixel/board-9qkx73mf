@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-09-02T19:45:00Z",
+  "updatedAt": "2026-09-02T21:00:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -50,7 +50,7 @@
       "name": "Treasury v1.9.4",
       "focus": "Treasury/auto-accounting ops: SKV 4632 finish, Wamo feed route, September accumulator",
       "status": "active",
-      "lastActive": "2026-09-02T19:45:00Z"
+      "lastActive": "2026-09-02T21:00:00Z"
     }
   ],
   "tasks": [
@@ -223,12 +223,12 @@
       "progress": 100,
       "priority": "P1",
       "milestone": "packages sent to Margit",
-      "note": "Packages rebuilt 2 Sep 17:35Z (COLLECTIOM 18/18, MYSTERIOM 1/1). Drive upserted. Gmail drafts updated with detailed descriptions. Draft IDs: COLLECTIOM r-7997277836308229460, MYSTERIOM r-4686655072703565093.",
+      "note": "MYSTERIOM SENT by Hannes 2 Sep — row marked In Report, Drive package refreshed. COLLECTIOM draft current: package xlsx attached + MacBook/Svea installments note added.",
       "gate": "Both drafts sent by Hannes + MARK_IN_REPORT run marks the rows as reported",
-      "next": "Hannes sends drafts; then run MARK_IN_REPORT=true",
+      "next": "Hannes sends COLLECTIOM draft (r-7997277836308229460), then run MARK_IN_REPORT ENTITY=COLLECTIOM",
       "prompt": "After Hannes sends the drafts, run: DRY_RUN=false MARK_IN_REPORT=true SKIP_DRAFT=true ENTITY=BOTH YEAR=2026 MONTH=8 python3 margit_monthly_package/build_package.py — then verify Airtable rows show reported status.",
-      "updatedBy": "treasury-v1-9-3",
-      "updatedAt": "2026-09-02T21:10:00Z"
+      "updatedBy": "treasury-v1-9-4",
+      "updatedAt": "2026-09-02T21:00:00Z"
     },
     {
       "id": "t-012",
@@ -299,12 +299,6 @@
       "at": "2026-08-29T21:46:00Z"
     },
     {
-      "who": "Hannes",
-      "what": "Send Margit package drafts (COLLECTIOM + MYSTERIOM); personal Revolut statement; Wamo IBAN (t-011, t-013)",
-      "eta": "",
-      "at": "2026-08-30T22:52:00Z"
-    },
-    {
       "who": "Ludwig",
       "what": "EMTA skuldfrihetsintyg (tax-debt certificate) for SKV 4632 — instructions PDF in handover",
       "eta": "",
@@ -315,6 +309,12 @@
       "what": "SKV 4632: submit via RUFS once Ludwig's EMTA cert lands; Wamo IBAN; Margit drafts; personal Revolut statement",
       "eta": "",
       "at": "2026-09-02T19:20:00Z"
+    },
+    {
+      "who": "Hannes",
+      "what": "Send COLLECTIOM Margit draft (MYSTERIOM sent 2 Sep)",
+      "eta": "~10 Sep",
+      "at": "2026-09-02T21:00:00Z"
     }
   ],
   "decisions": [
@@ -387,6 +387,11 @@
       "at": "2026-09-02T19:45:00Z",
       "by": "treasury-v1-9-4",
       "text": "MacBook docs source corrected per Hannes: invoice comes from Svea Bank (12 installments), not Macforum. COLLECTIOM Margit draft updated with installments/documents-pending note; Airtable row note updated."
+    },
+    {
+      "at": "2026-09-02T21:00:00Z",
+      "by": "treasury-v1-9-4",
+      "text": "MYSTERIOM Aug package sent by Hannes -> MARK_IN_REPORT run done (1 row In Report, Drive refreshed). COLLECTIOM draft: package xlsx attached, awaits Hannes's send."
     }
   ]
 }
