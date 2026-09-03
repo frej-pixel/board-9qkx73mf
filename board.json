@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-09-02T21:00:00Z",
+  "updatedAt": "2026-09-03T19:55:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -50,7 +50,7 @@
       "name": "Treasury v1.9.4",
       "focus": "Treasury/auto-accounting ops: SKV 4632 finish, Wamo feed route, September accumulator",
       "status": "active",
-      "lastActive": "2026-09-02T21:00:00Z"
+      "lastActive": "2026-09-03T19:55:00Z"
     }
   ],
   "tasks": [
@@ -223,12 +223,12 @@
       "progress": 100,
       "priority": "P1",
       "milestone": "packages sent to Margit",
-      "note": "MYSTERIOM SENT by Hannes 2 Sep — row marked In Report, Drive package refreshed. COLLECTIOM draft current: package xlsx attached + MacBook/Svea installments note added.",
+      "note": "Both August packages sent by Hannes (MYSTERIOM 2 Sep, COLLECTIOM 3 Sep) and marked In Report. Drive packages refreshed at stable links.",
       "gate": "Both drafts sent by Hannes + MARK_IN_REPORT run marks the rows as reported",
-      "next": "Hannes sends COLLECTIOM draft (r-7997277836308229460), then run MARK_IN_REPORT ENTITY=COLLECTIOM",
+      "next": "Done — next cycle: September packages, due ~10 Oct",
       "prompt": "After Hannes sends the drafts, run: DRY_RUN=false MARK_IN_REPORT=true SKIP_DRAFT=true ENTITY=BOTH YEAR=2026 MONTH=8 python3 margit_monthly_package/build_package.py — then verify Airtable rows show reported status.",
       "updatedBy": "treasury-v1-9-4",
-      "updatedAt": "2026-09-02T21:00:00Z"
+      "updatedAt": "2026-09-03T19:55:00Z"
     },
     {
       "id": "t-012",
@@ -309,12 +309,6 @@
       "what": "SKV 4632: submit via RUFS once Ludwig's EMTA cert lands; Wamo IBAN; Margit drafts; personal Revolut statement",
       "eta": "",
       "at": "2026-09-02T19:20:00Z"
-    },
-    {
-      "who": "Hannes",
-      "what": "Send COLLECTIOM Margit draft (MYSTERIOM sent 2 Sep)",
-      "eta": "~10 Sep",
-      "at": "2026-09-02T21:00:00Z"
     }
   ],
   "decisions": [
@@ -392,6 +386,11 @@
       "at": "2026-09-02T21:00:00Z",
       "by": "treasury-v1-9-4",
       "text": "MYSTERIOM Aug package sent by Hannes -> MARK_IN_REPORT run done (1 row In Report, Drive refreshed). COLLECTIOM draft: package xlsx attached, awaits Hannes's send."
+    },
+    {
+      "at": "2026-09-03T19:55:00Z",
+      "by": "treasury-v1-9-4",
+      "text": "COLLECTIOM Aug package sent by Hannes -> 18 rows marked In Report, Drive refreshed. t-011 DONE: both August packages closed."
     }
   ]
 }
