@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-09-07T16:30:00Z",
+  "updatedAt": "2026-09-07T16:45:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -420,6 +420,11 @@
       "at": "2026-09-07T16:30:00Z",
       "by": "treasury-v1-9-4",
       "text": "Cyprus POEM/IP Box prep: 4 platform-generic revenue categories created (Ads/Affiliate/Memberships/SaaS), IP-dev register built — Tier 1 ~€2,979 platform spend documented (44 rows), Tier 2 ~€1,729 candidates. 7 editable rows tagged ip-dev; sealed/In-Report rows untouched."
+    },
+    {
+      "at": "2026-09-07T16:45:00Z",
+      "by": "treasury-v1-9-4",
+      "text": "IP doctrine set: COLLECTIOM as a whole owns all sites/SaaS. Register rebuilt — platform dev spend to date ~€6,014 across 79 rows (domains €1,489, backend €526, storefront €379, tooling €3,619). ip-dev tag = 'collectiom platform'."
     }
   ]
 }
