@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-09-07T16:45:00Z",
+  "updatedAt": "2026-09-08T22:30:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -425,6 +425,11 @@
       "at": "2026-09-07T16:45:00Z",
       "by": "treasury-v1-9-4",
       "text": "IP doctrine set: COLLECTIOM as a whole owns all sites/SaaS. Register rebuilt — platform dev spend to date ~€6,014 across 79 rows (domains €1,489, backend €526, storefront €379, tooling €3,619). ip-dev tag = 'collectiom platform'."
+    },
+    {
+      "at": "2026-09-08T22:30:00Z",
+      "by": "treasury-v1-9-4",
+      "text": "Full system run all green. 3 new Detected rows: Booking.com €187.58 (flagged: likely Ludwig's UK hotel — pending confirmation for trip report), Vercel €64.93, Higgsfield €86.82. Invoice template delivered as PDF. Review queue 14."
     }
   ]
 }
