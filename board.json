@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-09-08T22:40:00Z",
+  "updatedAt": "2026-09-08T23:10:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -435,6 +435,11 @@
       "at": "2026-09-08T22:40:00Z",
       "by": "treasury-v1-9-4",
       "text": "4 Higgsfield invoices filed to Drive 2026-09. Two matched (€134.38 + €86.82) → Ready for Margit with receipts linked; two ($52.06, $27.63) pre-filed, charges pending in feed. Higgsfield still bills Ludwig personally — switch to company billing flagged."
+    },
+    {
+      "at": "2026-09-08T23:10:00Z",
+      "by": "treasury-v1-9-4",
+      "text": "Founder loan €1,600 booked (Hannes→COLLECTIOM Operating, cumulative €11,431.64; addendum draft awaits signatures). Staging gap closed: mirror_sync.py now syncs local receipt mirror → Drive + links rows; first run backfilled 61 files, linked 13 rows. Commit 17394fb."
     }
   ]
 }
