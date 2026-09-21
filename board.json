@@ -1,7 +1,7 @@
 {
   "project": "Smaug's Lair",
   "motto": "Finish what was started — the hoard grows by closing, not by starting.",
-  "updatedAt": "2026-09-08T23:10:00Z",
+  "updatedAt": "2026-09-21T11:35:00Z",
   "chats": [
     {
       "id": "setup-chat",
@@ -440,6 +440,11 @@
       "at": "2026-09-08T23:10:00Z",
       "by": "treasury-v1-9-4",
       "text": "Founder loan €1,600 booked (Hannes→COLLECTIOM Operating, cumulative €11,431.64; addendum draft awaits signatures). Staging gap closed: mirror_sync.py now syncs local receipt mirror → Drive + links rows; first run backfilled 61 files, linked 13 rows. Commit 17394fb."
+    },
+    {
+      "at": "2026-09-21T11:35:00Z",
+      "by": "treasury-v1-9-4",
+      "text": "Full system run after 12 days away — all steps green; daily crons kept pulling (13 rows landed 10-20 Sep). New Detected (all COLLECTIOM): Omio x2, Uber x3, Higgsfield 23.92 x2, Supabase 65.04, GoDaddy 13.40, Moonshot 179.93, Splice 21.80, Expenses app 8. One Higgsfield matches pre-filed inv 0013; second 23.92 needs receipt. COLLECTIOM Sept package refreshed to Drive (5 expenses). Review queue 24. MacBook/Svea docs still pending."
     }
   ]
 }
