@@ -1,6 +1,6 @@
 {
   "project": "Smaug's Lair",
-  "motto": "Finish what was started — the hoard grows by closing, not by starting.",
+  "motto": "Finish what was started \u2014 the hoard grows by closing, not by starting.",
   "updatedAt": "2026-09-21T11:35:00Z",
   "chats": [
     {
@@ -72,7 +72,7 @@
     },
     {
       "id": "t-002",
-      "title": "Desk K pilot dossier — Cormac McCarthy",
+      "title": "Desk K pilot dossier \u2014 Cormac McCarthy",
       "status": "done",
       "owner": "Hannes",
       "chat": "desk-k-chat",
@@ -88,7 +88,7 @@
     },
     {
       "id": "t-003",
-      "title": "Desk K batches — 224 authors after pilot clears",
+      "title": "Desk K batches \u2014 224 authors after pilot clears",
       "status": "done",
       "owner": "Hannes",
       "chat": "desk-k-chat",
@@ -113,7 +113,7 @@
       "milestone": "guide delivered",
       "note": "Both routes per company researched against current Estonian law and live registry data; Ludwig_Share_Guide_Collectiom_Mysteriom.pdf delivered. Recommended: portal capital increase for Collectiom (EUR 25, no notary), notarised 1% sale to Anthon for Mysteriom.",
       "gate": "Ludwig has every option, exact steps, costs and signing logistics",
-      "next": "Done — feeds t-005 to t-008",
+      "next": "Done \u2014 feeds t-005 to t-008",
       "prompt": "Complete. The guide PDF in the workspace root is the reference for t-005 to t-008.",
       "updatedBy": "share-transfer-chat",
       "updatedAt": "2026-08-29T21:46:00Z"
@@ -175,7 +175,7 @@
       "progress": 20,
       "priority": "P2",
       "milestone": "Anthon registered at 1%",
-      "note": "Hannes's bilingual consent + pre-emption waiver drafted (Mysteriom_Consent_Waiver_Anthon_1pct_DRAFT.pdf) — hand-sign and e-mail from the ship, no card needed. Then Ludwig + Anthon sign the purchase agreement at a notary (min ~EUR 250 + VAT); notary registers the change.",
+      "note": "Hannes's bilingual consent + pre-emption waiver drafted (Mysteriom_Consent_Waiver_Anthon_1pct_DRAFT.pdf) \u2014 hand-sign and e-mail from the ship, no card needed. Then Ludwig + Anthon sign the purchase agreement at a notary (min ~EUR 250 + VAT); notary registers the change.",
       "gate": "Registry card shows Ludwig 69% / Hannes 30% / Anthon 1%",
       "next": "Fill Anthon's full name + personal code into the waiver; Hannes signs and e-mails it from the ship",
       "prompt": "Complete the Mysteriom waiver PDF with Anthon's details, get Hannes's hand-signed scan by e-mail, then book any Estonian notary with Anthon to sign the EUR 0.02 share purchase agreement; the notary files with the register.",
@@ -184,7 +184,7 @@
     },
     {
       "id": "t-009",
-      "title": "Revolut bank feed — credentials + go-live",
+      "title": "Revolut bank feed \u2014 credentials + go-live",
       "status": "done",
       "owner": "Hannes",
       "chat": "treasury-v1.9.1",
@@ -193,21 +193,21 @@
       "milestone": "feed live",
       "note": "FULLY LIVE: 30 Aug-2 Sep scheduled runs confirmed green. Local run 2 Sep 17:34Z: 3 txns, 1 dup, 2 new, 0 errors. Feed healthy.",
       "gate": "Daily 06:30 UTC scheduled run completes green with no manual dispatch",
-      "next": "Done — feed fully operational",
+      "next": "Done \u2014 feed fully operational",
       "prompt": "Feed is live. No further action needed unless errors appear.",
       "updatedBy": "treasury-v1-9-3",
       "updatedAt": "2026-09-02T17:50:00Z"
     },
     {
       "id": "t-010",
-      "title": "Swedish VAT registration (SKV 4632) — COLLECTIOM",
+      "title": "Swedish VAT registration (SKV 4632) \u2014 COLLECTIOM",
       "status": "in_progress",
       "owner": "Hannes",
       "chat": "treasury-v1.9.1",
       "progress": 98,
       "priority": "P1",
       "milestone": "SE VAT number issued",
-      "note": "Form fully pre-filled + signed; registry extract, VAT cert and passport copy collected. RUFS online session timed out after steps 1-2 (re-entry cheat sheet in 2 Sep handover). Only missing piece: EMTA skuldfrihetsintyg — with Ludwig.",
+      "note": "Form fully pre-filled + signed; registry extract, VAT cert and passport copy collected. RUFS online session timed out after steps 1-2 (re-entry cheat sheet in 2 Sep handover). Only missing piece: EMTA skuldfrihetsintyg \u2014 with Ludwig.",
       "gate": "SKV 4632 submitted via RUFS (or posted to SE-205 30 Malmo) with registry extract + EMTA VAT cert + ID copy; SE VAT number received",
       "next": "Ludwig delivers EMTA skuldfrihetsintyg, then Hannes re-enters RUFS steps 1-5 in one session and submits",
       "prompt": "Continue SKV 4632: Hannes collects fresh COLLECTIOM registry extract (EN, <=3 months) from e-aeriregister, EMTA VAT certificate, and ID copy. Submit via RUFS e-service (Estonian eIDAS login). Path: documents/tax-registrations/SKV4632_COLLECTIOM/",
@@ -216,7 +216,7 @@
     },
     {
       "id": "t-011",
-      "title": "August accounting packages — COLLECTIOM + MYSTERIOM (Margit)",
+      "title": "August accounting packages \u2014 COLLECTIOM + MYSTERIOM (Margit)",
       "status": "done",
       "owner": "Hannes",
       "chat": "treasury-v1-9-3",
@@ -225,14 +225,14 @@
       "milestone": "packages sent to Margit",
       "note": "Both August packages sent by Hannes (MYSTERIOM 2 Sep, COLLECTIOM 3 Sep) and marked In Report. Drive packages refreshed at stable links.",
       "gate": "Both drafts sent by Hannes + MARK_IN_REPORT run marks the rows as reported",
-      "next": "Done — next cycle: September packages, due ~10 Oct",
-      "prompt": "After Hannes sends the drafts, run: DRY_RUN=false MARK_IN_REPORT=true SKIP_DRAFT=true ENTITY=BOTH YEAR=2026 MONTH=8 python3 margit_monthly_package/build_package.py — then verify Airtable rows show reported status.",
+      "next": "Done \u2014 next cycle: September packages, due ~10 Oct",
+      "prompt": "After Hannes sends the drafts, run: DRY_RUN=false MARK_IN_REPORT=true SKIP_DRAFT=true ENTITY=BOTH YEAR=2026 MONTH=8 python3 margit_monthly_package/build_package.py \u2014 then verify Airtable rows show reported status.",
       "updatedBy": "treasury-v1-9-4",
       "updatedAt": "2026-09-03T19:55:00Z"
     },
     {
       "id": "t-012",
-      "title": "Prague business trip report v3 — hotels included",
+      "title": "Prague business trip report v3 \u2014 hotels included",
       "status": "done",
       "owner": "Hannes",
       "chat": "treasury-v1-9-3",
@@ -241,14 +241,14 @@
       "milestone": "signed and filed trip report",
       "note": "Signed by Hannes 30 Aug (both traveller and approved-by lines). PDF generated from Excel by treasury-v1-9-3. Filed to Drive: COLLECTIOM/2026-08/Business_Trip_Report_Prague_2026-08-26_SIGNED.pdf.",
       "gate": "Hannes signs the report and it is filed to Drive COLLECTIOM/2026-08",
-      "next": "Done — report complete and archived",
+      "next": "Done \u2014 report complete and archived",
       "prompt": "Trip report is done. No further action needed.",
       "updatedBy": "treasury-v1-9-3",
       "updatedAt": "2026-08-30T22:52:00Z"
     },
     {
       "id": "t-013",
-      "title": "Wamo business account — API feed or statement import",
+      "title": "Wamo business account \u2014 API feed or statement import",
       "status": "done",
       "owner": "Hannes",
       "chat": "treasury-v1-9-2",
@@ -257,14 +257,14 @@
       "milestone": "Wamo transactions flowing into Airtable",
       "note": "Wamo feed LIVE via Enable Banking PSD2 (free restricted tier): wamo_feed.py + daily 06:42 UTC cron, green in Actions. IBAN LU41 4080 0000 4847 4073 in Accounts table. Consent to 2027-03-02.",
       "gate": "Zoe confirms or denies API access; feed or statement-import flow chosen and built",
-      "next": "Done — watch first real transactions (beta-flagged connection); re-auth 2027-03-02",
+      "next": "Done \u2014 watch first real transactions (beta-flagged connection); re-auth 2027-03-02",
       "prompt": "If Zoe grants API access: build a wamo-feed workflow mirroring revolut-feed (secrets synced via GitHub API, PyNaCl sealed box). If denied: implement a monthly Wamo CSV/PDF statement import into Airtable. Wamo IBAN still needed from Hannes.",
       "updatedBy": "treasury-v1-9-4",
       "updatedAt": "2026-09-03T23:20:00Z"
     },
     {
       "id": "t-014",
-      "title": "Ludwig docs round 2 — Ryanair + Dropbox receipts",
+      "title": "Ludwig docs round 2 \u2014 Ryanair + Dropbox receipts",
       "status": "done",
       "owner": "Ludwig",
       "chat": "treasury-v1-9-3",
@@ -273,7 +273,7 @@
       "milestone": "all Ludwig-paid expenses documented",
       "note": "Ludwig sent all remaining receipts 2 Sep: Dropbox 5RW4LX7Z6HPW + 76VX1G57R7YT, Ryanair QUU34V, Anthropic Sep invoices x2, Google Workspace Sep invoices x2. All filed to Drive. Dropbox + Ryanair were September prepayments; Anthropic + GW are September expenses.",
       "gate": "All receipts filed; September accumulator started in Cost_Documents_Incorpora/*/2026-09/",
-      "next": "Done — Anthropic verified 2 Sep: TWO real charges (2 separate €47.81 card txns in the feed), invoices 0011/0012 identical content, billed to Ludwig personally + 25% SE VAT. Flag to Margit on review.",
+      "next": "Done \u2014 Anthropic verified 2 Sep: TWO real charges (2 separate \u20ac47.81 card txns in the feed), invoices 0011/0012 identical content, billed to Ludwig personally + 25% SE VAT. Flag to Margit on review.",
       "prompt": "Check if Anthropic WKRMIP0E-0011 and 0012 are duplicates or for different companies. Continue processing _PRIVATE/ludwig_statements/ for shareholder-loan rows.",
       "updatedBy": "treasury-v1-9-4",
       "updatedAt": "2026-09-02T19:20:00Z"
@@ -300,14 +300,14 @@
     },
     {
       "who": "Ludwig",
-      "what": "EMTA skuldfrihetsintyg (tax-debt certificate) for SKV 4632 — instructions PDF in handover",
+      "what": "EMTA skuldfrihetsintyg (tax-debt certificate) for SKV 4632 \u2014 instructions PDF in handover",
       "eta": "",
       "at": "2026-09-02T19:20:00Z"
     }
   ],
   "decisions": [
     {
-      "text": "Mysteriom -> Anthon: route A (Ludwig sells 1% at notary — recommended, Hannes stays at exactly 30%) or route B (new issue, dilutes Ludwig and Hannes equally)",
+      "text": "Mysteriom -> Anthon: route A (Ludwig sells 1% at notary \u2014 recommended, Hannes stays at exactly 30%) or route B (new issue, dilutes Ludwig and Hannes equally)",
       "for": "Ludwig",
       "at": "2026-08-29T21:46:00Z"
     }
@@ -315,7 +315,7 @@
   "debts": [],
   "notes": [
     "Treasury: handovers are written ONLY when Hannes explicitly asks, named 'Handover <chat name>.md', with the board status inside and these board rules appended verbatim.",
-    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root — all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'.",
+    "Share transfer: handover for the next chat is 'Handover Share transfer chat.md' in the workspace root \u2014 all four PDFs with paths, the agreed plan, pending human actions, and the board rules appended verbatim. Keep chat id 'share-transfer-chat'.",
     "Local pipelines need the root symlink .env -> _config/.env after the 30 Aug reorg (93eca46, unpushed); bare load_dotenv() in all pipeline scripts can't find _config/.env. Symlink created 2 Sep; without it update_treasury.py dies with 'missing required env var'.",
     "September 2026 accumulator started: Dropbox x2, Ryanair QUU34V + TVHYPI, Anthropic x2, Google Workspace x2 all filed to Cost_Documents_Incorpora/*/2026-09/."
   ],
@@ -359,7 +359,7 @@
     {
       "at": "2026-08-29T23:12:00Z",
       "by": "treasury-v1-9-2",
-      "text": "Handover written on Hannes's explicit request: 'Handover Treasury v1.9.2.md' in Autoaccounting/ — full state of t-009..t-014, hard rules (Hannes sends all mail; no auto-Dismiss; no formula-field writes), draft IDs, MARK_IN_REPORT command, first moves for the next chat; board rules appended verbatim."
+      "text": "Handover written on Hannes's explicit request: 'Handover Treasury v1.9.2.md' in Autoaccounting/ \u2014 full state of t-009..t-014, hard rules (Hannes sends all mail; no auto-Dismiss; no formula-field writes), draft IDs, MARK_IN_REPORT command, first moves for the next chat; board rules appended verbatim."
     },
     {
       "at": "2026-08-29T20:58:00Z",
@@ -369,7 +369,7 @@
     {
       "at": "2026-09-02T19:20:00Z",
       "by": "treasury-v1-9-4",
-      "text": "Read-up from v1.9.3 + SKV4632 handovers. Zoe Cottle: NO Wamo API (31 Aug) — feed route decision needed. EMTA skuldfrihetsintyg still missing (Ludwig). Anthropic 'duplicate' verified: 2 genuine charges. Revolut feed green (3 Sep rows booked)."
+      "text": "Read-up from v1.9.3 + SKV4632 handovers. Zoe Cottle: NO Wamo API (31 Aug) \u2014 feed route decision needed. EMTA skuldfrihetsintyg still missing (Ludwig). Anthropic 'duplicate' verified: 2 genuine charges. Revolut feed green (3 Sep rows booked)."
     },
     {
       "at": "2026-09-02T19:45:00Z",
@@ -399,52 +399,57 @@
     {
       "at": "2026-09-06T20:30:00Z",
       "by": "treasury-v1-9-4",
-      "text": "Full system run green: both bank feeds OK (Wamo session healthy, awaiting first txns), hunter OK (Ludwig tokens still dead), digest OK, August packages untouched. New: Omio €38.79 in review queue."
+      "text": "Full system run green: both bank feeds OK (Wamo session healthy, awaiting first txns), hunter OK (Ludwig tokens still dead), digest OK, August packages untouched. New: Omio \u20ac38.79 in review queue."
     },
     {
       "at": "2026-09-06T21:15:00Z",
       "by": "treasury-v1-9-4",
-      "text": "Omio €38.79 identified: Ludwig's LNER train Kings Cross→York 17 Sep (part of Sep UK trip). Receipt filed to Drive, linked on the row; stays Detected (new vendor, no auto-rule)."
+      "text": "Omio \u20ac38.79 identified: Ludwig's LNER train Kings Cross\u2192York 17 Sep (part of Sep UK trip). Receipt filed to Drive, linked on the row; stays Detected (new vendor, no auto-rule)."
     },
     {
       "at": "2026-09-07T00:30:00Z",
       "by": "treasury-v1-9-4",
-      "text": "Omio €38.79 marked Ready for Margit (Travel, 0% VAT, receipt linked). Rule 19 added: Omio auto-files as Travel from now on. UK trip report draft started (3 legs, €144.55) at documents/trip-reports/2026-09_UK/ — living until signed after the trip."
+      "text": "Omio \u20ac38.79 marked Ready for Margit (Travel, 0% VAT, receipt linked). Rule 19 added: Omio auto-files as Travel from now on. UK trip report draft started (3 legs, \u20ac144.55) at documents/trip-reports/2026-09_UK/ \u2014 living until signed after the trip."
     },
     {
       "at": "2026-09-07T16:00:00Z",
       "by": "treasury-v1-9-4",
-      "text": "UK trip report finalized as living draft: purpose = pressmark.co/york launch + York Book Fair; Hannes rebooking the return leg (was 13 Sep, train is 17 Sep) — update report when new booking lands."
+      "text": "UK trip report finalized as living draft: purpose = pressmark.co/york launch + York Book Fair; Hannes rebooking the return leg (was 13 Sep, train is 17 Sep) \u2014 update report when new booking lands."
     },
     {
       "at": "2026-09-07T16:30:00Z",
       "by": "treasury-v1-9-4",
-      "text": "Cyprus POEM/IP Box prep: 4 platform-generic revenue categories created (Ads/Affiliate/Memberships/SaaS), IP-dev register built — Tier 1 ~€2,979 platform spend documented (44 rows), Tier 2 ~€1,729 candidates. 7 editable rows tagged ip-dev; sealed/In-Report rows untouched."
+      "text": "Cyprus POEM/IP Box prep: 4 platform-generic revenue categories created (Ads/Affiliate/Memberships/SaaS), IP-dev register built \u2014 Tier 1 ~\u20ac2,979 platform spend documented (44 rows), Tier 2 ~\u20ac1,729 candidates. 7 editable rows tagged ip-dev; sealed/In-Report rows untouched."
     },
     {
       "at": "2026-09-07T16:45:00Z",
       "by": "treasury-v1-9-4",
-      "text": "IP doctrine set: COLLECTIOM as a whole owns all sites/SaaS. Register rebuilt — platform dev spend to date ~€6,014 across 79 rows (domains €1,489, backend €526, storefront €379, tooling €3,619). ip-dev tag = 'collectiom platform'."
+      "text": "IP doctrine set: COLLECTIOM as a whole owns all sites/SaaS. Register rebuilt \u2014 platform dev spend to date ~\u20ac6,014 across 79 rows (domains \u20ac1,489, backend \u20ac526, storefront \u20ac379, tooling \u20ac3,619). ip-dev tag = 'collectiom platform'."
     },
     {
       "at": "2026-09-08T22:30:00Z",
       "by": "treasury-v1-9-4",
-      "text": "Full system run all green. 3 new Detected rows: Booking.com €187.58 (flagged: likely Ludwig's UK hotel — pending confirmation for trip report), Vercel €64.93, Higgsfield €86.82. Invoice template delivered as PDF. Review queue 14."
+      "text": "Full system run all green. 3 new Detected rows: Booking.com \u20ac187.58 (flagged: likely Ludwig's UK hotel \u2014 pending confirmation for trip report), Vercel \u20ac64.93, Higgsfield \u20ac86.82. Invoice template delivered as PDF. Review queue 14."
     },
     {
       "at": "2026-09-08T22:40:00Z",
       "by": "treasury-v1-9-4",
-      "text": "4 Higgsfield invoices filed to Drive 2026-09. Two matched (€134.38 + €86.82) → Ready for Margit with receipts linked; two ($52.06, $27.63) pre-filed, charges pending in feed. Higgsfield still bills Ludwig personally — switch to company billing flagged."
+      "text": "4 Higgsfield invoices filed to Drive 2026-09. Two matched (\u20ac134.38 + \u20ac86.82) \u2192 Ready for Margit with receipts linked; two ($52.06, $27.63) pre-filed, charges pending in feed. Higgsfield still bills Ludwig personally \u2014 switch to company billing flagged."
     },
     {
       "at": "2026-09-08T23:10:00Z",
       "by": "treasury-v1-9-4",
-      "text": "Founder loan €1,600 booked (Hannes→COLLECTIOM Operating, cumulative €11,431.64; addendum draft awaits signatures). Staging gap closed: mirror_sync.py now syncs local receipt mirror → Drive + links rows; first run backfilled 61 files, linked 13 rows. Commit 17394fb."
+      "text": "Founder loan \u20ac1,600 booked (Hannes\u2192COLLECTIOM Operating, cumulative \u20ac11,431.64; addendum draft awaits signatures). Staging gap closed: mirror_sync.py now syncs local receipt mirror \u2192 Drive + links rows; first run backfilled 61 files, linked 13 rows. Commit 17394fb."
     },
     {
       "at": "2026-09-21T11:35:00Z",
       "by": "treasury-v1-9-4",
-      "text": "Full system run after 12 days away — all steps green; daily crons kept pulling (13 rows landed 10-20 Sep). New Detected (all COLLECTIOM): Omio x2, Uber x3, Higgsfield 23.92 x2, Supabase 65.04, GoDaddy 13.40, Moonshot 179.93, Splice 21.80, Expenses app 8. One Higgsfield matches pre-filed inv 0013; second 23.92 needs receipt. COLLECTIOM Sept package refreshed to Drive (5 expenses). Review queue 24. MacBook/Svea docs still pending."
+      "text": "Full system run after 12 days away \u2014 all steps green; daily crons kept pulling (13 rows landed 10-20 Sep). New Detected (all COLLECTIOM): Omio x2, Uber x3, Higgsfield 23.92 x2, Supabase 65.04, GoDaddy 13.40, Moonshot 179.93, Splice 21.80, Expenses app 8. One Higgsfield matches pre-filed inv 0013; second 23.92 needs receipt. COLLECTIOM Sept package refreshed to Drive (5 expenses). Review queue 24. MacBook/Svea docs still pending."
+    },
+    {
+      "at": "2026-09-24T12:35:00Z",
+      "by": "treasury-v1-9-4",
+      "text": "Full pipeline run: Shopify \u20ac10 booked via Revolut feed; agent field-ID bug fixed \u2014 InCorpora \u20ac54.60 (inv 36754) auto-booked, idempotency restored; package refreshed; 24 rows in review queue."
     }
   ]
 }
